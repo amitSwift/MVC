@@ -1,15 +1,17 @@
 //
-//  ViewController.h
+//  CustomNavBar.h
 //  Fashion
 //
 //  Created by Lakhwinder Singh on 29/11/15.
 //  Copyright © 2015 lakh. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+/**
+ Custom navigation bar
+ */
 
-@interface ViewController : UIViewController
-
-
+@interface CustomNavBar : UINavigationBar
 @end
+
 
