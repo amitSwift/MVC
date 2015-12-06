@@ -7,11 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ConstantStore.h"
-
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
@@ -19,23 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
-//    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }
-                                             forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : COLOR_FASHION_PINK }
-                                             forState:UIControlStateSelected];
-    
-    
-    //unselected icon tint color
-    [[UIView appearanceWhenContainedIn:[UITabBar class], nil] setTintColor:[UIColor whiteColor]];
-
-    //selected tint color
-    [[UITabBar appearance] setTintColor:COLOR_FASHION_PINK];
-//
-//    //text tint color
-//    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     return YES;
 }
 
@@ -62,3 +41,5 @@
 }
 
 @end
+
+

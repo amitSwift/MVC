@@ -7,6 +7,197 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2DB9511C143C3B0062984C /* NSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9501C143C3B0062984C /* NSURLSession.m */; };
+		FD2DB9541C143C660062984C /* NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9531C143C660062984C /* NSObject.m */; };
+		FD2DBB171C144AC70062984C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9561C144AC70062984C /* .gitattributes */; };
+		FD2DBB181C144AC70062984C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9571C144AC70062984C /* .gitignore */; };
+		FD2DBB191C144AC70062984C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9581C144AC70062984C /* .travis.yml */; };
+		FD2DBB1A1C144AC70062984C /* build_docs.sh in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9591C144AC70062984C /* build_docs.sh */; };
+		FD2DBB1B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB95B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset */; };
+		FD2DBB1C1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB95E1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html */; };
+		FD2DBB1D1C144AC70062984C /* PINRemoteImageManagerImageProcessor.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB95F1C144AC70062984C /* PINRemoteImageManagerImageProcessor.html */; };
+		FD2DBB1E1C144AC70062984C /* PINRemoteImageCategoryManager.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9611C144AC70062984C /* PINRemoteImageCategoryManager.html */; };
+		FD2DBB1F1C144AC70062984C /* PINRemoteImageManager.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9621C144AC70062984C /* PINRemoteImageManager.html */; };
+		FD2DBB201C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9641C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html */; };
+		FD2DBB211C144AC70062984C /* PINRemoteImageManagerError.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9651C144AC70062984C /* PINRemoteImageManagerError.html */; };
+		FD2DBB221C144AC70062984C /* PINRemoteImageManagerPriority.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9661C144AC70062984C /* PINRemoteImageManagerPriority.html */; };
+		FD2DBB231C144AC70062984C /* PINRemoteImageResultType.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9671C144AC70062984C /* PINRemoteImageResultType.html */; };
+		FD2DBB241C144AC70062984C /* _index.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96A1C144AC70062984C /* _index.scss */; };
+		FD2DBB251C144AC70062984C /* _layout.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96B1C144AC70062984C /* _layout.scss */; };
+		FD2DBB261C144AC70062984C /* _normalize.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96C1C144AC70062984C /* _normalize.scss */; };
+		FD2DBB271C144AC70062984C /* _object.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96D1C144AC70062984C /* _object.scss */; };
+		FD2DBB281C144AC70062984C /* _print.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96E1C144AC70062984C /* _print.scss */; };
+		FD2DBB291C144AC70062984C /* _variables.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB96F1C144AC70062984C /* _variables.scss */; };
+		FD2DBB2A1C144AC70062984C /* _xcode.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9701C144AC70062984C /* _xcode.scss */; };
+		FD2DBB2B1C144AC70062984C /* style.scss in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9711C144AC70062984C /* style.scss */; };
+		FD2DBB2C1C144AC70062984C /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9721C144AC70062984C /* style.css */; };
+		FD2DBB2D1C144AC70062984C /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9731C144AC70062984C /* hierarchy.html */; };
+		FD2DBB2E1C144AC70062984C /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9751C144AC70062984C /* button_bar_background.png */; };
+		FD2DBB2F1C144AC70062984C /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9761C144AC70062984C /* disclosure.png */; };
+		FD2DBB301C144AC70062984C /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9771C144AC70062984C /* disclosure_open.png */; };
+		FD2DBB311C144AC70062984C /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9781C144AC70062984C /* library_background.png */; };
+		FD2DBB321C144AC70062984C /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9791C144AC70062984C /* title_background.png */; };
+		FD2DBB331C144AC70062984C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB97A1C144AC70062984C /* index.html */; };
+		FD2DBB341C144AC70062984C /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB97C1C144AC70062984C /* script.js */; };
+		FD2DBB351C144AC70062984C /* PINRemoteImageCategory.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB97E1C144AC70062984C /* PINRemoteImageCategory.html */; };
+		FD2DBB361C144AC70062984C /* PINRemoteImageCategory_Deprecated.html in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB97F1C144AC70062984C /* PINRemoteImageCategory_Deprecated.html */; };
+		FD2DBB371C144AC70062984C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9821C144AC70062984C /* Main.storyboard */; };
+		FD2DBB381C144AC70062984C /* DegradedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9851C144AC70062984C /* DegradedViewController.m */; };
+		FD2DBB391C144AC70062984C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9861C144AC70062984C /* InfoPlist.strings */; };
+		FD2DBB3C1C144AC70062984C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB98A1C144AC70062984C /* Media.xcassets */; };
+		FD2DBB3D1C144AC70062984C /* PINAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB98C1C144AC70062984C /* PINAppDelegate.m */; };
+		FD2DBB3E1C144AC70062984C /* PINRemoteImage-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB98D1C144AC70062984C /* PINRemoteImage-Info.plist */; };
+		FD2DBB3F1C144AC70062984C /* PINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9901C144AC70062984C /* PINViewController.m */; };
+		FD2DBB401C144AC70062984C /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9921C144AC70062984C /* ProcessingViewController.m */; };
+		FD2DBB411C144AC70062984C /* ProgressiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9941C144AC70062984C /* ProgressiveViewController.m */; };
+		FD2DBB421C144AC70062984C /* WebPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9961C144AC70062984C /* WebPViewController.m */; };
+		FD2DBB451C144AC70062984C /* PINRemoteImage.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB99D1C144AC70062984C /* PINRemoteImage.xcworkspace */; };
+		FD2DBB461C144AC70062984C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB99E1C144AC70062984C /* Podfile */; };
+		FD2DBB471C144AC70062984C /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB99F1C144AC70062984C /* Podfile.lock */; };
+		FD2DBB481C144AC70062984C /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9A51C144AC70062984C /* FLAnimatedImage.m */; };
+		FD2DBB491C144AC70062984C /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9A71C144AC70062984C /* FLAnimatedImageView.m */; };
+		FD2DBB4A1C144AC70062984C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9A81C144AC70062984C /* LICENSE */; };
+		FD2DBB4B1C144AC70062984C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9A91C144AC70062984C /* README.md */; };
+		FD2DBB4C1C144AC70062984C /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBA2E1C144AC70062984C /* COPYING */; };
+		FD2DBB4D1C144AC70062984C /* README in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBA2F1C144AC70062984C /* README */; };
+		FD2DBB4E1C144AC70062984C /* README.mux in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBA301C144AC70062984C /* README.mux */; };
+		FD2DBB4F1C144AC70062984C /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA331C144AC70062984C /* alpha.c */; };
+		FD2DBB501C144AC70062984C /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA351C144AC70062984C /* buffer.c */; };
+		FD2DBB511C144AC70062984C /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA371C144AC70062984C /* frame.c */; };
+		FD2DBB521C144AC70062984C /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA381C144AC70062984C /* idec.c */; };
+		FD2DBB531C144AC70062984C /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA391C144AC70062984C /* io.c */; };
+		FD2DBB541C144AC70062984C /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA3A1C144AC70062984C /* quant.c */; };
+		FD2DBB551C144AC70062984C /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA3B1C144AC70062984C /* tree.c */; };
+		FD2DBB561C144AC70062984C /* vp8.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA3C1C144AC70062984C /* vp8.c */; };
+		FD2DBB571C144AC70062984C /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA3E1C144AC70062984C /* vp8l.c */; };
+		FD2DBB581C144AC70062984C /* webp.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA401C144AC70062984C /* webp.c */; };
+		FD2DBB591C144AC70062984C /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA431C144AC70062984C /* demux.c */; };
+		FD2DBB5A1C144AC70062984C /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA451C144AC70062984C /* alpha_processing.c */; };
+		FD2DBB5B1C144AC70062984C /* alpha_processing_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA461C144AC70062984C /* alpha_processing_sse2.c */; };
+		FD2DBB5C1C144AC70062984C /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA471C144AC70062984C /* cpu.c */; };
+		FD2DBB5D1C144AC70062984C /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA481C144AC70062984C /* dec.c */; };
+		FD2DBB5E1C144AC70062984C /* dec_clip_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA491C144AC70062984C /* dec_clip_tables.c */; };
+		FD2DBB5F1C144AC70062984C /* dec_mips32.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA4A1C144AC70062984C /* dec_mips32.c */; };
+		FD2DBB601C144AC70062984C /* dec_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA4B1C144AC70062984C /* dec_neon.c */; };
+		FD2DBB611C144AC70062984C /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA4C1C144AC70062984C /* dec_sse2.c */; };
+		FD2DBB621C144AC70062984C /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA4E1C144AC70062984C /* enc.c */; };
+		FD2DBB631C144AC70062984C /* enc_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA4F1C144AC70062984C /* enc_avx2.c */; };
+		FD2DBB641C144AC70062984C /* enc_mips32.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA501C144AC70062984C /* enc_mips32.c */; };
+		FD2DBB651C144AC70062984C /* enc_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA511C144AC70062984C /* enc_neon.c */; };
+		FD2DBB661C144AC70062984C /* enc_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA521C144AC70062984C /* enc_sse2.c */; };
+		FD2DBB671C144AC70062984C /* lossless.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA531C144AC70062984C /* lossless.c */; };
+		FD2DBB681C144AC70062984C /* lossless_mips32.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA551C144AC70062984C /* lossless_mips32.c */; };
+		FD2DBB691C144AC70062984C /* lossless_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA561C144AC70062984C /* lossless_neon.c */; };
+		FD2DBB6A1C144AC70062984C /* lossless_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA571C144AC70062984C /* lossless_sse2.c */; };
+		FD2DBB6B1C144AC70062984C /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA591C144AC70062984C /* upsampling.c */; };
+		FD2DBB6C1C144AC70062984C /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA5A1C144AC70062984C /* upsampling_neon.c */; };
+		FD2DBB6D1C144AC70062984C /* upsampling_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA5B1C144AC70062984C /* upsampling_sse2.c */; };
+		FD2DBB6E1C144AC70062984C /* yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA5C1C144AC70062984C /* yuv.c */; };
+		FD2DBB6F1C144AC70062984C /* yuv_mips32.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA5E1C144AC70062984C /* yuv_mips32.c */; };
+		FD2DBB701C144AC70062984C /* yuv_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA5F1C144AC70062984C /* yuv_sse2.c */; };
+		FD2DBB711C144AC70062984C /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA621C144AC70062984C /* alpha.c */; };
+		FD2DBB721C144AC70062984C /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA631C144AC70062984C /* analysis.c */; };
+		FD2DBB731C144AC70062984C /* backward_references.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA641C144AC70062984C /* backward_references.c */; };
+		FD2DBB741C144AC70062984C /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA661C144AC70062984C /* config.c */; };
+		FD2DBB751C144AC70062984C /* cost.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA671C144AC70062984C /* cost.c */; };
+		FD2DBB761C144AC70062984C /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA691C144AC70062984C /* filter.c */; };
+		FD2DBB771C144AC70062984C /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA6A1C144AC70062984C /* frame.c */; };
+		FD2DBB781C144AC70062984C /* histogram.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA6B1C144AC70062984C /* histogram.c */; };
+		FD2DBB791C144AC70062984C /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA6D1C144AC70062984C /* iterator.c */; };
+		FD2DBB7A1C144AC70062984C /* picture.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA6E1C144AC70062984C /* picture.c */; };
+		FD2DBB7B1C144AC70062984C /* picture_csp.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA6F1C144AC70062984C /* picture_csp.c */; };
+		FD2DBB7C1C144AC70062984C /* picture_psnr.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA701C144AC70062984C /* picture_psnr.c */; };
+		FD2DBB7D1C144AC70062984C /* picture_rescale.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA711C144AC70062984C /* picture_rescale.c */; };
+		FD2DBB7E1C144AC70062984C /* picture_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA721C144AC70062984C /* picture_tools.c */; };
+		FD2DBB7F1C144AC70062984C /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA731C144AC70062984C /* quant.c */; };
+		FD2DBB801C144AC70062984C /* syntax.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA741C144AC70062984C /* syntax.c */; };
+		FD2DBB811C144AC70062984C /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA751C144AC70062984C /* token.c */; };
+		FD2DBB821C144AC70062984C /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA761C144AC70062984C /* tree.c */; };
+		FD2DBB831C144AC70062984C /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA781C144AC70062984C /* vp8l.c */; };
+		FD2DBB841C144AC70062984C /* webpenc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA7A1C144AC70062984C /* webpenc.c */; };
+		FD2DBB851C144AC70062984C /* muxedit.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA7C1C144AC70062984C /* muxedit.c */; };
+		FD2DBB861C144AC70062984C /* muxinternal.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA7E1C144AC70062984C /* muxinternal.c */; };
+		FD2DBB871C144AC70062984C /* muxread.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA7F1C144AC70062984C /* muxread.c */; };
+		FD2DBB881C144AC70062984C /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA811C144AC70062984C /* bit_reader.c */; };
+		FD2DBB891C144AC70062984C /* bit_writer.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA841C144AC70062984C /* bit_writer.c */; };
+		FD2DBB8A1C144AC70062984C /* color_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA861C144AC70062984C /* color_cache.c */; };
+		FD2DBB8B1C144AC70062984C /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA891C144AC70062984C /* filters.c */; };
+		FD2DBB8C1C144AC70062984C /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA8B1C144AC70062984C /* huffman.c */; };
+		FD2DBB8D1C144AC70062984C /* huffman_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA8D1C144AC70062984C /* huffman_encode.c */; };
+		FD2DBB8E1C144AC70062984C /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA8F1C144AC70062984C /* quant_levels.c */; };
+		FD2DBB8F1C144AC70062984C /* quant_levels_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA911C144AC70062984C /* quant_levels_dec.c */; };
+		FD2DBB901C144AC70062984C /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA931C144AC70062984C /* random.c */; };
+		FD2DBB911C144AC70062984C /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA951C144AC70062984C /* rescaler.c */; };
+		FD2DBB921C144AC70062984C /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA971C144AC70062984C /* thread.c */; };
+		FD2DBB931C144AC70062984C /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBA991C144AC70062984C /* utils.c */; };
+		FD2DBB941C144AC70062984C /* PINRemoteImage.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAA41C144AC70062984C /* PINRemoteImage.podspec.json */; };
+		FD2DBB951C144AC70062984C /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAA51C144AC70062984C /* Manifest.lock */; };
+		FD2DBB961C144AC70062984C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAA71C144AC70062984C /* LICENSE.txt */; };
+		FD2DBB971C144AC70062984C /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAAB1C144AC70062984C /* PINCache.m */; };
+		FD2DBB981C144AC70062984C /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAAD1C144AC70062984C /* PINDiskCache.m */; };
+		FD2DBB991C144AC70062984C /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAAF1C144AC70062984C /* PINMemoryCache.m */; };
+		FD2DBB9A1C144AC70062984C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAB01C144AC70062984C /* README.md */; };
+		FD2DBB9B1C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAB61C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.markdown */; };
+		FD2DBB9C1C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAB71C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.plist */; };
+		FD2DBB9D1C144AC70062984C /* Pods-PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAB81C144AC70062984C /* Pods-PINRemoteImage-dummy.m */; };
+		FD2DBB9E1C144AC70062984C /* Pods-PINRemoteImage-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBABA1C144AC70062984C /* Pods-PINRemoteImage-resources.sh */; };
+		FD2DBB9F1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBABB1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig */; };
+		FD2DBBA01C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBABC1C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig */; };
+		FD2DBBA11C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBABE1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.markdown */; };
+		FD2DBBA21C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBABF1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.plist */; };
+		FD2DBBA31C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAC01C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m */; };
+		FD2DBBA41C144AC70062984C /* Pods-PINRemoteImage Tests-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAC21C144AC70062984C /* Pods-PINRemoteImage Tests-resources.sh */; };
+		FD2DBBA51C144AC70062984C /* Pods-PINRemoteImage Tests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAC31C144AC70062984C /* Pods-PINRemoteImage Tests.debug.xcconfig */; };
+		FD2DBBA61C144AC70062984C /* Pods-PINRemoteImage Tests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAC41C144AC70062984C /* Pods-PINRemoteImage Tests.release.xcconfig */; };
+		FD2DBBA71C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAC61C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m */; };
+		FD2DBBA81C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAC81C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig */; };
+		FD2DBBA91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAC91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig */; };
+		FD2DBBAA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBACB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m */; };
+		FD2DBBAB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBACD1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig */; };
+		FD2DBBAC1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBACE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig */; };
+		FD2DBBAD1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAD01C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m */; };
+		FD2DBBAE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAD21C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig */; };
+		FD2DBBAF1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAD31C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig */; };
+		FD2DBBB01C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAD51C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m */; };
+		FD2DBBB11C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAD71C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig */; };
+		FD2DBBB21C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAD81C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig */; };
+		FD2DBBB31C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBADA1C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m */; };
+		FD2DBBB41C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBADC1C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig */; };
+		FD2DBBB51C144AC70062984C /* Pods-PINRemoteImage-libwebp.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBADD1C144AC70062984C /* Pods-PINRemoteImage-libwebp.xcconfig */; };
+		FD2DBBB61C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBADF1C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m */; };
+		FD2DBBB71C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAE11C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig */; };
+		FD2DBBB81C144AC70062984C /* Pods-PINRemoteImage-PINCache.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAE21C144AC70062984C /* Pods-PINRemoteImage-PINCache.xcconfig */; };
+		FD2DBBB91C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAE41C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m */; };
+		FD2DBBBA1C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAE61C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig */; };
+		FD2DBBBB1C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAE71C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage.xcconfig */; };
+		FD2DBBBC1C144AC70062984C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAE81C144AC70062984C /* LICENSE */; };
+		FD2DBBBD1C144AC70062984C /* PINRemoteImage.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAEA1C144AC70062984C /* PINRemoteImage.podspec */; };
+		FD2DBBBE1C144AC70062984C /* PINRemoteImageAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAEC1C144AC70062984C /* PINRemoteImageAdapter.m */; };
+		FD2DBBBF1C144AC70062984C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAEF1C144AC70062984C /* .gitkeep */; };
+		FD2DBBC01C144AC70062984C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBAF11C144AC70062984C /* .gitkeep */; };
+		FD2DBBC11C144AC70062984C /* NSData+ImageDetectors.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAF41C144AC70062984C /* NSData+ImageDetectors.m */; };
+		FD2DBBC21C144AC70062984C /* UIImage+DecodedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAF61C144AC70062984C /* UIImage+DecodedImage.m */; };
+		FD2DBBC31C144AC70062984C /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAF81C144AC70062984C /* UIImage+WebP.m */; };
+		FD2DBBC41C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAFB1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m */; };
+		FD2DBBC51C144AC70062984C /* UIButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAFD1C144AC70062984C /* UIButton+PINRemoteImage.m */; };
+		FD2DBBC61C144AC70062984C /* UIImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBAFF1C144AC70062984C /* UIImageView+PINRemoteImage.m */; };
+		FD2DBBC71C144AC70062984C /* PINDataTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB011C144AC70062984C /* PINDataTaskOperation.m */; };
+		FD2DBBC81C144AC70062984C /* PINProgressiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB031C144AC70062984C /* PINProgressiveImage.m */; };
+		FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB061C144AC70062984C /* PINRemoteImageCallbacks.m */; };
+		FD2DBBCA1C144AC70062984C /* PINRemoteImageCategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB081C144AC70062984C /* PINRemoteImageCategoryManager.m */; };
+		FD2DBBCB1C144AC70062984C /* PINRemoteImageDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB0A1C144AC70062984C /* PINRemoteImageDownloadTask.m */; };
+		FD2DBBCC1C144AC70062984C /* PINRemoteImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB0C1C144AC70062984C /* PINRemoteImageManager.m */; };
+		FD2DBBCD1C144AC70062984C /* PINRemoteImageManagerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB0E1C144AC70062984C /* PINRemoteImageManagerResult.m */; };
+		FD2DBBCE1C144AC70062984C /* PINRemoteImageProcessorTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB101C144AC70062984C /* PINRemoteImageProcessorTask.m */; };
+		FD2DBBCF1C144AC70062984C /* PINRemoteImageTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB121C144AC70062984C /* PINRemoteImageTask.m */; };
+		FD2DBBD01C144AC70062984C /* PINURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB141C144AC70062984C /* PINURLSessionManager.m */; };
+		FD2DBBD11C144AC70062984C /* progressive.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBB151C144AC70062984C /* progressive.gif */; };
+		FD2DBBD21C144AC70062984C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBB161C144AC70062984C /* README.md */; };
+		FD2DBBF91C1452490062984C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBBF61C1452490062984C /* SVProgressHUD.bundle */; };
+		FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBF81C1452490062984C /* SVProgressHUD.m */; };
+		FD2DBBFD1C1483530062984C /* MyAccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBFC1C1483530062984C /* MyAccountControl.m */; };
+		FD2DBC001C1483680062984C /* MarketPlaceControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */; };
+		FD2DBC031C1489630062984C /* CustomTabBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBC021C1489630062984C /* CustomTabBarControl.m */; };
 		FD40E0931C10B53B008CF1A4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0921C10B53B008CF1A4 /* News.m */; };
 		FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0961C10B76A008CF1A4 /* AbstractCell.m */; };
 		FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */; };
@@ -33,7 +224,478 @@
 		FDDF303A1C0B0B0E00145970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDF30381C0B0B0E00145970 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FD2DBBD51C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DB99A1C144AC70062984C /* PINRemoteImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6003F58A195388D20070C39A;
+			remoteInfo = PINRemoteImage;
+		};
+		FD2DBBE21C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F528C47A9C3F7EA24BDA087;
+			remoteInfo = "Pods-PINRemoteImage";
+		};
+		FD2DBBE41C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8836086BE0571D96DC238C49;
+			remoteInfo = "Pods-PINRemoteImage Tests";
+		};
+		FD2DBBE61C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B8D02298330B527A6514B03;
+			remoteInfo = "Pods-PINRemoteImage Tests-FLAnimatedImage";
+		};
+		FD2DBBE81C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D33C1A5B01870B4800B5235C;
+			remoteInfo = "Pods-PINRemoteImage Tests-PINCache";
+		};
+		FD2DBBEA1C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A145FA49DADFFF932CDC5D8;
+			remoteInfo = "Pods-PINRemoteImage Tests-PINRemoteImage";
+		};
+		FD2DBBEC1C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EACD96D29F76543863D3569;
+			remoteInfo = "Pods-PINRemoteImage-FLAnimatedImage";
+		};
+		FD2DBBEE1C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 79A0AD133AA88607F24D0F9C;
+			remoteInfo = "Pods-PINRemoteImage-PINCache";
+		};
+		FD2DBBF01C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4229FF266ED020C34ADE3FF4;
+			remoteInfo = "Pods-PINRemoteImage-PINRemoteImage";
+		};
+		FD2DBBF21C144AC80062984C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88FF0BCA882181B2621D583C;
+			remoteInfo = "Pods-PINRemoteImage-libwebp";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FD2DB94F1C143C3B0062984C /* NSURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSession.h; sourceTree = "<group>"; };
+		FD2DB9501C143C3B0062984C /* NSURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSession.m; sourceTree = "<group>"; };
+		FD2DB9521C143C660062984C /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
+		FD2DB9531C143C660062984C /* NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject.m; sourceTree = "<group>"; };
+		FD2DB9561C144AC70062984C /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		FD2DB9571C144AC70062984C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FD2DB9581C144AC70062984C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		FD2DB9591C144AC70062984C /* build_docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_docs.sh; sourceTree = "<group>"; };
+		FD2DB95B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "com.pinterest.PINRemoteImage-1.0.docset"; sourceTree = "<group>"; };
+		FD2DB95E1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManagerImageCompletion.html; sourceTree = "<group>"; };
+		FD2DB95F1C144AC70062984C /* PINRemoteImageManagerImageProcessor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManagerImageProcessor.html; sourceTree = "<group>"; };
+		FD2DB9611C144AC70062984C /* PINRemoteImageCategoryManager.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageCategoryManager.html; sourceTree = "<group>"; };
+		FD2DB9621C144AC70062984C /* PINRemoteImageManager.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManager.html; sourceTree = "<group>"; };
+		FD2DB9641C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManagerDownloadOptions.html; sourceTree = "<group>"; };
+		FD2DB9651C144AC70062984C /* PINRemoteImageManagerError.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManagerError.html; sourceTree = "<group>"; };
+		FD2DB9661C144AC70062984C /* PINRemoteImageManagerPriority.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageManagerPriority.html; sourceTree = "<group>"; };
+		FD2DB9671C144AC70062984C /* PINRemoteImageResultType.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageResultType.html; sourceTree = "<group>"; };
+		FD2DB96A1C144AC70062984C /* _index.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _index.scss; sourceTree = "<group>"; };
+		FD2DB96B1C144AC70062984C /* _layout.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _layout.scss; sourceTree = "<group>"; };
+		FD2DB96C1C144AC70062984C /* _normalize.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _normalize.scss; sourceTree = "<group>"; };
+		FD2DB96D1C144AC70062984C /* _object.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _object.scss; sourceTree = "<group>"; };
+		FD2DB96E1C144AC70062984C /* _print.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _print.scss; sourceTree = "<group>"; };
+		FD2DB96F1C144AC70062984C /* _variables.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _variables.scss; sourceTree = "<group>"; };
+		FD2DB9701C144AC70062984C /* _xcode.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _xcode.scss; sourceTree = "<group>"; };
+		FD2DB9711C144AC70062984C /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
+		FD2DB9721C144AC70062984C /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		FD2DB9731C144AC70062984C /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		FD2DB9751C144AC70062984C /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		FD2DB9761C144AC70062984C /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		FD2DB9771C144AC70062984C /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		FD2DB9781C144AC70062984C /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		FD2DB9791C144AC70062984C /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		FD2DB97A1C144AC70062984C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FD2DB97C1C144AC70062984C /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		FD2DB97E1C144AC70062984C /* PINRemoteImageCategory.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageCategory.html; sourceTree = "<group>"; };
+		FD2DB97F1C144AC70062984C /* PINRemoteImageCategory_Deprecated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PINRemoteImageCategory_Deprecated.html; sourceTree = "<group>"; };
+		FD2DB9831C144AC70062984C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD2DB9841C144AC70062984C /* DegradedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DegradedViewController.h; sourceTree = "<group>"; };
+		FD2DB9851C144AC70062984C /* DegradedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DegradedViewController.m; sourceTree = "<group>"; };
+		FD2DB9871C144AC70062984C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD2DB9881C144AC70062984C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD2DB9891C144AC70062984C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD2DB98A1C144AC70062984C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FD2DB98B1C144AC70062984C /* PINAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINAppDelegate.h; sourceTree = "<group>"; };
+		FD2DB98C1C144AC70062984C /* PINAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINAppDelegate.m; sourceTree = "<group>"; };
+		FD2DB98D1C144AC70062984C /* PINRemoteImage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PINRemoteImage-Info.plist"; sourceTree = "<group>"; };
+		FD2DB98E1C144AC70062984C /* PINRemoteImage-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PINRemoteImage-Prefix.pch"; sourceTree = "<group>"; };
+		FD2DB98F1C144AC70062984C /* PINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINViewController.h; sourceTree = "<group>"; };
+		FD2DB9901C144AC70062984C /* PINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINViewController.m; sourceTree = "<group>"; };
+		FD2DB9911C144AC70062984C /* ProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingViewController.h; sourceTree = "<group>"; };
+		FD2DB9921C144AC70062984C /* ProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingViewController.m; sourceTree = "<group>"; };
+		FD2DB9931C144AC70062984C /* ProgressiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressiveViewController.h; sourceTree = "<group>"; };
+		FD2DB9941C144AC70062984C /* ProgressiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressiveViewController.m; sourceTree = "<group>"; };
+		FD2DB9951C144AC70062984C /* WebPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPViewController.h; sourceTree = "<group>"; };
+		FD2DB9961C144AC70062984C /* WebPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPViewController.m; sourceTree = "<group>"; };
+		FD2DB99A1C144AC70062984C /* PINRemoteImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PINRemoteImage.xcodeproj; sourceTree = "<group>"; };
+		FD2DB99D1C144AC70062984C /* PINRemoteImage.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = PINRemoteImage.xcworkspace; sourceTree = "<group>"; };
+		FD2DB99E1C144AC70062984C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FD2DB99F1C144AC70062984C /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		FD2DB9A41C144AC70062984C /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		FD2DB9A51C144AC70062984C /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		FD2DB9A61C144AC70062984C /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		FD2DB9A71C144AC70062984C /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		FD2DB9A81C144AC70062984C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FD2DB9A91C144AC70062984C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD2DB9AD1C144AC70062984C /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		FD2DB9AE1C144AC70062984C /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		FD2DB9B01C144AC70062984C /* alphai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alphai.h; sourceTree = "<group>"; };
+		FD2DB9B11C144AC70062984C /* backward_references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backward_references.h; sourceTree = "<group>"; };
+		FD2DB9B21C144AC70062984C /* bit_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader.h; sourceTree = "<group>"; };
+		FD2DB9B31C144AC70062984C /* bit_reader_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader_inl.h; sourceTree = "<group>"; };
+		FD2DB9B41C144AC70062984C /* bit_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_writer.h; sourceTree = "<group>"; };
+		FD2DB9B51C144AC70062984C /* color_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_cache.h; sourceTree = "<group>"; };
+		FD2DB9B61C144AC70062984C /* cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cost.h; sourceTree = "<group>"; };
+		FD2DB9B71C144AC70062984C /* decode_vp8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_vp8.h; sourceTree = "<group>"; };
+		FD2DB9B81C144AC70062984C /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
+		FD2DB9B91C144AC70062984C /* endian_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian_inl.h; sourceTree = "<group>"; };
+		FD2DB9BA1C144AC70062984C /* filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filters.h; sourceTree = "<group>"; };
+		FD2DB9BB1C144AC70062984C /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		FD2DB9BC1C144AC70062984C /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		FD2DB9BD1C144AC70062984C /* huffman_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman_encode.h; sourceTree = "<group>"; };
+		FD2DB9BE1C144AC70062984C /* lossless.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lossless.h; sourceTree = "<group>"; };
+		FD2DB9BF1C144AC70062984C /* muxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = muxi.h; sourceTree = "<group>"; };
+		FD2DB9C01C144AC70062984C /* neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon.h; sourceTree = "<group>"; };
+		FD2DB9C11C144AC70062984C /* quant_levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels.h; sourceTree = "<group>"; };
+		FD2DB9C21C144AC70062984C /* quant_levels_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels_dec.h; sourceTree = "<group>"; };
+		FD2DB9C31C144AC70062984C /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		FD2DB9C41C144AC70062984C /* rescaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rescaler.h; sourceTree = "<group>"; };
+		FD2DB9C51C144AC70062984C /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		FD2DB9C61C144AC70062984C /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		FD2DB9C71C144AC70062984C /* vp8enci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8enci.h; sourceTree = "<group>"; };
+		FD2DB9C81C144AC70062984C /* vp8i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8i.h; sourceTree = "<group>"; };
+		FD2DB9C91C144AC70062984C /* vp8li.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8li.h; sourceTree = "<group>"; };
+		FD2DB9CB1C144AC70062984C /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		FD2DB9CC1C144AC70062984C /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		FD2DB9CD1C144AC70062984C /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		FD2DB9CE1C144AC70062984C /* format_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_constants.h; sourceTree = "<group>"; };
+		FD2DB9CF1C144AC70062984C /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		FD2DB9D01C144AC70062984C /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		FD2DB9D11C144AC70062984C /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		FD2DB9D21C144AC70062984C /* webpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webpi.h; sourceTree = "<group>"; };
+		FD2DB9D31C144AC70062984C /* yuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv.h; sourceTree = "<group>"; };
+		FD2DB9D41C144AC70062984C /* yuv_tables_sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv_tables_sse2.h; sourceTree = "<group>"; };
+		FD2DB9D61C144AC70062984C /* Nullability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullability.h; sourceTree = "<group>"; };
+		FD2DB9D71C144AC70062984C /* PINCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
+		FD2DB9D81C144AC70062984C /* PINDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDiskCache.h; sourceTree = "<group>"; };
+		FD2DB9D91C144AC70062984C /* PINMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINMemoryCache.h; sourceTree = "<group>"; };
+		FD2DB9DB1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DB9DC1C144AC70062984C /* NSData+ImageDetectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageDetectors.h"; sourceTree = "<group>"; };
+		FD2DB9DD1C144AC70062984C /* PINDataTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDataTaskOperation.h; sourceTree = "<group>"; };
+		FD2DB9DE1C144AC70062984C /* PINProgressiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINProgressiveImage.h; sourceTree = "<group>"; };
+		FD2DB9DF1C144AC70062984C /* PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImage.h; sourceTree = "<group>"; };
+		FD2DB9E01C144AC70062984C /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
+		FD2DB9E11C144AC70062984C /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
+		FD2DB9E21C144AC70062984C /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
+		FD2DB9E31C144AC70062984C /* PINRemoteImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManager.h; sourceTree = "<group>"; };
+		FD2DB9E41C144AC70062984C /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
+		FD2DB9E51C144AC70062984C /* PINRemoteImageProcessorTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageProcessorTask.h; sourceTree = "<group>"; };
+		FD2DB9E61C144AC70062984C /* PINRemoteImageTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageTask.h; sourceTree = "<group>"; };
+		FD2DB9E71C144AC70062984C /* PINURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINURLSessionManager.h; sourceTree = "<group>"; };
+		FD2DB9E81C144AC70062984C /* UIButton+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DB9E91C144AC70062984C /* UIImage+DecodedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DecodedImage.h"; sourceTree = "<group>"; };
+		FD2DB9EA1C144AC70062984C /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		FD2DB9EB1C144AC70062984C /* UIImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DB9EE1C144AC70062984C /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		FD2DB9EF1C144AC70062984C /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		FD2DB9F11C144AC70062984C /* alphai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alphai.h; sourceTree = "<group>"; };
+		FD2DB9F21C144AC70062984C /* backward_references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backward_references.h; sourceTree = "<group>"; };
+		FD2DB9F31C144AC70062984C /* bit_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader.h; sourceTree = "<group>"; };
+		FD2DB9F41C144AC70062984C /* bit_reader_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader_inl.h; sourceTree = "<group>"; };
+		FD2DB9F51C144AC70062984C /* bit_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_writer.h; sourceTree = "<group>"; };
+		FD2DB9F61C144AC70062984C /* color_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_cache.h; sourceTree = "<group>"; };
+		FD2DB9F71C144AC70062984C /* cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cost.h; sourceTree = "<group>"; };
+		FD2DB9F81C144AC70062984C /* decode_vp8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_vp8.h; sourceTree = "<group>"; };
+		FD2DB9F91C144AC70062984C /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
+		FD2DB9FA1C144AC70062984C /* endian_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian_inl.h; sourceTree = "<group>"; };
+		FD2DB9FB1C144AC70062984C /* filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filters.h; sourceTree = "<group>"; };
+		FD2DB9FC1C144AC70062984C /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		FD2DB9FD1C144AC70062984C /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		FD2DB9FE1C144AC70062984C /* huffman_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman_encode.h; sourceTree = "<group>"; };
+		FD2DB9FF1C144AC70062984C /* lossless.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lossless.h; sourceTree = "<group>"; };
+		FD2DBA001C144AC70062984C /* muxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = muxi.h; sourceTree = "<group>"; };
+		FD2DBA011C144AC70062984C /* neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon.h; sourceTree = "<group>"; };
+		FD2DBA021C144AC70062984C /* quant_levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels.h; sourceTree = "<group>"; };
+		FD2DBA031C144AC70062984C /* quant_levels_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels_dec.h; sourceTree = "<group>"; };
+		FD2DBA041C144AC70062984C /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		FD2DBA051C144AC70062984C /* rescaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rescaler.h; sourceTree = "<group>"; };
+		FD2DBA061C144AC70062984C /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		FD2DBA071C144AC70062984C /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		FD2DBA081C144AC70062984C /* vp8enci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8enci.h; sourceTree = "<group>"; };
+		FD2DBA091C144AC70062984C /* vp8i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8i.h; sourceTree = "<group>"; };
+		FD2DBA0A1C144AC70062984C /* vp8li.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8li.h; sourceTree = "<group>"; };
+		FD2DBA0C1C144AC70062984C /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		FD2DBA0D1C144AC70062984C /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		FD2DBA0E1C144AC70062984C /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		FD2DBA0F1C144AC70062984C /* format_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_constants.h; sourceTree = "<group>"; };
+		FD2DBA101C144AC70062984C /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		FD2DBA111C144AC70062984C /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		FD2DBA121C144AC70062984C /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		FD2DBA131C144AC70062984C /* webpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webpi.h; sourceTree = "<group>"; };
+		FD2DBA141C144AC70062984C /* yuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv.h; sourceTree = "<group>"; };
+		FD2DBA151C144AC70062984C /* yuv_tables_sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv_tables_sse2.h; sourceTree = "<group>"; };
+		FD2DBA171C144AC70062984C /* Nullability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullability.h; sourceTree = "<group>"; };
+		FD2DBA181C144AC70062984C /* PINCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
+		FD2DBA191C144AC70062984C /* PINDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDiskCache.h; sourceTree = "<group>"; };
+		FD2DBA1A1C144AC70062984C /* PINMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINMemoryCache.h; sourceTree = "<group>"; };
+		FD2DBA1C1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBA1D1C144AC70062984C /* NSData+ImageDetectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageDetectors.h"; sourceTree = "<group>"; };
+		FD2DBA1E1C144AC70062984C /* PINDataTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDataTaskOperation.h; sourceTree = "<group>"; };
+		FD2DBA1F1C144AC70062984C /* PINProgressiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINProgressiveImage.h; sourceTree = "<group>"; };
+		FD2DBA201C144AC70062984C /* PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImage.h; sourceTree = "<group>"; };
+		FD2DBA211C144AC70062984C /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
+		FD2DBA221C144AC70062984C /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
+		FD2DBA231C144AC70062984C /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
+		FD2DBA241C144AC70062984C /* PINRemoteImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManager.h; sourceTree = "<group>"; };
+		FD2DBA251C144AC70062984C /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
+		FD2DBA261C144AC70062984C /* PINRemoteImageProcessorTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageProcessorTask.h; sourceTree = "<group>"; };
+		FD2DBA271C144AC70062984C /* PINRemoteImageTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageTask.h; sourceTree = "<group>"; };
+		FD2DBA281C144AC70062984C /* PINURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINURLSessionManager.h; sourceTree = "<group>"; };
+		FD2DBA291C144AC70062984C /* UIButton+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBA2A1C144AC70062984C /* UIImage+DecodedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DecodedImage.h"; sourceTree = "<group>"; };
+		FD2DBA2B1C144AC70062984C /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		FD2DBA2C1C144AC70062984C /* UIImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBA2E1C144AC70062984C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		FD2DBA2F1C144AC70062984C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FD2DBA301C144AC70062984C /* README.mux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mux; sourceTree = "<group>"; };
+		FD2DBA331C144AC70062984C /* alpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha.c; sourceTree = "<group>"; };
+		FD2DBA341C144AC70062984C /* alphai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alphai.h; sourceTree = "<group>"; };
+		FD2DBA351C144AC70062984C /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		FD2DBA361C144AC70062984C /* decode_vp8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_vp8.h; sourceTree = "<group>"; };
+		FD2DBA371C144AC70062984C /* frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frame.c; sourceTree = "<group>"; };
+		FD2DBA381C144AC70062984C /* idec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = idec.c; sourceTree = "<group>"; };
+		FD2DBA391C144AC70062984C /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		FD2DBA3A1C144AC70062984C /* quant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quant.c; sourceTree = "<group>"; };
+		FD2DBA3B1C144AC70062984C /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		FD2DBA3C1C144AC70062984C /* vp8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vp8.c; sourceTree = "<group>"; };
+		FD2DBA3D1C144AC70062984C /* vp8i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8i.h; sourceTree = "<group>"; };
+		FD2DBA3E1C144AC70062984C /* vp8l.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vp8l.c; sourceTree = "<group>"; };
+		FD2DBA3F1C144AC70062984C /* vp8li.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8li.h; sourceTree = "<group>"; };
+		FD2DBA401C144AC70062984C /* webp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webp.c; sourceTree = "<group>"; };
+		FD2DBA411C144AC70062984C /* webpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webpi.h; sourceTree = "<group>"; };
+		FD2DBA431C144AC70062984C /* demux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = demux.c; sourceTree = "<group>"; };
+		FD2DBA451C144AC70062984C /* alpha_processing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha_processing.c; sourceTree = "<group>"; };
+		FD2DBA461C144AC70062984C /* alpha_processing_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha_processing_sse2.c; sourceTree = "<group>"; };
+		FD2DBA471C144AC70062984C /* cpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu.c; sourceTree = "<group>"; };
+		FD2DBA481C144AC70062984C /* dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec.c; sourceTree = "<group>"; };
+		FD2DBA491C144AC70062984C /* dec_clip_tables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_clip_tables.c; sourceTree = "<group>"; };
+		FD2DBA4A1C144AC70062984C /* dec_mips32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_mips32.c; sourceTree = "<group>"; };
+		FD2DBA4B1C144AC70062984C /* dec_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_neon.c; sourceTree = "<group>"; };
+		FD2DBA4C1C144AC70062984C /* dec_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_sse2.c; sourceTree = "<group>"; };
+		FD2DBA4D1C144AC70062984C /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
+		FD2DBA4E1C144AC70062984C /* enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc.c; sourceTree = "<group>"; };
+		FD2DBA4F1C144AC70062984C /* enc_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_avx2.c; sourceTree = "<group>"; };
+		FD2DBA501C144AC70062984C /* enc_mips32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_mips32.c; sourceTree = "<group>"; };
+		FD2DBA511C144AC70062984C /* enc_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_neon.c; sourceTree = "<group>"; };
+		FD2DBA521C144AC70062984C /* enc_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_sse2.c; sourceTree = "<group>"; };
+		FD2DBA531C144AC70062984C /* lossless.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless.c; sourceTree = "<group>"; };
+		FD2DBA541C144AC70062984C /* lossless.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lossless.h; sourceTree = "<group>"; };
+		FD2DBA551C144AC70062984C /* lossless_mips32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless_mips32.c; sourceTree = "<group>"; };
+		FD2DBA561C144AC70062984C /* lossless_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless_neon.c; sourceTree = "<group>"; };
+		FD2DBA571C144AC70062984C /* lossless_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lossless_sse2.c; sourceTree = "<group>"; };
+		FD2DBA581C144AC70062984C /* neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon.h; sourceTree = "<group>"; };
+		FD2DBA591C144AC70062984C /* upsampling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upsampling.c; sourceTree = "<group>"; };
+		FD2DBA5A1C144AC70062984C /* upsampling_neon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upsampling_neon.c; sourceTree = "<group>"; };
+		FD2DBA5B1C144AC70062984C /* upsampling_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upsampling_sse2.c; sourceTree = "<group>"; };
+		FD2DBA5C1C144AC70062984C /* yuv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv.c; sourceTree = "<group>"; };
+		FD2DBA5D1C144AC70062984C /* yuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv.h; sourceTree = "<group>"; };
+		FD2DBA5E1C144AC70062984C /* yuv_mips32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv_mips32.c; sourceTree = "<group>"; };
+		FD2DBA5F1C144AC70062984C /* yuv_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv_sse2.c; sourceTree = "<group>"; };
+		FD2DBA601C144AC70062984C /* yuv_tables_sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuv_tables_sse2.h; sourceTree = "<group>"; };
+		FD2DBA621C144AC70062984C /* alpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha.c; sourceTree = "<group>"; };
+		FD2DBA631C144AC70062984C /* analysis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = analysis.c; sourceTree = "<group>"; };
+		FD2DBA641C144AC70062984C /* backward_references.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = backward_references.c; sourceTree = "<group>"; };
+		FD2DBA651C144AC70062984C /* backward_references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backward_references.h; sourceTree = "<group>"; };
+		FD2DBA661C144AC70062984C /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		FD2DBA671C144AC70062984C /* cost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cost.c; sourceTree = "<group>"; };
+		FD2DBA681C144AC70062984C /* cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cost.h; sourceTree = "<group>"; };
+		FD2DBA691C144AC70062984C /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
+		FD2DBA6A1C144AC70062984C /* frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frame.c; sourceTree = "<group>"; };
+		FD2DBA6B1C144AC70062984C /* histogram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = histogram.c; sourceTree = "<group>"; };
+		FD2DBA6C1C144AC70062984C /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		FD2DBA6D1C144AC70062984C /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		FD2DBA6E1C144AC70062984C /* picture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture.c; sourceTree = "<group>"; };
+		FD2DBA6F1C144AC70062984C /* picture_csp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture_csp.c; sourceTree = "<group>"; };
+		FD2DBA701C144AC70062984C /* picture_psnr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture_psnr.c; sourceTree = "<group>"; };
+		FD2DBA711C144AC70062984C /* picture_rescale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture_rescale.c; sourceTree = "<group>"; };
+		FD2DBA721C144AC70062984C /* picture_tools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picture_tools.c; sourceTree = "<group>"; };
+		FD2DBA731C144AC70062984C /* quant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quant.c; sourceTree = "<group>"; };
+		FD2DBA741C144AC70062984C /* syntax.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syntax.c; sourceTree = "<group>"; };
+		FD2DBA751C144AC70062984C /* token.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = token.c; sourceTree = "<group>"; };
+		FD2DBA761C144AC70062984C /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		FD2DBA771C144AC70062984C /* vp8enci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8enci.h; sourceTree = "<group>"; };
+		FD2DBA781C144AC70062984C /* vp8l.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vp8l.c; sourceTree = "<group>"; };
+		FD2DBA791C144AC70062984C /* vp8li.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp8li.h; sourceTree = "<group>"; };
+		FD2DBA7A1C144AC70062984C /* webpenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webpenc.c; sourceTree = "<group>"; };
+		FD2DBA7C1C144AC70062984C /* muxedit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = muxedit.c; sourceTree = "<group>"; };
+		FD2DBA7D1C144AC70062984C /* muxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = muxi.h; sourceTree = "<group>"; };
+		FD2DBA7E1C144AC70062984C /* muxinternal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = muxinternal.c; sourceTree = "<group>"; };
+		FD2DBA7F1C144AC70062984C /* muxread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = muxread.c; sourceTree = "<group>"; };
+		FD2DBA811C144AC70062984C /* bit_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bit_reader.c; sourceTree = "<group>"; };
+		FD2DBA821C144AC70062984C /* bit_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader.h; sourceTree = "<group>"; };
+		FD2DBA831C144AC70062984C /* bit_reader_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader_inl.h; sourceTree = "<group>"; };
+		FD2DBA841C144AC70062984C /* bit_writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bit_writer.c; sourceTree = "<group>"; };
+		FD2DBA851C144AC70062984C /* bit_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_writer.h; sourceTree = "<group>"; };
+		FD2DBA861C144AC70062984C /* color_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = color_cache.c; sourceTree = "<group>"; };
+		FD2DBA871C144AC70062984C /* color_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_cache.h; sourceTree = "<group>"; };
+		FD2DBA881C144AC70062984C /* endian_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian_inl.h; sourceTree = "<group>"; };
+		FD2DBA891C144AC70062984C /* filters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filters.c; sourceTree = "<group>"; };
+		FD2DBA8A1C144AC70062984C /* filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filters.h; sourceTree = "<group>"; };
+		FD2DBA8B1C144AC70062984C /* huffman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman.c; sourceTree = "<group>"; };
+		FD2DBA8C1C144AC70062984C /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		FD2DBA8D1C144AC70062984C /* huffman_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman_encode.c; sourceTree = "<group>"; };
+		FD2DBA8E1C144AC70062984C /* huffman_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman_encode.h; sourceTree = "<group>"; };
+		FD2DBA8F1C144AC70062984C /* quant_levels.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quant_levels.c; sourceTree = "<group>"; };
+		FD2DBA901C144AC70062984C /* quant_levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels.h; sourceTree = "<group>"; };
+		FD2DBA911C144AC70062984C /* quant_levels_dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quant_levels_dec.c; sourceTree = "<group>"; };
+		FD2DBA921C144AC70062984C /* quant_levels_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quant_levels_dec.h; sourceTree = "<group>"; };
+		FD2DBA931C144AC70062984C /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
+		FD2DBA941C144AC70062984C /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		FD2DBA951C144AC70062984C /* rescaler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rescaler.c; sourceTree = "<group>"; };
+		FD2DBA961C144AC70062984C /* rescaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rescaler.h; sourceTree = "<group>"; };
+		FD2DBA971C144AC70062984C /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		FD2DBA981C144AC70062984C /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		FD2DBA991C144AC70062984C /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		FD2DBA9A1C144AC70062984C /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		FD2DBA9C1C144AC70062984C /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		FD2DBA9D1C144AC70062984C /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		FD2DBA9E1C144AC70062984C /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		FD2DBA9F1C144AC70062984C /* format_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_constants.h; sourceTree = "<group>"; };
+		FD2DBAA01C144AC70062984C /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		FD2DBAA11C144AC70062984C /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		FD2DBAA21C144AC70062984C /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		FD2DBAA41C144AC70062984C /* PINRemoteImage.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PINRemoteImage.podspec.json; sourceTree = "<group>"; };
+		FD2DBAA51C144AC70062984C /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		FD2DBAA71C144AC70062984C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		FD2DBAA91C144AC70062984C /* Nullability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullability.h; sourceTree = "<group>"; };
+		FD2DBAAA1C144AC70062984C /* PINCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
+		FD2DBAAB1C144AC70062984C /* PINCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINCache.m; sourceTree = "<group>"; };
+		FD2DBAAC1C144AC70062984C /* PINDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDiskCache.h; sourceTree = "<group>"; };
+		FD2DBAAD1C144AC70062984C /* PINDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINDiskCache.m; sourceTree = "<group>"; };
+		FD2DBAAE1C144AC70062984C /* PINMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINMemoryCache.h; sourceTree = "<group>"; };
+		FD2DBAAF1C144AC70062984C /* PINMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINMemoryCache.m; sourceTree = "<group>"; };
+		FD2DBAB01C144AC70062984C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD2DBAB11C144AC70062984C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		FD2DBAB61C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Pods-PINRemoteImage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD2DBAB71C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-PINRemoteImage-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD2DBAB81C144AC70062984C /* Pods-PINRemoteImage-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAB91C144AC70062984C /* Pods-PINRemoteImage-environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage-environment.h"; sourceTree = "<group>"; };
+		FD2DBABA1C144AC70062984C /* Pods-PINRemoteImage-resources.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-PINRemoteImage-resources.sh"; sourceTree = "<group>"; };
+		FD2DBABB1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2DBABC1C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage.release.xcconfig"; sourceTree = "<group>"; };
+		FD2DBABE1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Pods-PINRemoteImage Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD2DBABF1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-PINRemoteImage Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD2DBAC01C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage Tests-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAC11C144AC70062984C /* Pods-PINRemoteImage Tests-environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage Tests-environment.h"; sourceTree = "<group>"; };
+		FD2DBAC21C144AC70062984C /* Pods-PINRemoteImage Tests-resources.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-PINRemoteImage Tests-resources.sh"; sourceTree = "<group>"; };
+		FD2DBAC31C144AC70062984C /* Pods-PINRemoteImage Tests.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAC41C144AC70062984C /* Pods-PINRemoteImage Tests.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAC61C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAC71C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage Tests-FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBAC81C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAC91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig"; sourceTree = "<group>"; };
+		FD2DBACB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage Tests-PINCache-dummy.m"; sourceTree = "<group>"; };
+		FD2DBACC1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage Tests-PINCache-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBACD1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-PINCache-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBACE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-PINCache.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAD01C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAD11C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage Tests-PINRemoteImage-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBAD21C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAD31C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAD51C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage-FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAD61C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage-FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBAD71C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAD81C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-FLAnimatedImage.xcconfig"; sourceTree = "<group>"; };
+		FD2DBADA1C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage-libwebp-dummy.m"; sourceTree = "<group>"; };
+		FD2DBADB1C144AC70062984C /* Pods-PINRemoteImage-libwebp-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage-libwebp-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBADC1C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-libwebp-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBADD1C144AC70062984C /* Pods-PINRemoteImage-libwebp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-libwebp.xcconfig"; sourceTree = "<group>"; };
+		FD2DBADF1C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage-PINCache-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAE01C144AC70062984C /* Pods-PINRemoteImage-PINCache-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage-PINCache-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBAE11C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-PINCache-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAE21C144AC70062984C /* Pods-PINRemoteImage-PINCache.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-PINCache.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAE41C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-PINRemoteImage-PINRemoteImage-dummy.m"; sourceTree = "<group>"; };
+		FD2DBAE51C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-PINRemoteImage-PINRemoteImage-prefix.pch"; sourceTree = "<group>"; };
+		FD2DBAE61C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAE71C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-PINRemoteImage-PINRemoteImage.xcconfig"; sourceTree = "<group>"; };
+		FD2DBAE81C144AC70062984C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FD2DBAE91C144AC70062984C /* PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImage.h; sourceTree = "<group>"; };
+		FD2DBAEA1C144AC70062984C /* PINRemoteImage.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PINRemoteImage.podspec; sourceTree = "<group>"; };
+		FD2DBAEB1C144AC70062984C /* PINRemoteImageAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageAdapter.h; sourceTree = "<group>"; };
+		FD2DBAEC1C144AC70062984C /* PINRemoteImageAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageAdapter.m; sourceTree = "<group>"; };
+		FD2DBAEF1C144AC70062984C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FD2DBAF11C144AC70062984C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FD2DBAF31C144AC70062984C /* NSData+ImageDetectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageDetectors.h"; sourceTree = "<group>"; };
+		FD2DBAF41C144AC70062984C /* NSData+ImageDetectors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageDetectors.m"; sourceTree = "<group>"; };
+		FD2DBAF51C144AC70062984C /* UIImage+DecodedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DecodedImage.h"; sourceTree = "<group>"; };
+		FD2DBAF61C144AC70062984C /* UIImage+DecodedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DecodedImage.m"; sourceTree = "<group>"; };
+		FD2DBAF71C144AC70062984C /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		FD2DBAF81C144AC70062984C /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		FD2DBAFA1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBAFB1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
+		FD2DBAFC1C144AC70062984C /* UIButton+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBAFD1C144AC70062984C /* UIButton+PINRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PINRemoteImage.m"; sourceTree = "<group>"; };
+		FD2DBAFE1C144AC70062984C /* UIImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
+		FD2DBAFF1C144AC70062984C /* UIImageView+PINRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
+		FD2DBB001C144AC70062984C /* PINDataTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDataTaskOperation.h; sourceTree = "<group>"; };
+		FD2DBB011C144AC70062984C /* PINDataTaskOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINDataTaskOperation.m; sourceTree = "<group>"; };
+		FD2DBB021C144AC70062984C /* PINProgressiveImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINProgressiveImage.h; sourceTree = "<group>"; };
+		FD2DBB031C144AC70062984C /* PINProgressiveImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINProgressiveImage.m; sourceTree = "<group>"; };
+		FD2DBB041C144AC70062984C /* PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImage.h; sourceTree = "<group>"; };
+		FD2DBB051C144AC70062984C /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
+		FD2DBB061C144AC70062984C /* PINRemoteImageCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageCallbacks.m; sourceTree = "<group>"; };
+		FD2DBB071C144AC70062984C /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
+		FD2DBB081C144AC70062984C /* PINRemoteImageCategoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageCategoryManager.m; sourceTree = "<group>"; };
+		FD2DBB091C144AC70062984C /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
+		FD2DBB0A1C144AC70062984C /* PINRemoteImageDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageDownloadTask.m; sourceTree = "<group>"; };
+		FD2DBB0B1C144AC70062984C /* PINRemoteImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManager.h; sourceTree = "<group>"; };
+		FD2DBB0C1C144AC70062984C /* PINRemoteImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageManager.m; sourceTree = "<group>"; };
+		FD2DBB0D1C144AC70062984C /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
+		FD2DBB0E1C144AC70062984C /* PINRemoteImageManagerResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageManagerResult.m; sourceTree = "<group>"; };
+		FD2DBB0F1C144AC70062984C /* PINRemoteImageProcessorTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageProcessorTask.h; sourceTree = "<group>"; };
+		FD2DBB101C144AC70062984C /* PINRemoteImageProcessorTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageProcessorTask.m; sourceTree = "<group>"; };
+		FD2DBB111C144AC70062984C /* PINRemoteImageTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINRemoteImageTask.h; sourceTree = "<group>"; };
+		FD2DBB121C144AC70062984C /* PINRemoteImageTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINRemoteImageTask.m; sourceTree = "<group>"; };
+		FD2DBB131C144AC70062984C /* PINURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINURLSessionManager.h; sourceTree = "<group>"; };
+		FD2DBB141C144AC70062984C /* PINURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINURLSessionManager.m; sourceTree = "<group>"; };
+		FD2DBB151C144AC70062984C /* progressive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progressive.gif; sourceTree = "<group>"; };
+		FD2DBB161C144AC70062984C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD2DBBF51C1452490062984C /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		FD2DBBF61C1452490062984C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		FD2DBBF71C1452490062984C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		FD2DBBF81C1452490062984C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		FD2DBBFB1C1483530062984C /* MyAccountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountControl.h; sourceTree = "<group>"; };
+		FD2DBBFC1C1483530062984C /* MyAccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountControl.m; sourceTree = "<group>"; };
+		FD2DBBFE1C1483680062984C /* MarketPlaceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketPlaceControl.h; sourceTree = "<group>"; };
+		FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketPlaceControl.m; sourceTree = "<group>"; };
+		FD2DBC011C1489630062984C /* CustomTabBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarControl.h; sourceTree = "<group>"; };
+		FD2DBC021C1489630062984C /* CustomTabBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarControl.m; sourceTree = "<group>"; };
 		FD40E0911C10B53B008CF1A4 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		FD40E0921C10B53B008CF1A4 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		FD40E0951C10B76A008CF1A4 /* AbstractCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractCell.h; path = Views/AbstractCell.h; sourceTree = "<group>"; };
@@ -84,6 +746,882 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD2DB9551C144AC70062984C /* PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9561C144AC70062984C /* .gitattributes */,
+				FD2DB9571C144AC70062984C /* .gitignore */,
+				FD2DB9581C144AC70062984C /* .travis.yml */,
+				FD2DB9591C144AC70062984C /* build_docs.sh */,
+				FD2DB95A1C144AC70062984C /* docs */,
+				FD2DB9801C144AC70062984C /* Example */,
+				FD2DBAE81C144AC70062984C /* LICENSE */,
+				FD2DBAE91C144AC70062984C /* PINRemoteImage.h */,
+				FD2DBAEA1C144AC70062984C /* PINRemoteImage.podspec */,
+				FD2DBAEB1C144AC70062984C /* PINRemoteImageAdapter.h */,
+				FD2DBAEC1C144AC70062984C /* PINRemoteImageAdapter.m */,
+				FD2DBAED1C144AC70062984C /* Pod */,
+				FD2DBB151C144AC70062984C /* progressive.gif */,
+				FD2DBB161C144AC70062984C /* README.md */,
+			);
+			name = PINRemoteImage;
+			path = Libs/PINRemoteImage;
+			sourceTree = "<group>";
+		};
+		FD2DB95A1C144AC70062984C /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB95B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset */,
+				FD2DB95C1C144AC70062984C /* html */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		FD2DB95C1C144AC70062984C /* html */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB95D1C144AC70062984C /* Blocks */,
+				FD2DB9601C144AC70062984C /* Classes */,
+				FD2DB9631C144AC70062984C /* Constants */,
+				FD2DB9681C144AC70062984C /* css */,
+				FD2DB9731C144AC70062984C /* hierarchy.html */,
+				FD2DB9741C144AC70062984C /* img */,
+				FD2DB97A1C144AC70062984C /* index.html */,
+				FD2DB97B1C144AC70062984C /* js */,
+				FD2DB97D1C144AC70062984C /* Protocols */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		FD2DB95D1C144AC70062984C /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB95E1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html */,
+				FD2DB95F1C144AC70062984C /* PINRemoteImageManagerImageProcessor.html */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		FD2DB9601C144AC70062984C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9611C144AC70062984C /* PINRemoteImageCategoryManager.html */,
+				FD2DB9621C144AC70062984C /* PINRemoteImageManager.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FD2DB9631C144AC70062984C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9641C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html */,
+				FD2DB9651C144AC70062984C /* PINRemoteImageManagerError.html */,
+				FD2DB9661C144AC70062984C /* PINRemoteImageManagerPriority.html */,
+				FD2DB9671C144AC70062984C /* PINRemoteImageResultType.html */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FD2DB9681C144AC70062984C /* css */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9691C144AC70062984C /* scss */,
+				FD2DB9721C144AC70062984C /* style.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		FD2DB9691C144AC70062984C /* scss */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB96A1C144AC70062984C /* _index.scss */,
+				FD2DB96B1C144AC70062984C /* _layout.scss */,
+				FD2DB96C1C144AC70062984C /* _normalize.scss */,
+				FD2DB96D1C144AC70062984C /* _object.scss */,
+				FD2DB96E1C144AC70062984C /* _print.scss */,
+				FD2DB96F1C144AC70062984C /* _variables.scss */,
+				FD2DB9701C144AC70062984C /* _xcode.scss */,
+				FD2DB9711C144AC70062984C /* style.scss */,
+			);
+			path = scss;
+			sourceTree = "<group>";
+		};
+		FD2DB9741C144AC70062984C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9751C144AC70062984C /* button_bar_background.png */,
+				FD2DB9761C144AC70062984C /* disclosure.png */,
+				FD2DB9771C144AC70062984C /* disclosure_open.png */,
+				FD2DB9781C144AC70062984C /* library_background.png */,
+				FD2DB9791C144AC70062984C /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		FD2DB97B1C144AC70062984C /* js */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB97C1C144AC70062984C /* script.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		FD2DB97D1C144AC70062984C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB97E1C144AC70062984C /* PINRemoteImageCategory.html */,
+				FD2DB97F1C144AC70062984C /* PINRemoteImageCategory_Deprecated.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD2DB9801C144AC70062984C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9811C144AC70062984C /* PINRemoteImage */,
+				FD2DB99A1C144AC70062984C /* PINRemoteImage.xcodeproj */,
+				FD2DB99D1C144AC70062984C /* PINRemoteImage.xcworkspace */,
+				FD2DB99E1C144AC70062984C /* Podfile */,
+				FD2DB99F1C144AC70062984C /* Podfile.lock */,
+				FD2DB9A01C144AC70062984C /* Pods */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		FD2DB9811C144AC70062984C /* PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9821C144AC70062984C /* Main.storyboard */,
+				FD2DB9841C144AC70062984C /* DegradedViewController.h */,
+				FD2DB9851C144AC70062984C /* DegradedViewController.m */,
+				FD2DB9861C144AC70062984C /* InfoPlist.strings */,
+				FD2DB9881C144AC70062984C /* Images.xcassets */,
+				FD2DB9891C144AC70062984C /* main.m */,
+				FD2DB98A1C144AC70062984C /* Media.xcassets */,
+				FD2DB98B1C144AC70062984C /* PINAppDelegate.h */,
+				FD2DB98C1C144AC70062984C /* PINAppDelegate.m */,
+				FD2DB98D1C144AC70062984C /* PINRemoteImage-Info.plist */,
+				FD2DB98E1C144AC70062984C /* PINRemoteImage-Prefix.pch */,
+				FD2DB98F1C144AC70062984C /* PINViewController.h */,
+				FD2DB9901C144AC70062984C /* PINViewController.m */,
+				FD2DB9911C144AC70062984C /* ProcessingViewController.h */,
+				FD2DB9921C144AC70062984C /* ProcessingViewController.m */,
+				FD2DB9931C144AC70062984C /* ProgressiveViewController.h */,
+				FD2DB9941C144AC70062984C /* ProgressiveViewController.m */,
+				FD2DB9951C144AC70062984C /* WebPViewController.h */,
+				FD2DB9961C144AC70062984C /* WebPViewController.m */,
+			);
+			path = PINRemoteImage;
+			sourceTree = "<group>";
+		};
+		FD2DB99B1C144AC70062984C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBBD61C144AC80062984C /* PINRemoteImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD2DB9A01C144AC70062984C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9A11C144AC70062984C /* FLAnimatedImage */,
+				FD2DB9AA1C144AC70062984C /* Headers */,
+				FD2DBA2D1C144AC70062984C /* libwebp */,
+				FD2DBAA31C144AC70062984C /* Local Podspecs */,
+				FD2DBAA51C144AC70062984C /* Manifest.lock */,
+				FD2DBAA61C144AC70062984C /* PINCache */,
+				FD2DBAB11C144AC70062984C /* Pods.xcodeproj */,
+				FD2DBAB41C144AC70062984C /* Target Support Files */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD2DB9A11C144AC70062984C /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9A21C144AC70062984C /* FLAnimatedImageDemo */,
+				FD2DB9A81C144AC70062984C /* LICENSE */,
+				FD2DB9A91C144AC70062984C /* README.md */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		FD2DB9A21C144AC70062984C /* FLAnimatedImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9A31C144AC70062984C /* FLAnimatedImage */,
+			);
+			path = FLAnimatedImageDemo;
+			sourceTree = "<group>";
+		};
+		FD2DB9A31C144AC70062984C /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9A41C144AC70062984C /* FLAnimatedImage.h */,
+				FD2DB9A51C144AC70062984C /* FLAnimatedImage.m */,
+				FD2DB9A61C144AC70062984C /* FLAnimatedImageView.h */,
+				FD2DB9A71C144AC70062984C /* FLAnimatedImageView.m */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		FD2DB9AA1C144AC70062984C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9AB1C144AC70062984C /* Private */,
+				FD2DB9EC1C144AC70062984C /* Public */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		FD2DB9AB1C144AC70062984C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9AC1C144AC70062984C /* FLAnimatedImage */,
+				FD2DB9AF1C144AC70062984C /* libwebp */,
+				FD2DB9D51C144AC70062984C /* PINCache */,
+				FD2DB9DA1C144AC70062984C /* PINRemoteImage */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		FD2DB9AC1C144AC70062984C /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9AD1C144AC70062984C /* FLAnimatedImage.h */,
+				FD2DB9AE1C144AC70062984C /* FLAnimatedImageView.h */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		FD2DB9AF1C144AC70062984C /* libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9B01C144AC70062984C /* alphai.h */,
+				FD2DB9B11C144AC70062984C /* backward_references.h */,
+				FD2DB9B21C144AC70062984C /* bit_reader.h */,
+				FD2DB9B31C144AC70062984C /* bit_reader_inl.h */,
+				FD2DB9B41C144AC70062984C /* bit_writer.h */,
+				FD2DB9B51C144AC70062984C /* color_cache.h */,
+				FD2DB9B61C144AC70062984C /* cost.h */,
+				FD2DB9B71C144AC70062984C /* decode_vp8.h */,
+				FD2DB9B81C144AC70062984C /* dsp.h */,
+				FD2DB9B91C144AC70062984C /* endian_inl.h */,
+				FD2DB9BA1C144AC70062984C /* filters.h */,
+				FD2DB9BB1C144AC70062984C /* histogram.h */,
+				FD2DB9BC1C144AC70062984C /* huffman.h */,
+				FD2DB9BD1C144AC70062984C /* huffman_encode.h */,
+				FD2DB9BE1C144AC70062984C /* lossless.h */,
+				FD2DB9BF1C144AC70062984C /* muxi.h */,
+				FD2DB9C01C144AC70062984C /* neon.h */,
+				FD2DB9C11C144AC70062984C /* quant_levels.h */,
+				FD2DB9C21C144AC70062984C /* quant_levels_dec.h */,
+				FD2DB9C31C144AC70062984C /* random.h */,
+				FD2DB9C41C144AC70062984C /* rescaler.h */,
+				FD2DB9C51C144AC70062984C /* thread.h */,
+				FD2DB9C61C144AC70062984C /* utils.h */,
+				FD2DB9C71C144AC70062984C /* vp8enci.h */,
+				FD2DB9C81C144AC70062984C /* vp8i.h */,
+				FD2DB9C91C144AC70062984C /* vp8li.h */,
+				FD2DB9CA1C144AC70062984C /* webp */,
+				FD2DB9D21C144AC70062984C /* webpi.h */,
+				FD2DB9D31C144AC70062984C /* yuv.h */,
+				FD2DB9D41C144AC70062984C /* yuv_tables_sse2.h */,
+			);
+			path = libwebp;
+			sourceTree = "<group>";
+		};
+		FD2DB9CA1C144AC70062984C /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9CB1C144AC70062984C /* decode.h */,
+				FD2DB9CC1C144AC70062984C /* demux.h */,
+				FD2DB9CD1C144AC70062984C /* encode.h */,
+				FD2DB9CE1C144AC70062984C /* format_constants.h */,
+				FD2DB9CF1C144AC70062984C /* mux.h */,
+				FD2DB9D01C144AC70062984C /* mux_types.h */,
+				FD2DB9D11C144AC70062984C /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+		FD2DB9D51C144AC70062984C /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9D61C144AC70062984C /* Nullability.h */,
+				FD2DB9D71C144AC70062984C /* PINCache.h */,
+				FD2DB9D81C144AC70062984C /* PINDiskCache.h */,
+				FD2DB9D91C144AC70062984C /* PINMemoryCache.h */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		FD2DB9DA1C144AC70062984C /* PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9DB1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */,
+				FD2DB9DC1C144AC70062984C /* NSData+ImageDetectors.h */,
+				FD2DB9DD1C144AC70062984C /* PINDataTaskOperation.h */,
+				FD2DB9DE1C144AC70062984C /* PINProgressiveImage.h */,
+				FD2DB9DF1C144AC70062984C /* PINRemoteImage.h */,
+				FD2DB9E01C144AC70062984C /* PINRemoteImageCallbacks.h */,
+				FD2DB9E11C144AC70062984C /* PINRemoteImageCategoryManager.h */,
+				FD2DB9E21C144AC70062984C /* PINRemoteImageDownloadTask.h */,
+				FD2DB9E31C144AC70062984C /* PINRemoteImageManager.h */,
+				FD2DB9E41C144AC70062984C /* PINRemoteImageManagerResult.h */,
+				FD2DB9E51C144AC70062984C /* PINRemoteImageProcessorTask.h */,
+				FD2DB9E61C144AC70062984C /* PINRemoteImageTask.h */,
+				FD2DB9E71C144AC70062984C /* PINURLSessionManager.h */,
+				FD2DB9E81C144AC70062984C /* UIButton+PINRemoteImage.h */,
+				FD2DB9E91C144AC70062984C /* UIImage+DecodedImage.h */,
+				FD2DB9EA1C144AC70062984C /* UIImage+WebP.h */,
+				FD2DB9EB1C144AC70062984C /* UIImageView+PINRemoteImage.h */,
+			);
+			path = PINRemoteImage;
+			sourceTree = "<group>";
+		};
+		FD2DB9EC1C144AC70062984C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9ED1C144AC70062984C /* FLAnimatedImage */,
+				FD2DB9F01C144AC70062984C /* libwebp */,
+				FD2DBA161C144AC70062984C /* PINCache */,
+				FD2DBA1B1C144AC70062984C /* PINRemoteImage */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		FD2DB9ED1C144AC70062984C /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9EE1C144AC70062984C /* FLAnimatedImage.h */,
+				FD2DB9EF1C144AC70062984C /* FLAnimatedImageView.h */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		FD2DB9F01C144AC70062984C /* libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DB9F11C144AC70062984C /* alphai.h */,
+				FD2DB9F21C144AC70062984C /* backward_references.h */,
+				FD2DB9F31C144AC70062984C /* bit_reader.h */,
+				FD2DB9F41C144AC70062984C /* bit_reader_inl.h */,
+				FD2DB9F51C144AC70062984C /* bit_writer.h */,
+				FD2DB9F61C144AC70062984C /* color_cache.h */,
+				FD2DB9F71C144AC70062984C /* cost.h */,
+				FD2DB9F81C144AC70062984C /* decode_vp8.h */,
+				FD2DB9F91C144AC70062984C /* dsp.h */,
+				FD2DB9FA1C144AC70062984C /* endian_inl.h */,
+				FD2DB9FB1C144AC70062984C /* filters.h */,
+				FD2DB9FC1C144AC70062984C /* histogram.h */,
+				FD2DB9FD1C144AC70062984C /* huffman.h */,
+				FD2DB9FE1C144AC70062984C /* huffman_encode.h */,
+				FD2DB9FF1C144AC70062984C /* lossless.h */,
+				FD2DBA001C144AC70062984C /* muxi.h */,
+				FD2DBA011C144AC70062984C /* neon.h */,
+				FD2DBA021C144AC70062984C /* quant_levels.h */,
+				FD2DBA031C144AC70062984C /* quant_levels_dec.h */,
+				FD2DBA041C144AC70062984C /* random.h */,
+				FD2DBA051C144AC70062984C /* rescaler.h */,
+				FD2DBA061C144AC70062984C /* thread.h */,
+				FD2DBA071C144AC70062984C /* utils.h */,
+				FD2DBA081C144AC70062984C /* vp8enci.h */,
+				FD2DBA091C144AC70062984C /* vp8i.h */,
+				FD2DBA0A1C144AC70062984C /* vp8li.h */,
+				FD2DBA0B1C144AC70062984C /* webp */,
+				FD2DBA131C144AC70062984C /* webpi.h */,
+				FD2DBA141C144AC70062984C /* yuv.h */,
+				FD2DBA151C144AC70062984C /* yuv_tables_sse2.h */,
+			);
+			path = libwebp;
+			sourceTree = "<group>";
+		};
+		FD2DBA0B1C144AC70062984C /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA0C1C144AC70062984C /* decode.h */,
+				FD2DBA0D1C144AC70062984C /* demux.h */,
+				FD2DBA0E1C144AC70062984C /* encode.h */,
+				FD2DBA0F1C144AC70062984C /* format_constants.h */,
+				FD2DBA101C144AC70062984C /* mux.h */,
+				FD2DBA111C144AC70062984C /* mux_types.h */,
+				FD2DBA121C144AC70062984C /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+		FD2DBA161C144AC70062984C /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA171C144AC70062984C /* Nullability.h */,
+				FD2DBA181C144AC70062984C /* PINCache.h */,
+				FD2DBA191C144AC70062984C /* PINDiskCache.h */,
+				FD2DBA1A1C144AC70062984C /* PINMemoryCache.h */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		FD2DBA1B1C144AC70062984C /* PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA1C1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */,
+				FD2DBA1D1C144AC70062984C /* NSData+ImageDetectors.h */,
+				FD2DBA1E1C144AC70062984C /* PINDataTaskOperation.h */,
+				FD2DBA1F1C144AC70062984C /* PINProgressiveImage.h */,
+				FD2DBA201C144AC70062984C /* PINRemoteImage.h */,
+				FD2DBA211C144AC70062984C /* PINRemoteImageCallbacks.h */,
+				FD2DBA221C144AC70062984C /* PINRemoteImageCategoryManager.h */,
+				FD2DBA231C144AC70062984C /* PINRemoteImageDownloadTask.h */,
+				FD2DBA241C144AC70062984C /* PINRemoteImageManager.h */,
+				FD2DBA251C144AC70062984C /* PINRemoteImageManagerResult.h */,
+				FD2DBA261C144AC70062984C /* PINRemoteImageProcessorTask.h */,
+				FD2DBA271C144AC70062984C /* PINRemoteImageTask.h */,
+				FD2DBA281C144AC70062984C /* PINURLSessionManager.h */,
+				FD2DBA291C144AC70062984C /* UIButton+PINRemoteImage.h */,
+				FD2DBA2A1C144AC70062984C /* UIImage+DecodedImage.h */,
+				FD2DBA2B1C144AC70062984C /* UIImage+WebP.h */,
+				FD2DBA2C1C144AC70062984C /* UIImageView+PINRemoteImage.h */,
+			);
+			path = PINRemoteImage;
+			sourceTree = "<group>";
+		};
+		FD2DBA2D1C144AC70062984C /* libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA2E1C144AC70062984C /* COPYING */,
+				FD2DBA2F1C144AC70062984C /* README */,
+				FD2DBA301C144AC70062984C /* README.mux */,
+				FD2DBA311C144AC70062984C /* src */,
+			);
+			path = libwebp;
+			sourceTree = "<group>";
+		};
+		FD2DBA311C144AC70062984C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA321C144AC70062984C /* dec */,
+				FD2DBA421C144AC70062984C /* demux */,
+				FD2DBA441C144AC70062984C /* dsp */,
+				FD2DBA611C144AC70062984C /* enc */,
+				FD2DBA7B1C144AC70062984C /* mux */,
+				FD2DBA801C144AC70062984C /* utils */,
+				FD2DBA9B1C144AC70062984C /* webp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FD2DBA321C144AC70062984C /* dec */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA331C144AC70062984C /* alpha.c */,
+				FD2DBA341C144AC70062984C /* alphai.h */,
+				FD2DBA351C144AC70062984C /* buffer.c */,
+				FD2DBA361C144AC70062984C /* decode_vp8.h */,
+				FD2DBA371C144AC70062984C /* frame.c */,
+				FD2DBA381C144AC70062984C /* idec.c */,
+				FD2DBA391C144AC70062984C /* io.c */,
+				FD2DBA3A1C144AC70062984C /* quant.c */,
+				FD2DBA3B1C144AC70062984C /* tree.c */,
+				FD2DBA3C1C144AC70062984C /* vp8.c */,
+				FD2DBA3D1C144AC70062984C /* vp8i.h */,
+				FD2DBA3E1C144AC70062984C /* vp8l.c */,
+				FD2DBA3F1C144AC70062984C /* vp8li.h */,
+				FD2DBA401C144AC70062984C /* webp.c */,
+				FD2DBA411C144AC70062984C /* webpi.h */,
+			);
+			path = dec;
+			sourceTree = "<group>";
+		};
+		FD2DBA421C144AC70062984C /* demux */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA431C144AC70062984C /* demux.c */,
+			);
+			path = demux;
+			sourceTree = "<group>";
+		};
+		FD2DBA441C144AC70062984C /* dsp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA451C144AC70062984C /* alpha_processing.c */,
+				FD2DBA461C144AC70062984C /* alpha_processing_sse2.c */,
+				FD2DBA471C144AC70062984C /* cpu.c */,
+				FD2DBA481C144AC70062984C /* dec.c */,
+				FD2DBA491C144AC70062984C /* dec_clip_tables.c */,
+				FD2DBA4A1C144AC70062984C /* dec_mips32.c */,
+				FD2DBA4B1C144AC70062984C /* dec_neon.c */,
+				FD2DBA4C1C144AC70062984C /* dec_sse2.c */,
+				FD2DBA4D1C144AC70062984C /* dsp.h */,
+				FD2DBA4E1C144AC70062984C /* enc.c */,
+				FD2DBA4F1C144AC70062984C /* enc_avx2.c */,
+				FD2DBA501C144AC70062984C /* enc_mips32.c */,
+				FD2DBA511C144AC70062984C /* enc_neon.c */,
+				FD2DBA521C144AC70062984C /* enc_sse2.c */,
+				FD2DBA531C144AC70062984C /* lossless.c */,
+				FD2DBA541C144AC70062984C /* lossless.h */,
+				FD2DBA551C144AC70062984C /* lossless_mips32.c */,
+				FD2DBA561C144AC70062984C /* lossless_neon.c */,
+				FD2DBA571C144AC70062984C /* lossless_sse2.c */,
+				FD2DBA581C144AC70062984C /* neon.h */,
+				FD2DBA591C144AC70062984C /* upsampling.c */,
+				FD2DBA5A1C144AC70062984C /* upsampling_neon.c */,
+				FD2DBA5B1C144AC70062984C /* upsampling_sse2.c */,
+				FD2DBA5C1C144AC70062984C /* yuv.c */,
+				FD2DBA5D1C144AC70062984C /* yuv.h */,
+				FD2DBA5E1C144AC70062984C /* yuv_mips32.c */,
+				FD2DBA5F1C144AC70062984C /* yuv_sse2.c */,
+				FD2DBA601C144AC70062984C /* yuv_tables_sse2.h */,
+			);
+			path = dsp;
+			sourceTree = "<group>";
+		};
+		FD2DBA611C144AC70062984C /* enc */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA621C144AC70062984C /* alpha.c */,
+				FD2DBA631C144AC70062984C /* analysis.c */,
+				FD2DBA641C144AC70062984C /* backward_references.c */,
+				FD2DBA651C144AC70062984C /* backward_references.h */,
+				FD2DBA661C144AC70062984C /* config.c */,
+				FD2DBA671C144AC70062984C /* cost.c */,
+				FD2DBA681C144AC70062984C /* cost.h */,
+				FD2DBA691C144AC70062984C /* filter.c */,
+				FD2DBA6A1C144AC70062984C /* frame.c */,
+				FD2DBA6B1C144AC70062984C /* histogram.c */,
+				FD2DBA6C1C144AC70062984C /* histogram.h */,
+				FD2DBA6D1C144AC70062984C /* iterator.c */,
+				FD2DBA6E1C144AC70062984C /* picture.c */,
+				FD2DBA6F1C144AC70062984C /* picture_csp.c */,
+				FD2DBA701C144AC70062984C /* picture_psnr.c */,
+				FD2DBA711C144AC70062984C /* picture_rescale.c */,
+				FD2DBA721C144AC70062984C /* picture_tools.c */,
+				FD2DBA731C144AC70062984C /* quant.c */,
+				FD2DBA741C144AC70062984C /* syntax.c */,
+				FD2DBA751C144AC70062984C /* token.c */,
+				FD2DBA761C144AC70062984C /* tree.c */,
+				FD2DBA771C144AC70062984C /* vp8enci.h */,
+				FD2DBA781C144AC70062984C /* vp8l.c */,
+				FD2DBA791C144AC70062984C /* vp8li.h */,
+				FD2DBA7A1C144AC70062984C /* webpenc.c */,
+			);
+			path = enc;
+			sourceTree = "<group>";
+		};
+		FD2DBA7B1C144AC70062984C /* mux */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA7C1C144AC70062984C /* muxedit.c */,
+				FD2DBA7D1C144AC70062984C /* muxi.h */,
+				FD2DBA7E1C144AC70062984C /* muxinternal.c */,
+				FD2DBA7F1C144AC70062984C /* muxread.c */,
+			);
+			path = mux;
+			sourceTree = "<group>";
+		};
+		FD2DBA801C144AC70062984C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA811C144AC70062984C /* bit_reader.c */,
+				FD2DBA821C144AC70062984C /* bit_reader.h */,
+				FD2DBA831C144AC70062984C /* bit_reader_inl.h */,
+				FD2DBA841C144AC70062984C /* bit_writer.c */,
+				FD2DBA851C144AC70062984C /* bit_writer.h */,
+				FD2DBA861C144AC70062984C /* color_cache.c */,
+				FD2DBA871C144AC70062984C /* color_cache.h */,
+				FD2DBA881C144AC70062984C /* endian_inl.h */,
+				FD2DBA891C144AC70062984C /* filters.c */,
+				FD2DBA8A1C144AC70062984C /* filters.h */,
+				FD2DBA8B1C144AC70062984C /* huffman.c */,
+				FD2DBA8C1C144AC70062984C /* huffman.h */,
+				FD2DBA8D1C144AC70062984C /* huffman_encode.c */,
+				FD2DBA8E1C144AC70062984C /* huffman_encode.h */,
+				FD2DBA8F1C144AC70062984C /* quant_levels.c */,
+				FD2DBA901C144AC70062984C /* quant_levels.h */,
+				FD2DBA911C144AC70062984C /* quant_levels_dec.c */,
+				FD2DBA921C144AC70062984C /* quant_levels_dec.h */,
+				FD2DBA931C144AC70062984C /* random.c */,
+				FD2DBA941C144AC70062984C /* random.h */,
+				FD2DBA951C144AC70062984C /* rescaler.c */,
+				FD2DBA961C144AC70062984C /* rescaler.h */,
+				FD2DBA971C144AC70062984C /* thread.c */,
+				FD2DBA981C144AC70062984C /* thread.h */,
+				FD2DBA991C144AC70062984C /* utils.c */,
+				FD2DBA9A1C144AC70062984C /* utils.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		FD2DBA9B1C144AC70062984C /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBA9C1C144AC70062984C /* decode.h */,
+				FD2DBA9D1C144AC70062984C /* demux.h */,
+				FD2DBA9E1C144AC70062984C /* encode.h */,
+				FD2DBA9F1C144AC70062984C /* format_constants.h */,
+				FD2DBAA01C144AC70062984C /* mux.h */,
+				FD2DBAA11C144AC70062984C /* mux_types.h */,
+				FD2DBAA21C144AC70062984C /* types.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+		FD2DBAA31C144AC70062984C /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAA41C144AC70062984C /* PINRemoteImage.podspec.json */,
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		FD2DBAA61C144AC70062984C /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAA71C144AC70062984C /* LICENSE.txt */,
+				FD2DBAA81C144AC70062984C /* PINCache */,
+				FD2DBAB01C144AC70062984C /* README.md */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		FD2DBAA81C144AC70062984C /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAA91C144AC70062984C /* Nullability.h */,
+				FD2DBAAA1C144AC70062984C /* PINCache.h */,
+				FD2DBAAB1C144AC70062984C /* PINCache.m */,
+				FD2DBAAC1C144AC70062984C /* PINDiskCache.h */,
+				FD2DBAAD1C144AC70062984C /* PINDiskCache.m */,
+				FD2DBAAE1C144AC70062984C /* PINMemoryCache.h */,
+				FD2DBAAF1C144AC70062984C /* PINMemoryCache.m */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		FD2DBAB21C144AC70062984C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBBE31C144AC80062984C /* libPods-PINRemoteImage.a */,
+				FD2DBBE51C144AC80062984C /* libPods-PINRemoteImage Tests.a */,
+				FD2DBBE71C144AC80062984C /* libPods-PINRemoteImage Tests-FLAnimatedImage.a */,
+				FD2DBBE91C144AC80062984C /* libPods-PINRemoteImage Tests-PINCache.a */,
+				FD2DBBEB1C144AC80062984C /* libPods-PINRemoteImage Tests-PINRemoteImage.a */,
+				FD2DBBED1C144AC80062984C /* libPods-PINRemoteImage-FLAnimatedImage.a */,
+				FD2DBBEF1C144AC80062984C /* libPods-PINRemoteImage-PINCache.a */,
+				FD2DBBF11C144AC80062984C /* libPods-PINRemoteImage-PINRemoteImage.a */,
+				FD2DBBF31C144AC80062984C /* libPods-PINRemoteImage-libwebp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD2DBAB41C144AC70062984C /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAB51C144AC70062984C /* Pods-PINRemoteImage */,
+				FD2DBABD1C144AC70062984C /* Pods-PINRemoteImage Tests */,
+				FD2DBAC51C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage */,
+				FD2DBACA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache */,
+				FD2DBACF1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage */,
+				FD2DBAD41C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage */,
+				FD2DBAD91C144AC70062984C /* Pods-PINRemoteImage-libwebp */,
+				FD2DBADE1C144AC70062984C /* Pods-PINRemoteImage-PINCache */,
+				FD2DBAE31C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		FD2DBAB51C144AC70062984C /* Pods-PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAB61C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.markdown */,
+				FD2DBAB71C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.plist */,
+				FD2DBAB81C144AC70062984C /* Pods-PINRemoteImage-dummy.m */,
+				FD2DBAB91C144AC70062984C /* Pods-PINRemoteImage-environment.h */,
+				FD2DBABA1C144AC70062984C /* Pods-PINRemoteImage-resources.sh */,
+				FD2DBABB1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig */,
+				FD2DBABC1C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage";
+			sourceTree = "<group>";
+		};
+		FD2DBABD1C144AC70062984C /* Pods-PINRemoteImage Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBABE1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.markdown */,
+				FD2DBABF1C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.plist */,
+				FD2DBAC01C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m */,
+				FD2DBAC11C144AC70062984C /* Pods-PINRemoteImage Tests-environment.h */,
+				FD2DBAC21C144AC70062984C /* Pods-PINRemoteImage Tests-resources.sh */,
+				FD2DBAC31C144AC70062984C /* Pods-PINRemoteImage Tests.debug.xcconfig */,
+				FD2DBAC41C144AC70062984C /* Pods-PINRemoteImage Tests.release.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage Tests";
+			sourceTree = "<group>";
+		};
+		FD2DBAC51C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAC61C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m */,
+				FD2DBAC71C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-prefix.pch */,
+				FD2DBAC81C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig */,
+				FD2DBAC91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage Tests-FLAnimatedImage";
+			sourceTree = "<group>";
+		};
+		FD2DBACA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBACB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m */,
+				FD2DBACC1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-prefix.pch */,
+				FD2DBACD1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig */,
+				FD2DBACE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage Tests-PINCache";
+			sourceTree = "<group>";
+		};
+		FD2DBACF1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAD01C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m */,
+				FD2DBAD11C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-prefix.pch */,
+				FD2DBAD21C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig */,
+				FD2DBAD31C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage Tests-PINRemoteImage";
+			sourceTree = "<group>";
+		};
+		FD2DBAD41C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAD51C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m */,
+				FD2DBAD61C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-prefix.pch */,
+				FD2DBAD71C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig */,
+				FD2DBAD81C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage-FLAnimatedImage";
+			sourceTree = "<group>";
+		};
+		FD2DBAD91C144AC70062984C /* Pods-PINRemoteImage-libwebp */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBADA1C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m */,
+				FD2DBADB1C144AC70062984C /* Pods-PINRemoteImage-libwebp-prefix.pch */,
+				FD2DBADC1C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig */,
+				FD2DBADD1C144AC70062984C /* Pods-PINRemoteImage-libwebp.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage-libwebp";
+			sourceTree = "<group>";
+		};
+		FD2DBADE1C144AC70062984C /* Pods-PINRemoteImage-PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBADF1C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m */,
+				FD2DBAE01C144AC70062984C /* Pods-PINRemoteImage-PINCache-prefix.pch */,
+				FD2DBAE11C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig */,
+				FD2DBAE21C144AC70062984C /* Pods-PINRemoteImage-PINCache.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage-PINCache";
+			sourceTree = "<group>";
+		};
+		FD2DBAE31C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAE41C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m */,
+				FD2DBAE51C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-prefix.pch */,
+				FD2DBAE61C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig */,
+				FD2DBAE71C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage.xcconfig */,
+			);
+			path = "Pods-PINRemoteImage-PINRemoteImage";
+			sourceTree = "<group>";
+		};
+		FD2DBAED1C144AC70062984C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAEE1C144AC70062984C /* Assets */,
+				FD2DBAF01C144AC70062984C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FD2DBAEE1C144AC70062984C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAEF1C144AC70062984C /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FD2DBAF01C144AC70062984C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAF11C144AC70062984C /* .gitkeep */,
+				FD2DBAF21C144AC70062984C /* Categories */,
+				FD2DBAF91C144AC70062984C /* Image Categories */,
+				FD2DBB001C144AC70062984C /* PINDataTaskOperation.h */,
+				FD2DBB011C144AC70062984C /* PINDataTaskOperation.m */,
+				FD2DBB021C144AC70062984C /* PINProgressiveImage.h */,
+				FD2DBB031C144AC70062984C /* PINProgressiveImage.m */,
+				FD2DBB041C144AC70062984C /* PINRemoteImage.h */,
+				FD2DBB051C144AC70062984C /* PINRemoteImageCallbacks.h */,
+				FD2DBB061C144AC70062984C /* PINRemoteImageCallbacks.m */,
+				FD2DBB071C144AC70062984C /* PINRemoteImageCategoryManager.h */,
+				FD2DBB081C144AC70062984C /* PINRemoteImageCategoryManager.m */,
+				FD2DBB091C144AC70062984C /* PINRemoteImageDownloadTask.h */,
+				FD2DBB0A1C144AC70062984C /* PINRemoteImageDownloadTask.m */,
+				FD2DBB0B1C144AC70062984C /* PINRemoteImageManager.h */,
+				FD2DBB0C1C144AC70062984C /* PINRemoteImageManager.m */,
+				FD2DBB0D1C144AC70062984C /* PINRemoteImageManagerResult.h */,
+				FD2DBB0E1C144AC70062984C /* PINRemoteImageManagerResult.m */,
+				FD2DBB0F1C144AC70062984C /* PINRemoteImageProcessorTask.h */,
+				FD2DBB101C144AC70062984C /* PINRemoteImageProcessorTask.m */,
+				FD2DBB111C144AC70062984C /* PINRemoteImageTask.h */,
+				FD2DBB121C144AC70062984C /* PINRemoteImageTask.m */,
+				FD2DBB131C144AC70062984C /* PINURLSessionManager.h */,
+				FD2DBB141C144AC70062984C /* PINURLSessionManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FD2DBAF21C144AC70062984C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAF31C144AC70062984C /* NSData+ImageDetectors.h */,
+				FD2DBAF41C144AC70062984C /* NSData+ImageDetectors.m */,
+				FD2DBAF51C144AC70062984C /* UIImage+DecodedImage.h */,
+				FD2DBAF61C144AC70062984C /* UIImage+DecodedImage.m */,
+				FD2DBAF71C144AC70062984C /* UIImage+WebP.h */,
+				FD2DBAF81C144AC70062984C /* UIImage+WebP.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FD2DBAF91C144AC70062984C /* Image Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBAFA1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.h */,
+				FD2DBAFB1C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m */,
+				FD2DBAFC1C144AC70062984C /* UIButton+PINRemoteImage.h */,
+				FD2DBAFD1C144AC70062984C /* UIButton+PINRemoteImage.m */,
+				FD2DBAFE1C144AC70062984C /* UIImageView+PINRemoteImage.h */,
+				FD2DBAFF1C144AC70062984C /* UIImageView+PINRemoteImage.m */,
+			);
+			path = "Image Categories";
+			sourceTree = "<group>";
+		};
+		FD2DBBF41C1452490062984C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FD2DBBF51C1452490062984C /* SVProgressHUD-Prefix.pch */,
+				FD2DBBF61C1452490062984C /* SVProgressHUD.bundle */,
+				FD2DBBF71C1452490062984C /* SVProgressHUD.h */,
+				FD2DBBF81C1452490062984C /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = Libs/SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		FD40E08C1C10B50C008CF1A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +1637,8 @@
 				FDDF30481C0B0DE300145970 /* Storyboard */,
 				FDAEDAC11C0E187F003FB843 /* CustomNavBar.h */,
 				FDAEDAC21C0E187F003FB843 /* CustomNavBar.m */,
+				FD2DBC011C1489630062984C /* CustomTabBarControl.h */,
+				FD2DBC021C1489630062984C /* CustomTabBarControl.m */,
 				FD40E0951C10B76A008CF1A4 /* AbstractCell.h */,
 				FD40E0961C10B76A008CF1A4 /* AbstractCell.m */,
 				FD40E0981C10B7CF008CF1A4 /* FashionNewsCell.h */,
@@ -110,8 +1650,14 @@
 		FD40E09E1C10B98F008CF1A4 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FD2DBBF41C1452490062984C /* SVProgressHUD */,
+				FD2DB9551C144AC70062984C /* PINRemoteImage */,
 				FD40E09F1C10B996008CF1A4 /* GCD.h */,
 				FD40E0A01C10B996008CF1A4 /* GCD.m */,
+				FD2DB9521C143C660062984C /* NSObject.h */,
+				FD2DB9531C143C660062984C /* NSObject.m */,
+				FD2DB94F1C143C3B0062984C /* NSURLSession.h */,
+				FD2DB9501C143C3B0062984C /* NSURLSession.m */,
 				FD5A192C1C1313E60033EDE5 /* UIStoryboard.h */,
 				FD5A192D1C1313E60033EDE5 /* UIStoryboard.m */,
 			);
@@ -156,6 +1702,7 @@
 			children = (
 				FDDF302D1C0B0B0E00145970 /* AppDelegate.h */,
 				FDDF302E1C0B0B0E00145970 /* AppDelegate.m */,
+				FDDF30361C0B0B0E00145970 /* Assets.xcassets */,
 				FD40E08C1C10B50C008CF1A4 /* Models */,
 				FD40E0941C10B707008CF1A4 /* Views */,
 				FDDF30471C0B0DD800145970 /* Controllers */,
@@ -193,6 +1740,10 @@
 				FDDF30311C0B0B0E00145970 /* FashionControl.m */,
 				FD5A19291C13122B0033EDE5 /* FashionNewsDetailControl.h */,
 				FD5A192A1C13122B0033EDE5 /* FashionNewsDetailControl.m */,
+				FD2DBBFB1C1483530062984C /* MyAccountControl.h */,
+				FD2DBBFC1C1483530062984C /* MyAccountControl.m */,
+				FD2DBBFE1C1483680062984C /* MarketPlaceControl.h */,
+				FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -202,7 +1753,6 @@
 			children = (
 				FDDF30331C0B0B0E00145970 /* Main.storyboard */,
 				FDDF30381C0B0B0E00145970 /* LaunchScreen.storyboard */,
-				FDDF30361C0B0B0E00145970 /* Assets.xcassets */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -252,6 +1802,16 @@
 			mainGroup = FDDF301E1C0B0B0E00145970;
 			productRefGroup = FDDF30281C0B0B0E00145970 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FD2DB99B1C144AC70062984C /* Products */;
+					ProjectRef = FD2DB99A1C144AC70062984C /* PINRemoteImage.xcodeproj */;
+				},
+				{
+					ProductGroup = FD2DBAB21C144AC70062984C /* Products */;
+					ProjectRef = FD2DBAB11C144AC70062984C /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FDDF30261C0B0B0E00145970 /* Fashion */,
@@ -259,22 +1819,169 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FD2DBBD61C144AC80062984C /* PINRemoteImage.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PINRemoteImage.app;
+			remoteRef = FD2DBBD51C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBE31C144AC80062984C /* libPods-PINRemoteImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage.a";
+			remoteRef = FD2DBBE21C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBE51C144AC80062984C /* libPods-PINRemoteImage Tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage Tests.a";
+			remoteRef = FD2DBBE41C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBE71C144AC80062984C /* libPods-PINRemoteImage Tests-FLAnimatedImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage Tests-FLAnimatedImage.a";
+			remoteRef = FD2DBBE61C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBE91C144AC80062984C /* libPods-PINRemoteImage Tests-PINCache.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage Tests-PINCache.a";
+			remoteRef = FD2DBBE81C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBEB1C144AC80062984C /* libPods-PINRemoteImage Tests-PINRemoteImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage Tests-PINRemoteImage.a";
+			remoteRef = FD2DBBEA1C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBED1C144AC80062984C /* libPods-PINRemoteImage-FLAnimatedImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage-FLAnimatedImage.a";
+			remoteRef = FD2DBBEC1C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBEF1C144AC80062984C /* libPods-PINRemoteImage-PINCache.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage-PINCache.a";
+			remoteRef = FD2DBBEE1C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBF11C144AC80062984C /* libPods-PINRemoteImage-PINRemoteImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage-PINRemoteImage.a";
+			remoteRef = FD2DBBF01C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD2DBBF31C144AC80062984C /* libPods-PINRemoteImage-libwebp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-PINRemoteImage-libwebp.a";
+			remoteRef = FD2DBBF21C144AC80062984C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		FDDF30251C0B0B0E00145970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2DBBC01C144AC70062984C /* .gitkeep in Resources */,
+				FD2DBB361C144AC70062984C /* PINRemoteImageCategory_Deprecated.html in Resources */,
+				FD2DBB941C144AC70062984C /* PINRemoteImage.podspec.json in Resources */,
 				FD40E0B11C10BF0C008CF1A4 /* image4.jpg in Resources */,
+				FD2DBBB21C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig in Resources */,
+				FD2DBB2B1C144AC70062984C /* style.scss in Resources */,
+				FD2DBB2C1C144AC70062984C /* style.css in Resources */,
+				FD2DBBB41C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig in Resources */,
 				FD40E0B21C10BF0C008CF1A4 /* image5.jpg in Resources */,
+				FD2DBB281C144AC70062984C /* _print.scss in Resources */,
+				FD2DBB191C144AC70062984C /* .travis.yml in Resources */,
+				FD2DBB1C1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html in Resources */,
+				FD2DBBB11C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-Private.xcconfig in Resources */,
+				FD2DBBBD1C144AC70062984C /* PINRemoteImage.podspec in Resources */,
+				FD2DBB271C144AC70062984C /* _object.scss in Resources */,
+				FD2DBBA81C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-Private.xcconfig in Resources */,
+				FD2DBBB81C144AC70062984C /* Pods-PINRemoteImage-PINCache.xcconfig in Resources */,
 				FDDF303A1C0B0B0E00145970 /* LaunchScreen.storyboard in Resources */,
+				FD2DBB9F1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig in Resources */,
+				FD2DBB2A1C144AC70062984C /* _xcode.scss in Resources */,
+				FD2DBBAB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig in Resources */,
 				FD40E0B61C10BF0C008CF1A4 /* image9.jpg in Resources */,
+				FD2DBB391C144AC70062984C /* InfoPlist.strings in Resources */,
+				FD2DBB1E1C144AC70062984C /* PINRemoteImageCategoryManager.html in Resources */,
+				FD2DBB951C144AC70062984C /* Manifest.lock in Resources */,
+				FD2DBB2E1C144AC70062984C /* button_bar_background.png in Resources */,
+				FD2DBB311C144AC70062984C /* library_background.png in Resources */,
+				FD2DBB3C1C144AC70062984C /* Media.xcassets in Resources */,
+				FD2DBBB51C144AC70062984C /* Pods-PINRemoteImage-libwebp.xcconfig in Resources */,
+				FD2DBB301C144AC70062984C /* disclosure_open.png in Resources */,
+				FD2DBB251C144AC70062984C /* _layout.scss in Resources */,
+				FD2DBB1A1C144AC70062984C /* build_docs.sh in Resources */,
 				FD40E0AD1C10BF0C008CF1A4 /* image1.jpg in Resources */,
+				FD2DBB461C144AC70062984C /* Podfile in Resources */,
+				FD2DBBF91C1452490062984C /* SVProgressHUD.bundle in Resources */,
 				FD40E0B51C10BF0C008CF1A4 /* image8.jpg in Resources */,
+				FD2DBB2D1C144AC70062984C /* hierarchy.html in Resources */,
+				FD2DBB4C1C144AC70062984C /* COPYING in Resources */,
+				FD2DBB341C144AC70062984C /* script.js in Resources */,
+				FD2DBB261C144AC70062984C /* _normalize.scss in Resources */,
+				FD2DBB9E1C144AC70062984C /* Pods-PINRemoteImage-resources.sh in Resources */,
+				FD2DBB351C144AC70062984C /* PINRemoteImageCategory.html in Resources */,
+				FD2DBB331C144AC70062984C /* index.html in Resources */,
+				FD2DBBBA1C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-Private.xcconfig in Resources */,
+				FD2DBB9C1C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.plist in Resources */,
+				FD2DBBA21C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.plist in Resources */,
+				FD2DBB961C144AC70062984C /* LICENSE.txt in Resources */,
+				FD2DBB1F1C144AC70062984C /* PINRemoteImageManager.html in Resources */,
 				FDDF30371C0B0B0E00145970 /* Assets.xcassets in Resources */,
+				FD2DBB241C144AC70062984C /* _index.scss in Resources */,
+				FD2DBB3E1C144AC70062984C /* PINRemoteImage-Info.plist in Resources */,
+				FD2DBB4D1C144AC70062984C /* README in Resources */,
+				FD2DBB291C144AC70062984C /* _variables.scss in Resources */,
+				FD2DBBD11C144AC70062984C /* progressive.gif in Resources */,
 				FD40E0AE1C10BF0C008CF1A4 /* image10.jpg in Resources */,
+				FD2DBB211C144AC70062984C /* PINRemoteImageManagerError.html in Resources */,
+				FD2DBB221C144AC70062984C /* PINRemoteImageManagerPriority.html in Resources */,
+				FD2DBB4E1C144AC70062984C /* README.mux in Resources */,
+				FD2DBB471C144AC70062984C /* Podfile.lock in Resources */,
+				FD2DBBB71C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig in Resources */,
+				FD2DBB451C144AC70062984C /* PINRemoteImage.xcworkspace in Resources */,
+				FD2DBB1B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset in Resources */,
 				FD40E0B31C10BF0C008CF1A4 /* image6.jpg in Resources */,
+				FD2DBBAE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig in Resources */,
+				FD2DBBA01C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig in Resources */,
 				FD40E0AF1C10BF0C008CF1A4 /* image2.jpg in Resources */,
+				FD2DBB371C144AC70062984C /* Main.storyboard in Resources */,
+				FD2DBB201C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html in Resources */,
+				FD2DBBA91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig in Resources */,
+				FD2DBBBC1C144AC70062984C /* LICENSE in Resources */,
+				FD2DBB181C144AC70062984C /* .gitignore in Resources */,
+				FD2DBBA51C144AC70062984C /* Pods-PINRemoteImage Tests.debug.xcconfig in Resources */,
+				FD2DBB1D1C144AC70062984C /* PINRemoteImageManagerImageProcessor.html in Resources */,
+				FD2DBB2F1C144AC70062984C /* disclosure.png in Resources */,
+				FD2DBBA41C144AC70062984C /* Pods-PINRemoteImage Tests-resources.sh in Resources */,
+				FD2DBBA61C144AC70062984C /* Pods-PINRemoteImage Tests.release.xcconfig in Resources */,
+				FD2DBBAF1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage.xcconfig in Resources */,
+				FD2DBBBB1C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage.xcconfig in Resources */,
+				FD2DBBBF1C144AC70062984C /* .gitkeep in Resources */,
+				FD2DBB321C144AC70062984C /* title_background.png in Resources */,
+				FD2DBB4A1C144AC70062984C /* LICENSE in Resources */,
+				FD2DBB231C144AC70062984C /* PINRemoteImageResultType.html in Resources */,
+				FD2DBBAC1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig in Resources */,
 				FD40E0B41C10BF0C008CF1A4 /* image7.jpg in Resources */,
+				FD2DBB171C144AC70062984C /* .gitattributes in Resources */,
 				FD40E0B01C10BF0C008CF1A4 /* image3.jpg in Resources */,
 				FDDF30351C0B0B0E00145970 /* Main.storyboard in Resources */,
 			);
@@ -287,23 +1994,156 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2DBB621C144AC70062984C /* enc.c in Sources */,
+				FD2DBB421C144AC70062984C /* WebPViewController.m in Sources */,
+				FD2DBB871C144AC70062984C /* muxread.c in Sources */,
 				FD40E0A11C10B996008CF1A4 /* GCD.m in Sources */,
+				FD2DBBA31C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m in Sources */,
+				FD2DBB3F1C144AC70062984C /* PINViewController.m in Sources */,
+				FD2DBB791C144AC70062984C /* iterator.c in Sources */,
+				FD2DBB8B1C144AC70062984C /* filters.c in Sources */,
+				FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */,
+				FD2DBB581C144AC70062984C /* webp.c in Sources */,
+				FD2DBB601C144AC70062984C /* dec_neon.c in Sources */,
 				FD40E0931C10B53B008CF1A4 /* News.m in Sources */,
+				FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */,
+				FD2DBB401C144AC70062984C /* ProcessingViewController.m in Sources */,
+				FD2DBB9A1C144AC70062984C /* README.md in Sources */,
+				FD2DBB9D1C144AC70062984C /* Pods-PINRemoteImage-dummy.m in Sources */,
+				FD2DBB6D1C144AC70062984C /* upsampling_sse2.c in Sources */,
+				FD2DBB911C144AC70062984C /* rescaler.c in Sources */,
+				FD2DBB7C1C144AC70062984C /* picture_psnr.c in Sources */,
+				FD2DBB4B1C144AC70062984C /* README.md in Sources */,
 				FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */,
 				FDDF30321C0B0B0E00145970 /* FashionControl.m in Sources */,
+				FD2DBB641C144AC70062984C /* enc_mips32.c in Sources */,
+				FD2DBBB91C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m in Sources */,
+				FD2DBBD21C144AC70062984C /* README.md in Sources */,
+				FD2DBB661C144AC70062984C /* enc_sse2.c in Sources */,
+				FD2DBB741C144AC70062984C /* config.c in Sources */,
+				FD2DBB571C144AC70062984C /* vp8l.c in Sources */,
+				FD2DBB7A1C144AC70062984C /* picture.c in Sources */,
+				FD2DBB831C144AC70062984C /* vp8l.c in Sources */,
+				FD2DBB881C144AC70062984C /* bit_reader.c in Sources */,
+				FD2DBBC21C144AC70062984C /* UIImage+DecodedImage.m in Sources */,
 				FDDF302F1C0B0B0E00145970 /* AppDelegate.m in Sources */,
+				FD2DBBB61C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m in Sources */,
+				FD2DBB591C144AC70062984C /* demux.c in Sources */,
 				FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */,
 				FD5A192B1C13122B0033EDE5 /* FashionNewsDetailControl.m in Sources */,
+				FD2DBB801C144AC70062984C /* syntax.c in Sources */,
+				FD2DBB971C144AC70062984C /* PINCache.m in Sources */,
+				FD2DBBFD1C1483530062984C /* MyAccountControl.m in Sources */,
+				FD2DBB991C144AC70062984C /* PINMemoryCache.m in Sources */,
+				FD2DBB681C144AC70062984C /* lossless_mips32.c in Sources */,
+				FD2DBBA71C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m in Sources */,
+				FD2DBB5E1C144AC70062984C /* dec_clip_tables.c in Sources */,
+				FD2DBBA11C144AC70062984C /* Pods-PINRemoteImage Tests-acknowledgements.markdown in Sources */,
+				FD2DBB521C144AC70062984C /* idec.c in Sources */,
+				FD2DBB511C144AC70062984C /* frame.c in Sources */,
+				FD2DBB8A1C144AC70062984C /* color_cache.c in Sources */,
+				FD2DBB771C144AC70062984C /* frame.c in Sources */,
 				FD5A192E1C1313E60033EDE5 /* UIStoryboard.m in Sources */,
+				FD2DBBCB1C144AC70062984C /* PINRemoteImageDownloadTask.m in Sources */,
+				FD2DBBCC1C144AC70062984C /* PINRemoteImageManager.m in Sources */,
+				FD2DBBBE1C144AC70062984C /* PINRemoteImageAdapter.m in Sources */,
+				FD2DBB691C144AC70062984C /* lossless_neon.c in Sources */,
+				FD2DBB8C1C144AC70062984C /* huffman.c in Sources */,
+				FD2DBB6E1C144AC70062984C /* yuv.c in Sources */,
+				FD2DBC031C1489630062984C /* CustomTabBarControl.m in Sources */,
+				FD2DBB811C144AC70062984C /* token.c in Sources */,
+				FD2DBB921C144AC70062984C /* thread.c in Sources */,
+				FD2DBB721C144AC70062984C /* analysis.c in Sources */,
+				FD2DBB821C144AC70062984C /* tree.c in Sources */,
+				FD2DBB8E1C144AC70062984C /* quant_levels.c in Sources */,
+				FD2DBB781C144AC70062984C /* histogram.c in Sources */,
+				FD2DBB6C1C144AC70062984C /* upsampling_neon.c in Sources */,
+				FD2DBB731C144AC70062984C /* backward_references.c in Sources */,
+				FD2DBB761C144AC70062984C /* filter.c in Sources */,
+				FD2DBB8F1C144AC70062984C /* quant_levels_dec.c in Sources */,
+				FD2DBBCD1C144AC70062984C /* PINRemoteImageManagerResult.m in Sources */,
+				FD2DBB5D1C144AC70062984C /* dec.c in Sources */,
+				FD2DBB5C1C144AC70062984C /* cpu.c in Sources */,
+				FD2DBB4F1C144AC70062984C /* alpha.c in Sources */,
+				FD2DBB7F1C144AC70062984C /* quant.c in Sources */,
+				FD2DBBC11C144AC70062984C /* NSData+ImageDetectors.m in Sources */,
+				FD2DBB9B1C144AC70062984C /* Pods-PINRemoteImage-acknowledgements.markdown in Sources */,
+				FD2DBBC31C144AC70062984C /* UIImage+WebP.m in Sources */,
+				FD2DBB5F1C144AC70062984C /* dec_mips32.c in Sources */,
+				FD2DBBB01C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m in Sources */,
+				FD2DBB651C144AC70062984C /* enc_neon.c in Sources */,
+				FD2DBBCA1C144AC70062984C /* PINRemoteImageCategoryManager.m in Sources */,
+				FD2DBBAA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m in Sources */,
+				FD2DBBD01C144AC70062984C /* PINURLSessionManager.m in Sources */,
+				FD2DBB481C144AC70062984C /* FLAnimatedImage.m in Sources */,
+				FD2DBBC81C144AC70062984C /* PINProgressiveImage.m in Sources */,
+				FD2DBB551C144AC70062984C /* tree.c in Sources */,
+				FD2DBB7B1C144AC70062984C /* picture_csp.c in Sources */,
+				FD2DBB6A1C144AC70062984C /* lossless_sse2.c in Sources */,
+				FD2DBB901C144AC70062984C /* random.c in Sources */,
 				FDAEDAC31C0E187F003FB843 /* CustomNavBar.m in Sources */,
+				FD2DBBC71C144AC70062984C /* PINDataTaskOperation.m in Sources */,
+				FD2DBB711C144AC70062984C /* alpha.c in Sources */,
+				FD2DBB861C144AC70062984C /* muxinternal.c in Sources */,
+				FD2DBBCE1C144AC70062984C /* PINRemoteImageProcessorTask.m in Sources */,
+				FD2DB9541C143C660062984C /* NSObject.m in Sources */,
+				FD2DBBC41C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m in Sources */,
+				FD2DBB561C144AC70062984C /* vp8.c in Sources */,
+				FD2DBB701C144AC70062984C /* yuv_sse2.c in Sources */,
+				FD2DBB8D1C144AC70062984C /* huffman_encode.c in Sources */,
+				FD2DBBC61C144AC70062984C /* UIImageView+PINRemoteImage.m in Sources */,
+				FD2DBBC51C144AC70062984C /* UIButton+PINRemoteImage.m in Sources */,
+				FD2DBB7E1C144AC70062984C /* picture_tools.c in Sources */,
+				FD2DBB5A1C144AC70062984C /* alpha_processing.c in Sources */,
+				FD2DBB981C144AC70062984C /* PINDiskCache.m in Sources */,
+				FD2DBB381C144AC70062984C /* DegradedViewController.m in Sources */,
+				FD2DBB931C144AC70062984C /* utils.c in Sources */,
+				FD2DBBAD1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-dummy.m in Sources */,
+				FD2DBB7D1C144AC70062984C /* picture_rescale.c in Sources */,
+				FD2DBB531C144AC70062984C /* io.c in Sources */,
+				FD2DBBCF1C144AC70062984C /* PINRemoteImageTask.m in Sources */,
+				FD2DBB501C144AC70062984C /* buffer.c in Sources */,
+				FD2DBC001C1483680062984C /* MarketPlaceControl.m in Sources */,
+				FD2DBB671C144AC70062984C /* lossless.c in Sources */,
+				FD2DBB491C144AC70062984C /* FLAnimatedImageView.m in Sources */,
+				FD2DBB751C144AC70062984C /* cost.c in Sources */,
+				FD2DBB611C144AC70062984C /* dec_sse2.c in Sources */,
+				FD2DB9511C143C3B0062984C /* NSURLSession.m in Sources */,
+				FD2DBB6B1C144AC70062984C /* upsampling.c in Sources */,
+				FD2DBBB31C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m in Sources */,
+				FD2DBB5B1C144AC70062984C /* alpha_processing_sse2.c in Sources */,
+				FD2DBB6F1C144AC70062984C /* yuv_mips32.c in Sources */,
+				FD2DBB891C144AC70062984C /* bit_writer.c in Sources */,
+				FD2DBB411C144AC70062984C /* ProgressiveViewController.m in Sources */,
 				FD40E09D1C10B8E3008CF1A4 /* FashionStore.m in Sources */,
+				FD2DBB631C144AC70062984C /* enc_avx2.c in Sources */,
+				FD2DBB841C144AC70062984C /* webpenc.c in Sources */,
+				FD2DBB541C144AC70062984C /* quant.c in Sources */,
+				FD2DBB3D1C144AC70062984C /* PINAppDelegate.m in Sources */,
 				FDDF302C1C0B0B0E00145970 /* main.m in Sources */,
+				FD2DBB851C144AC70062984C /* muxedit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FD2DB9821C144AC70062984C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD2DB9831C144AC70062984C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD2DB9861C144AC70062984C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD2DB9871C144AC70062984C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FDDF30331C0B0B0E00145970 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,6 +2199,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Fashion/Libs/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -397,6 +2238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Fashion/Libs/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";

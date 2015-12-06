@@ -10,26 +10,67 @@
 #import "FashionNewsCell.h"
 #import "FashionStore.h"
 #import "FashionNewsDetailControl.h"
+#import "SVProgressHUD.h"
+#import "GCD.h"
 
 @interface FashionControl ()<UICollectionViewDataSource, UICollectionViewDelegate> {
-    NSArray *newsArray;
+    NSMutableArray *items;
+    NSInteger pageIndex;
 }
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-
+/// Pull-to-refresh control
+@property (strong, nonatomic, readonly) UIRefreshControl *refreshControl;
 @end
 
 @implementation FashionControl
+@synthesize refreshControl = _refreshControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.collectionView addSubview:self.refreshControl];
+    pageIndex = 1;
     [self.collectionView setCollectionViewLayout:self.customLayout animated:YES];
-    [[FashionStore shared] requestNewsWithCompletion:^(NSArray *news, NSError *error) {
-        newsArray = news;
-        [self.collectionView reloadData];
-    }];
-    [self setNeedsStatusBarAppearanceUpdate];
+    [SVProgressHUD show];
+    [self loadNews];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (UIRefreshControl *)refreshControl {
+    if (!_refreshControl) {
+        _refreshControl = [UIRefreshControl new];
+        [_refreshControl addTarget:self action:@selector(reload) forControlEvents:UIControlEventValueChanged];
+    } return _refreshControl;
+}
+
+- (void)reload {
+    [self requestItemsForFirstPage];
+}
+
+- (void)requestItemsForFirstPage {
+    pageIndex = 1;
+    [self loadNews];
+}
+
+- (void)requestItemsForNextPage {
+    pageIndex ++;
+    [SVProgressHUD show];
+    [self loadNews];
+}
+
+- (void)loadNews {
+    [[FashionStore shared] requestNews:pageIndex withCompletion:^(NSArray *news, NSError *error) {
+        [SVProgressHUD dismiss];
+        if (news.count == 0) {
+            [SVProgressHUD showErrorWithStatus:@"No news found."];
+        }
+        if (pageIndex == 1) {
+            items = [NSMutableArray new];
+        }
+        [items addObjectsFromArray:news];
+        [self.collectionView reloadData];
+        [self.refreshControl endRefreshing];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,18 +95,26 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [newsArray count];
+    return [items count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FashionNewsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ResueID" forIndexPath:indexPath];
-    [cell updateWithModel:newsArray[indexPath.row]];
+    [cell updateWithModel:items[indexPath.row]];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    FashionNewsDetailControl *detail = [FashionNewsDetailControl controlWithNews:newsArray[indexPath.row]];
+    FashionNewsDetailControl *detail = [FashionNewsDetailControl controlWithNews:items[indexPath.row]];
     [self.navigationController pushViewController:detail animated:YES];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    BOOL lastItemReached = indexPath.item == items.count - 1;
+    if (lastItemReached)
+        dispatch_async_main(^{ // Avoid race condition
+            [self requestItemsForNextPage];
+        });
 }
 
 @end

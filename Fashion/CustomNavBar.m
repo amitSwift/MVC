@@ -8,29 +8,17 @@
 
 #import "CustomNavBar.h"
 
-@interface CustomNavBar ()
-@property (readonly) UIView *wrapperView;
-@property (readonly) UIImageView *backImageView;
-@end
-
 @implementation CustomNavBar
 
-@synthesize wrapperView = _wrapperView, backImageView = _backImageView;
+@synthesize backImageView = _backImageView;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [self addSubview:self.wrapperView];
         [self addSubview:self.backImageView];
     } return self;
 }
 
 #pragma mark getters and setters
-
-- (UIView *)wrapperView {
-    if (!_wrapperView) {
-        _wrapperView = [UIView new];
-    } return _wrapperView;
-}
 
 - (UIImageView *)backImageView {
     if (!_backImageView) {
@@ -44,9 +32,12 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    if (self.wrapperView) {
-        self.wrapperView.frame = self.bounds;
-        self.backImageView.frame = self.bounds;
+    if (self.backImageView) {
+        CGRect frame = self.frame;
+        frame.size.width = self.backImageView.image.size.width;
+        frame.origin.x = self.center.x - frame.size.width/2;
+        frame.origin.y = 0;
+        self.backImageView.frame = frame;
     }
 }
 

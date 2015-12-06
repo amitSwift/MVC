@@ -14,7 +14,11 @@
 
 @property (strong, nonatomic) NSString *newsDescription;
 
+@property (strong, nonatomic) NSString *contentWeb;
+
 @property (strong, nonatomic) NSString *imageUrl;
+
+@property (strong, nonatomic) NSString *date;
 
 
 @end

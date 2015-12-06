@@ -13,7 +13,7 @@
 //! Singleton (shared instance)
 + (instancetype)shared;
 //! Asynchronously returns news array
-- (void)requestNewsWithCompletion:(void(^)(NSArray *news, NSError *error))completion;
+- (void)requestNews:(NSInteger)page withCompletion:(void(^)(NSArray *news, NSError *error))completion;
 @end
 
 

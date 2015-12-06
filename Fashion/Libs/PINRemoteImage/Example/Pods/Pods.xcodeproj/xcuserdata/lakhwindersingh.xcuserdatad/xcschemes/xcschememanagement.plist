@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-PINRemoteImage Tests-FLAnimatedImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>Pods-PINRemoteImage Tests-PINCache.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Pods-PINRemoteImage Tests-PINRemoteImage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-PINRemoteImage Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Pods-PINRemoteImage-FLAnimatedImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Pods-PINRemoteImage-PINCache.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Pods-PINRemoteImage-PINRemoteImage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pods-PINRemoteImage-libwebp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Pods-PINRemoteImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3091AE0AB69637A0D4873AB2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>822D6AA9F3EEB56D9A1868C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C0680BEE34556A8023EB5DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC94048850625CD07E3A98AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2D5B251DE893D5F1C3EE94E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6C155F0A4EA8DC094A3DF98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5893B7048FAF770D6678D64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F87A88BDC23AD1F92436E1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD5C94A81700C30D9BE32245</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

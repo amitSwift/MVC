@@ -9,42 +9,44 @@
 #import "FashionNewsDetailControl.h"
 #import "News.h"
 #import "UIStoryboard.h"
+#import "GCD.h"
+#import "SVProgressHUD.h"
+
 @interface FashionNewsDetailControl ()
 @property (strong, nonatomic) News *newsDetail;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *imgVIew;
-@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollBack;
+@property (strong, nonatomic) IBOutlet UITextView *descriptionLabel;
+
+@property (strong, nonatomic) IBOutlet UITextView *descriptionView;
 
 - (IBAction)commentButton:(id)sender;
 - (IBAction)shareButton:(id)sender;
 - (IBAction)backButton:(id)sender;
-- (IBAction)backkButton:(id)sender;
 
 @end
 
 @implementation FashionNewsDetailControl
 
 + (instancetype)controlWithNews:(News *)news {
-    FashionNewsDetailControl *control = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"FashionNewsDetail"];
+    FashionNewsDetailControl *control = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"FashionDetail"];
     control.newsDetail = news;
     return control;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [SVProgressHUD show];
     [self.tabBarController.tabBar setHidden:YES];
     self.titleLabel.text = self.newsDetail.title;
-    self.descriptionLabel.text = self.newsDetail.newsDescription;
-    self.imgVIew.image = [UIImage imageNamed:self.newsDetail.imageUrl];
     // Do any additional setup after loading the view.
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    CGRect contentRect = CGRectZero;
-    for (UIView *view in self.scrollBack.subviews)
-        contentRect = CGRectUnion(contentRect, view.frame);
-    self.scrollBack.contentSize = contentRect.size;
+    self.descriptionView.attributedText =
+    [[NSAttributedString alloc] initWithData: [self.newsDetail.contentWeb dataUsingEncoding:NSUTF8StringEncoding]
+                                     options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                          documentAttributes: nil error:nil];
+    [SVProgressHUD dismiss];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -65,10 +67,6 @@
 }
 
 - (IBAction)backButton:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
-- (IBAction)backkButton:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

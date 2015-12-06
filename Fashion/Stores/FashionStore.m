@@ -7,8 +7,10 @@
 //
 
 #import "FashionStore.h"
-#import "GCD.h"
+#import "NSURLSession.h"
 #import "News.h"
+
+#define KEY_RESULTS @"posts"
 
 @implementation FashionStore
 
@@ -24,11 +26,46 @@
 
 #pragma mark news requests
 
-- (void)requestNewsWithCompletion:(void (^)(NSArray *, NSError *))completion {
-    NSArray *arrDummy = [self getDummyNews];
-    completion (arrDummy, nil);
+- (void)requestNews:(NSInteger)page withCompletion:(void(^)(NSArray *news, NSError *error))completion {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/api/get_posts?page=%lu",page]]; // Construct URL
+    [NSURLSession jsonFromURL:url completion:^(id json){
+        NSArray *news = [self isListJsonOK:json] ? [self newsArrayWithJSON:json[KEY_RESULTS]] : nil; // Get the result
+        dispatch_async_main(^{
+            completion(news, nil);
+        }); // Execute completion block
+    }];
+    
+    
+//    NSArray *arrDummy = [self getDummyNews];
+//    completion (arrDummy, nil);
 }
 
+//! Returns array of news from JSON
+- (NSArray *)newsArrayWithJSON:(id)json {
+    NSMutableArray *newsArray = [NSMutableArray new];
+    for (NSDictionary *item in json) {
+        News *news = [self newsFromJSON:item];
+        //To Skip upcoming movies coming in theaters tab.
+        if (news)
+            [newsArray addObject:news];
+    }
+    return newsArray.count > 0 ? newsArray : nil;
+}
+
+//! Check if we got correct list result from api
+- (BOOL)isListJsonOK:(id)json {
+    return json && json[@"status"] && [json[KEY_RESULTS] count] > 0;
+}
+
+//! Returns news object from actor JSON
+- (News *)newsFromJSON:(id)json {
+    News *new = [News new];
+    new.title = json[@"title"];
+    new.imageUrl = json[@"thumbnail"];
+    new.date = json[@"date"];
+    new.contentWeb = json[@"content"];
+    return new;
+}
 
 - (NSArray *)getDummyNews {
     NSArray *titles = @[@"How to master the cropped flare",
