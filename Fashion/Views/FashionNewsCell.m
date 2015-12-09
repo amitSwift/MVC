@@ -9,6 +9,7 @@
 #import "FashionNewsCell.h"
 #import "News.h"
 #import "PINRemoteImageAdapter.h"
+#import "GCD.h"
 
 @interface FashionNewsCell ()
 
@@ -23,13 +24,13 @@
 - (void)updateWithModel:(id)model {
     News *news = model;
     self.titleLabel.text = news.title;
-    self.descriptionLabel.text = @"";
-//    self.descriptionLabel.attributedText =
-//    [[NSAttributedString alloc]
-//     initWithData: [news.contentWeb dataUsingEncoding:NSUTF8StringEncoding]
-//     options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-//     documentAttributes: nil error:nil];
-    
+    dispatch_async_main(^{
+        self.descriptionLabel.attributedText =
+        [[NSAttributedString alloc]
+         initWithData: [news.newsDescription dataUsingEncoding:NSUTF8StringEncoding]
+         options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+         documentAttributes: nil error:nil];
+    });
     [self.imgView setUrl:[NSURL URLWithString:news.imageUrl] placeholder:nil];
 }
 

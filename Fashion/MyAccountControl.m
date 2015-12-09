@@ -7,9 +7,11 @@
 //
 
 #import "MyAccountControl.h"
+#import "LibOften.h"
+#import "UserStore.h"
 
 @interface MyAccountControl ()
-
+@property (strong, nonatomic) IBOutlet UILabel *loginButton;
 @end
 
 @implementation MyAccountControl
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[UIView appearanceWhenContainedInInstancesOfClasses:@[[UITabBar class]]] setTintColor:[UIColor whiteColor]];
+    
+    self.loginButton.hidden = [UserStore shared].isLoggedIn;
+    self.loginButton.text = @"You are not logged in yet!\nTap anywhere to login/signup";
+    
+    DefineWeakSelf;
+    self.loginButton.actionBlock = ^{
+        [weakSelf presentViewController:[[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"SignInSignUpControl"] animated:YES completion:nil];
+    };
     // Do any additional setup after loading the view.
 }
 

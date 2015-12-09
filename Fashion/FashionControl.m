@@ -11,13 +11,14 @@
 #import "FashionStore.h"
 #import "FashionNewsDetailControl.h"
 #import "SVProgressHUD.h"
-#import "GCD.h"
+#import "LibOften.h"
 
 @interface FashionControl ()<UICollectionViewDataSource, UICollectionViewDelegate> {
     NSMutableArray *items;
     NSInteger pageIndex;
 }
 
+@property (strong, nonatomic) IBOutlet UILabel *noDataFound;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 /// Pull-to-refresh control
 @property (strong, nonatomic, readonly) UIRefreshControl *refreshControl;
@@ -28,6 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.noDataFound.text = @"No news has been found.\nTap anywhere to refresh.";
+
+    DefineWeakSelf;
+    self.noDataFound.actionBlock = ^{
+        [SVProgressHUD show];
+        [weakSelf reload];
+    };
     [self.collectionView addSubview:self.refreshControl];
     pageIndex = 1;
     [self.collectionView setCollectionViewLayout:self.customLayout animated:YES];
@@ -44,6 +52,7 @@
 }
 
 - (void)reload {
+    self.noDataFound.hidden = YES;
     [self requestItemsForFirstPage];
 }
 
@@ -68,11 +77,15 @@
             items = [NSMutableArray new];
         }
         [items addObjectsFromArray:news];
-        [self.collectionView reloadData];
-        [self.refreshControl endRefreshing];
+        [self reloadData];
     }];
 }
 
+- (void)reloadData {
+    self.noDataFound.hidden = items.count;
+    [self.collectionView reloadData];
+    [self.refreshControl endRefreshing];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

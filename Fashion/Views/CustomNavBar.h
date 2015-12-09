@@ -12,9 +12,6 @@
  */
 
 @interface CustomNavBar : UINavigationBar
-
-@property (readonly) UIImageView *backImageView;
-
 @end
 
 

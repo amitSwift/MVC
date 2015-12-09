@@ -15,9 +15,9 @@
 @interface FashionNewsDetailControl ()
 @property (strong, nonatomic) News *newsDetail;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UITextView *descriptionLabel;
-
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) IBOutlet UITextView *descriptionView;
+@property (strong, nonatomic) IBOutlet UILabel *editorNameLabel;
 
 - (IBAction)commentButton:(id)sender;
 - (IBAction)shareButton:(id)sender;
@@ -38,6 +38,8 @@
     [SVProgressHUD show];
     [self.tabBarController.tabBar setHidden:YES];
     self.titleLabel.text = self.newsDetail.title;
+    self.dateLabel.text = self.newsDetail.date;
+    self.editorNameLabel.text = self.newsDetail.author.name;
     // Do any additional setup after loading the view.
 }
 
