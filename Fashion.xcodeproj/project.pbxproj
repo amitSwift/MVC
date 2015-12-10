@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD2DB9511C143C3B0062984C /* NSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9501C143C3B0062984C /* NSURLSession.m */; };
-		FD2DB9541C143C660062984C /* NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DB9531C143C660062984C /* NSObject.m */; };
 		FD2DBB171C144AC70062984C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9561C144AC70062984C /* .gitattributes */; };
 		FD2DBB181C144AC70062984C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9571C144AC70062984C /* .gitignore */; };
 		FD2DBB191C144AC70062984C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9581C144AC70062984C /* .travis.yml */; };
@@ -185,13 +183,9 @@
 		FD2DBBD11C144AC70062984C /* progressive.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBB151C144AC70062984C /* progressive.gif */; };
 		FD2DBBF91C1452490062984C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD2DBBF61C1452490062984C /* SVProgressHUD.bundle */; };
 		FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBF81C1452490062984C /* SVProgressHUD.m */; };
-		FD2DBBFD1C1483530062984C /* MyAccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBFC1C1483530062984C /* MyAccountControl.m */; };
-		FD2DBC001C1483680062984C /* MarketPlaceControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */; };
-		FD40E0931C10B53B008CF1A4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0921C10B53B008CF1A4 /* News.m */; };
 		FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0961C10B76A008CF1A4 /* AbstractCell.m */; };
 		FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */; };
 		FD40E09D1C10B8E3008CF1A4 /* FashionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */; };
-		FD40E0A11C10B996008CF1A4 /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0A01C10B996008CF1A4 /* GCD.m */; };
 		FD40E0AD1C10BF0C008CF1A4 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A31C10BF0C008CF1A4 /* image1.jpg */; };
 		FD40E0AE1C10BF0C008CF1A4 /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A41C10BF0C008CF1A4 /* image10.jpg */; };
 		FD40E0AF1C10BF0C008CF1A4 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A51C10BF0C008CF1A4 /* image2.jpg */; };
@@ -202,21 +196,27 @@
 		FD40E0B41C10BF0C008CF1A4 /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AA1C10BF0C008CF1A4 /* image7.jpg */; };
 		FD40E0B51C10BF0C008CF1A4 /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AB1C10BF0C008CF1A4 /* image8.jpg */; };
 		FD40E0B61C10BF0C008CF1A4 /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AC1C10BF0C008CF1A4 /* image9.jpg */; };
-		FD5A192B1C13122B0033EDE5 /* FashionNewsDetailControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A192A1C13122B0033EDE5 /* FashionNewsDetailControl.m */; };
-		FD5A192E1C1313E60033EDE5 /* UIStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A192D1C1313E60033EDE5 /* UIStoryboard.m */; };
-		FDB874261C18990600BA641E /* NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874251C18990600BA641E /* NSDate.m */; };
-		FDB874361C189A5500BA641E /* NSDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874351C189A5500BA641E /* NSDateComponents.m */; };
-		FDB874391C18A03D00BA641E /* UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874381C18A03D00BA641E /* UIView.m */; };
+		FD9925D41C19D5C80017532E /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C41C19D5C70017532E /* GCD.m */; };
+		FD9925D51C19D5C80017532E /* NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C71C19D5C70017532E /* NSDate.m */; };
+		FD9925D61C19D5C80017532E /* NSDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C91C19D5C70017532E /* NSDateComponents.m */; };
+		FD9925D71C19D5C80017532E /* NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925CB1C19D5C70017532E /* NSObject.m */; };
+		FD9925D81C19D5C80017532E /* NSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925CD1C19D5C70017532E /* NSURLSession.m */; };
+		FD9925D91C19D5C80017532E /* UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925CF1C19D5C80017532E /* UIButton.m */; };
+		FD9925DA1C19D5C80017532E /* UIStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925D11C19D5C80017532E /* UIStoryboard.m */; };
+		FD9925DB1C19D5C80017532E /* UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925D31C19D5C80017532E /* UIView.m */; };
+		FD9925E11C19D6220017532E /* FashionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925DE1C19D6220017532E /* FashionControl.m */; };
+		FD9925E21C19D6220017532E /* FashionNewsDetailControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925E01C19D6220017532E /* FashionNewsDetailControl.m */; };
+		FD9925E71C19D62F0017532E /* MarketPlaceControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925E41C19D62F0017532E /* MarketPlaceControl.m */; };
+		FD9925E81C19D62F0017532E /* MyAccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925E61C19D62F0017532E /* MyAccountControl.m */; };
+		FD9925EB1C19D65F0017532E /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925EA1C19D65F0017532E /* News.m */; };
 		FDB8743E1C18A99100BA641E /* MarketPlaceNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8743D1C18A99100BA641E /* MarketPlaceNavBar.m */; };
 		FDB874411C18A9A100BA641E /* CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874401C18A9A100BA641E /* CustomNavBar.m */; };
 		FDB874441C18A9E700BA641E /* CustomTabBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874431C18A9E700BA641E /* CustomTabBarControl.m */; };
-		FDB874481C18AAA200BA641E /* UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874471C18AAA200BA641E /* UIButton.m */; };
 		FDB8744B1C18AE9300BA641E /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8744A1C18AE9300BA641E /* UserStore.m */; };
 		FDB874511C18B07900BA641E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8744E1C18B07900BA641E /* TPKeyboardAvoidingScrollView.m */; };
 		FDB874521C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874501C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		FDDF302C1C0B0B0E00145970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDF302B1C0B0B0E00145970 /* main.m */; };
 		FDDF302F1C0B0B0E00145970 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDF302E1C0B0B0E00145970 /* AppDelegate.m */; };
-		FDDF30321C0B0B0E00145970 /* FashionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDF30311C0B0B0E00145970 /* FashionControl.m */; };
 		FDDF30351C0B0B0E00145970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDF30331C0B0B0E00145970 /* Main.storyboard */; };
 		FDDF30371C0B0B0E00145970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDF30361C0B0B0E00145970 /* Assets.xcassets */; };
 		FDDF303A1C0B0B0E00145970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDF30381C0B0B0E00145970 /* LaunchScreen.storyboard */; };
@@ -296,10 +296,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD2DB94F1C143C3B0062984C /* NSURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSession.h; sourceTree = "<group>"; };
-		FD2DB9501C143C3B0062984C /* NSURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSession.m; sourceTree = "<group>"; };
-		FD2DB9521C143C660062984C /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
-		FD2DB9531C143C660062984C /* NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject.m; sourceTree = "<group>"; };
 		FD2DB9561C144AC70062984C /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		FD2DB9571C144AC70062984C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FD2DB9581C144AC70062984C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -688,20 +684,12 @@
 		FD2DBBF61C1452490062984C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		FD2DBBF71C1452490062984C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		FD2DBBF81C1452490062984C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		FD2DBBFB1C1483530062984C /* MyAccountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountControl.h; sourceTree = "<group>"; };
-		FD2DBBFC1C1483530062984C /* MyAccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountControl.m; sourceTree = "<group>"; };
-		FD2DBBFE1C1483680062984C /* MarketPlaceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketPlaceControl.h; sourceTree = "<group>"; };
-		FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketPlaceControl.m; sourceTree = "<group>"; };
-		FD40E0911C10B53B008CF1A4 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
-		FD40E0921C10B53B008CF1A4 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		FD40E0951C10B76A008CF1A4 /* AbstractCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractCell.h; path = Views/AbstractCell.h; sourceTree = "<group>"; };
 		FD40E0961C10B76A008CF1A4 /* AbstractCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractCell.m; path = Views/AbstractCell.m; sourceTree = "<group>"; };
 		FD40E0981C10B7CF008CF1A4 /* FashionNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionNewsCell.h; path = Views/FashionNewsCell.h; sourceTree = "<group>"; };
 		FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionNewsCell.m; path = Views/FashionNewsCell.m; sourceTree = "<group>"; };
 		FD40E09B1C10B8E3008CF1A4 /* FashionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionStore.h; path = Stores/FashionStore.h; sourceTree = "<group>"; };
 		FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionStore.m; path = Stores/FashionStore.m; sourceTree = "<group>"; };
-		FD40E09F1C10B996008CF1A4 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
-		FD40E0A01C10B996008CF1A4 /* GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD.m; sourceTree = "<group>"; };
 		FD40E0A31C10BF0C008CF1A4 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		FD40E0A41C10BF0C008CF1A4 /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
 		FD40E0A51C10BF0C008CF1A4 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
@@ -712,26 +700,40 @@
 		FD40E0AA1C10BF0C008CF1A4 /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
 		FD40E0AB1C10BF0C008CF1A4 /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
 		FD40E0AC1C10BF0C008CF1A4 /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
-		FD5A19291C13122B0033EDE5 /* FashionNewsDetailControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionNewsDetailControl.h; sourceTree = "<group>"; };
-		FD5A192A1C13122B0033EDE5 /* FashionNewsDetailControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionNewsDetailControl.m; sourceTree = "<group>"; };
-		FD5A192C1C1313E60033EDE5 /* UIStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStoryboard.h; sourceTree = "<group>"; };
-		FD5A192D1C1313E60033EDE5 /* UIStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStoryboard.m; sourceTree = "<group>"; };
-		FDB874241C18990600BA641E /* NSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate.h; sourceTree = "<group>"; };
-		FDB874251C18990600BA641E /* NSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate.m; sourceTree = "<group>"; };
-		FDB874321C18998F00BA641E /* LibOften.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibOften.h; path = Libs/PINRemoteImage/LibOften.h; sourceTree = "<group>"; };
-		FDB874341C189A5500BA641E /* NSDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateComponents.h; sourceTree = "<group>"; };
-		FDB874351C189A5500BA641E /* NSDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateComponents.m; sourceTree = "<group>"; };
-		FDB874371C18A03D00BA641E /* UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView.h; sourceTree = "<group>"; };
-		FDB874381C18A03D00BA641E /* UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView.m; sourceTree = "<group>"; };
-		FDB8743A1C18A14300BA641E /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		FD9925C31C19D5C70017532E /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCD.h; path = MyClasses/GCD.h; sourceTree = "<group>"; };
+		FD9925C41C19D5C70017532E /* GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCD.m; path = MyClasses/GCD.m; sourceTree = "<group>"; };
+		FD9925C51C19D5C70017532E /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = MyClasses/Macro.h; sourceTree = "<group>"; };
+		FD9925C61C19D5C70017532E /* NSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDate.h; path = MyClasses/NSDate.h; sourceTree = "<group>"; };
+		FD9925C71C19D5C70017532E /* NSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDate.m; path = MyClasses/NSDate.m; sourceTree = "<group>"; };
+		FD9925C81C19D5C70017532E /* NSDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateComponents.h; path = MyClasses/NSDateComponents.h; sourceTree = "<group>"; };
+		FD9925C91C19D5C70017532E /* NSDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateComponents.m; path = MyClasses/NSDateComponents.m; sourceTree = "<group>"; };
+		FD9925CA1C19D5C70017532E /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject.h; path = MyClasses/NSObject.h; sourceTree = "<group>"; };
+		FD9925CB1C19D5C70017532E /* NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObject.m; path = MyClasses/NSObject.m; sourceTree = "<group>"; };
+		FD9925CC1C19D5C70017532E /* NSURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSURLSession.h; path = MyClasses/NSURLSession.h; sourceTree = "<group>"; };
+		FD9925CD1C19D5C70017532E /* NSURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLSession.m; path = MyClasses/NSURLSession.m; sourceTree = "<group>"; };
+		FD9925CE1C19D5C70017532E /* UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIButton.h; path = MyClasses/UIButton.h; sourceTree = "<group>"; };
+		FD9925CF1C19D5C80017532E /* UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIButton.m; path = MyClasses/UIButton.m; sourceTree = "<group>"; };
+		FD9925D01C19D5C80017532E /* UIStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIStoryboard.h; path = MyClasses/UIStoryboard.h; sourceTree = "<group>"; };
+		FD9925D11C19D5C80017532E /* UIStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIStoryboard.m; path = MyClasses/UIStoryboard.m; sourceTree = "<group>"; };
+		FD9925D21C19D5C80017532E /* UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIView.h; path = MyClasses/UIView.h; sourceTree = "<group>"; };
+		FD9925D31C19D5C80017532E /* UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView.m; path = MyClasses/UIView.m; sourceTree = "<group>"; };
+		FD9925DC1C19D5F40017532E /* LibOften.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibOften.h; path = MyClasses/LibOften.h; sourceTree = "<group>"; };
+		FD9925DD1C19D6220017532E /* FashionControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionControl.h; path = Controls/FashionControl.h; sourceTree = "<group>"; };
+		FD9925DE1C19D6220017532E /* FashionControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionControl.m; path = Controls/FashionControl.m; sourceTree = "<group>"; };
+		FD9925DF1C19D6220017532E /* FashionNewsDetailControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionNewsDetailControl.h; path = Controls/FashionNewsDetailControl.h; sourceTree = "<group>"; };
+		FD9925E01C19D6220017532E /* FashionNewsDetailControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionNewsDetailControl.m; path = Controls/FashionNewsDetailControl.m; sourceTree = "<group>"; };
+		FD9925E31C19D62F0017532E /* MarketPlaceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarketPlaceControl.h; path = Controls/MarketPlaceControl.h; sourceTree = "<group>"; };
+		FD9925E41C19D62F0017532E /* MarketPlaceControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarketPlaceControl.m; path = Controls/MarketPlaceControl.m; sourceTree = "<group>"; };
+		FD9925E51C19D62F0017532E /* MyAccountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAccountControl.h; path = Controls/MyAccountControl.h; sourceTree = "<group>"; };
+		FD9925E61C19D62F0017532E /* MyAccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAccountControl.m; path = Controls/MyAccountControl.m; sourceTree = "<group>"; };
+		FD9925E91C19D65F0017532E /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Models/News.h; sourceTree = "<group>"; };
+		FD9925EA1C19D65F0017532E /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Models/News.m; sourceTree = "<group>"; };
 		FDB8743C1C18A99100BA641E /* MarketPlaceNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarketPlaceNavBar.h; path = Views/MarketPlaceNavBar.h; sourceTree = "<group>"; };
 		FDB8743D1C18A99100BA641E /* MarketPlaceNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarketPlaceNavBar.m; path = Views/MarketPlaceNavBar.m; sourceTree = "<group>"; };
 		FDB8743F1C18A9A100BA641E /* CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomNavBar.h; path = Views/CustomNavBar.h; sourceTree = "<group>"; };
 		FDB874401C18A9A100BA641E /* CustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomNavBar.m; path = Views/CustomNavBar.m; sourceTree = "<group>"; };
 		FDB874421C18A9E700BA641E /* CustomTabBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTabBarControl.h; path = Views/CustomTabBarControl.h; sourceTree = "<group>"; };
 		FDB874431C18A9E700BA641E /* CustomTabBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTabBarControl.m; path = Views/CustomTabBarControl.m; sourceTree = "<group>"; };
-		FDB874461C18AAA200BA641E /* UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton.h; sourceTree = "<group>"; };
-		FDB874471C18AAA200BA641E /* UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton.m; sourceTree = "<group>"; };
 		FDB874491C18AE9300BA641E /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserStore.h; path = Stores/UserStore.h; sourceTree = "<group>"; };
 		FDB8744A1C18AE9300BA641E /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserStore.m; path = Stores/UserStore.m; sourceTree = "<group>"; };
 		FDB8744D1C18B07900BA641E /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -742,8 +744,6 @@
 		FDDF302B1C0B0B0E00145970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDDF302D1C0B0B0E00145970 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDDF302E1C0B0B0E00145970 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FDDF30301C0B0B0E00145970 /* FashionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FashionControl.h; sourceTree = "<group>"; };
-		FDDF30311C0B0B0E00145970 /* FashionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionControl.m; sourceTree = "<group>"; };
 		FDDF30341C0B0B0E00145970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDDF30361C0B0B0E00145970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDDF30391C0B0B0E00145970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1641,8 +1641,8 @@
 		FD40E08C1C10B50C008CF1A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD40E0911C10B53B008CF1A4 /* News.h */,
-				FD40E0921C10B53B008CF1A4 /* News.m */,
+				FD9925E91C19D65F0017532E /* News.h */,
+				FD9925EA1C19D65F0017532E /* News.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1692,24 +1692,24 @@
 		FDB874331C1899AE00BA641E /* MyClasses */ = {
 			isa = PBXGroup;
 			children = (
-				FDB874321C18998F00BA641E /* LibOften.h */,
-				FDB874241C18990600BA641E /* NSDate.h */,
-				FDB874251C18990600BA641E /* NSDate.m */,
-				FDB874341C189A5500BA641E /* NSDateComponents.h */,
-				FDB874351C189A5500BA641E /* NSDateComponents.m */,
-				FD2DB9521C143C660062984C /* NSObject.h */,
-				FD2DB9531C143C660062984C /* NSObject.m */,
-				FDB874461C18AAA200BA641E /* UIButton.h */,
-				FDB874471C18AAA200BA641E /* UIButton.m */,
-				FDB874371C18A03D00BA641E /* UIView.h */,
-				FDB874381C18A03D00BA641E /* UIView.m */,
-				FD5A192C1C1313E60033EDE5 /* UIStoryboard.h */,
-				FD5A192D1C1313E60033EDE5 /* UIStoryboard.m */,
-				FDB8743A1C18A14300BA641E /* Macro.h */,
-				FD40E09F1C10B996008CF1A4 /* GCD.h */,
-				FD40E0A01C10B996008CF1A4 /* GCD.m */,
-				FD2DB94F1C143C3B0062984C /* NSURLSession.h */,
-				FD2DB9501C143C3B0062984C /* NSURLSession.m */,
+				FD9925DC1C19D5F40017532E /* LibOften.h */,
+				FD9925C31C19D5C70017532E /* GCD.h */,
+				FD9925C41C19D5C70017532E /* GCD.m */,
+				FD9925C51C19D5C70017532E /* Macro.h */,
+				FD9925C61C19D5C70017532E /* NSDate.h */,
+				FD9925C71C19D5C70017532E /* NSDate.m */,
+				FD9925C81C19D5C70017532E /* NSDateComponents.h */,
+				FD9925C91C19D5C70017532E /* NSDateComponents.m */,
+				FD9925CA1C19D5C70017532E /* NSObject.h */,
+				FD9925CB1C19D5C70017532E /* NSObject.m */,
+				FD9925CC1C19D5C70017532E /* NSURLSession.h */,
+				FD9925CD1C19D5C70017532E /* NSURLSession.m */,
+				FD9925CE1C19D5C70017532E /* UIButton.h */,
+				FD9925CF1C19D5C80017532E /* UIButton.m */,
+				FD9925D01C19D5C80017532E /* UIStoryboard.h */,
+				FD9925D11C19D5C80017532E /* UIStoryboard.m */,
+				FD9925D21C19D5C80017532E /* UIView.h */,
+				FD9925D31C19D5C80017532E /* UIView.m */,
 			);
 			name = MyClasses;
 			sourceTree = "<group>";
@@ -1717,10 +1717,10 @@
 		FDB8743B1C18A24C00BA641E /* FashionNews */ = {
 			isa = PBXGroup;
 			children = (
-				FDDF30301C0B0B0E00145970 /* FashionControl.h */,
-				FDDF30311C0B0B0E00145970 /* FashionControl.m */,
-				FD5A19291C13122B0033EDE5 /* FashionNewsDetailControl.h */,
-				FD5A192A1C13122B0033EDE5 /* FashionNewsDetailControl.m */,
+				FD9925DD1C19D6220017532E /* FashionControl.h */,
+				FD9925DE1C19D6220017532E /* FashionControl.m */,
+				FD9925DF1C19D6220017532E /* FashionNewsDetailControl.h */,
+				FD9925E01C19D6220017532E /* FashionNewsDetailControl.m */,
 			);
 			name = FashionNews;
 			sourceTree = "<group>";
@@ -1807,10 +1807,10 @@
 			isa = PBXGroup;
 			children = (
 				FDB8743B1C18A24C00BA641E /* FashionNews */,
-				FD2DBBFB1C1483530062984C /* MyAccountControl.h */,
-				FD2DBBFC1C1483530062984C /* MyAccountControl.m */,
-				FD2DBBFE1C1483680062984C /* MarketPlaceControl.h */,
-				FD2DBBFF1C1483680062984C /* MarketPlaceControl.m */,
+				FD9925E31C19D62F0017532E /* MarketPlaceControl.h */,
+				FD9925E41C19D62F0017532E /* MarketPlaceControl.m */,
+				FD9925E51C19D62F0017532E /* MyAccountControl.h */,
+				FD9925E61C19D62F0017532E /* MyAccountControl.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -2059,7 +2059,6 @@
 				FD2DBB621C144AC70062984C /* enc.c in Sources */,
 				FD2DBB421C144AC70062984C /* WebPViewController.m in Sources */,
 				FD2DBB871C144AC70062984C /* muxread.c in Sources */,
-				FD40E0A11C10B996008CF1A4 /* GCD.m in Sources */,
 				FD2DBBA31C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m in Sources */,
 				FD2DBB3F1C144AC70062984C /* PINViewController.m in Sources */,
 				FD2DBB791C144AC70062984C /* iterator.c in Sources */,
@@ -2067,15 +2066,15 @@
 				FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */,
 				FD2DBB581C144AC70062984C /* webp.c in Sources */,
 				FD2DBB601C144AC70062984C /* dec_neon.c in Sources */,
-				FD40E0931C10B53B008CF1A4 /* News.m in Sources */,
+				FD9925D41C19D5C80017532E /* GCD.m in Sources */,
 				FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */,
+				FD9925E71C19D62F0017532E /* MarketPlaceControl.m in Sources */,
 				FD2DBB401C144AC70062984C /* ProcessingViewController.m in Sources */,
 				FD2DBB9D1C144AC70062984C /* Pods-PINRemoteImage-dummy.m in Sources */,
 				FD2DBB6D1C144AC70062984C /* upsampling_sse2.c in Sources */,
 				FD2DBB911C144AC70062984C /* rescaler.c in Sources */,
 				FD2DBB7C1C144AC70062984C /* picture_psnr.c in Sources */,
 				FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */,
-				FDDF30321C0B0B0E00145970 /* FashionControl.m in Sources */,
 				FD2DBB641C144AC70062984C /* enc_mips32.c in Sources */,
 				FD2DBBB91C144AC70062984C /* Pods-PINRemoteImage-PINRemoteImage-dummy.m in Sources */,
 				FD2DBB661C144AC70062984C /* enc_sse2.c in Sources */,
@@ -2089,10 +2088,10 @@
 				FD2DBBB61C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m in Sources */,
 				FD2DBB591C144AC70062984C /* demux.c in Sources */,
 				FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */,
-				FD5A192B1C13122B0033EDE5 /* FashionNewsDetailControl.m in Sources */,
+				FD9925D81C19D5C80017532E /* NSURLSession.m in Sources */,
 				FD2DBB801C144AC70062984C /* syntax.c in Sources */,
+				FD9925D71C19D5C80017532E /* NSObject.m in Sources */,
 				FD2DBB971C144AC70062984C /* PINCache.m in Sources */,
-				FD2DBBFD1C1483530062984C /* MyAccountControl.m in Sources */,
 				FD2DBB991C144AC70062984C /* PINMemoryCache.m in Sources */,
 				FD2DBB681C144AC70062984C /* lossless_mips32.c in Sources */,
 				FD2DBBA71C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage-dummy.m in Sources */,
@@ -2101,13 +2100,15 @@
 				FD2DBB511C144AC70062984C /* frame.c in Sources */,
 				FD2DBB8A1C144AC70062984C /* color_cache.c in Sources */,
 				FD2DBB771C144AC70062984C /* frame.c in Sources */,
-				FD5A192E1C1313E60033EDE5 /* UIStoryboard.m in Sources */,
 				FD2DBBCB1C144AC70062984C /* PINRemoteImageDownloadTask.m in Sources */,
 				FD2DBBCC1C144AC70062984C /* PINRemoteImageManager.m in Sources */,
 				FD2DBBBE1C144AC70062984C /* PINRemoteImageAdapter.m in Sources */,
+				FD9925E21C19D6220017532E /* FashionNewsDetailControl.m in Sources */,
 				FD2DBB691C144AC70062984C /* lossless_neon.c in Sources */,
 				FD2DBB8C1C144AC70062984C /* huffman.c in Sources */,
+				FD9925D51C19D5C80017532E /* NSDate.m in Sources */,
 				FD2DBB6E1C144AC70062984C /* yuv.c in Sources */,
+				FD9925D91C19D5C80017532E /* UIButton.m in Sources */,
 				FD2DBB811C144AC70062984C /* token.c in Sources */,
 				FD2DBB921C144AC70062984C /* thread.c in Sources */,
 				FD2DBB721C144AC70062984C /* analysis.c in Sources */,
@@ -2115,11 +2116,11 @@
 				FDB8743E1C18A99100BA641E /* MarketPlaceNavBar.m in Sources */,
 				FD2DBB8E1C144AC70062984C /* quant_levels.c in Sources */,
 				FD2DBB781C144AC70062984C /* histogram.c in Sources */,
+				FD9925E11C19D6220017532E /* FashionControl.m in Sources */,
 				FD2DBB6C1C144AC70062984C /* upsampling_neon.c in Sources */,
 				FD2DBB731C144AC70062984C /* backward_references.c in Sources */,
 				FD2DBB761C144AC70062984C /* filter.c in Sources */,
 				FD2DBB8F1C144AC70062984C /* quant_levels_dec.c in Sources */,
-				FDB874481C18AAA200BA641E /* UIButton.m in Sources */,
 				FD2DBBCD1C144AC70062984C /* PINRemoteImageManagerResult.m in Sources */,
 				FD2DBB5D1C144AC70062984C /* dec.c in Sources */,
 				FD2DBB5C1C144AC70062984C /* cpu.c in Sources */,
@@ -2128,16 +2129,16 @@
 				FD2DBBC11C144AC70062984C /* NSData+ImageDetectors.m in Sources */,
 				FD2DBBC31C144AC70062984C /* UIImage+WebP.m in Sources */,
 				FD2DBB5F1C144AC70062984C /* dec_mips32.c in Sources */,
-				FDB874361C189A5500BA641E /* NSDateComponents.m in Sources */,
 				FD2DBBB01C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m in Sources */,
 				FDB874441C18A9E700BA641E /* CustomTabBarControl.m in Sources */,
 				FD2DBB651C144AC70062984C /* enc_neon.c in Sources */,
 				FD2DBBCA1C144AC70062984C /* PINRemoteImageCategoryManager.m in Sources */,
+				FD9925E81C19D62F0017532E /* MyAccountControl.m in Sources */,
 				FD2DBBAA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m in Sources */,
 				FD2DBBD01C144AC70062984C /* PINURLSessionManager.m in Sources */,
 				FD2DBB481C144AC70062984C /* FLAnimatedImage.m in Sources */,
 				FD2DBBC81C144AC70062984C /* PINProgressiveImage.m in Sources */,
-				FDB874261C18990600BA641E /* NSDate.m in Sources */,
+				FD9925DA1C19D5C80017532E /* UIStoryboard.m in Sources */,
 				FD2DBB551C144AC70062984C /* tree.c in Sources */,
 				FD2DBB7B1C144AC70062984C /* picture_csp.c in Sources */,
 				FD2DBB6A1C144AC70062984C /* lossless_sse2.c in Sources */,
@@ -2146,16 +2147,15 @@
 				FD2DBB711C144AC70062984C /* alpha.c in Sources */,
 				FD2DBB861C144AC70062984C /* muxinternal.c in Sources */,
 				FD2DBBCE1C144AC70062984C /* PINRemoteImageProcessorTask.m in Sources */,
-				FD2DB9541C143C660062984C /* NSObject.m in Sources */,
 				FDB874511C18B07900BA641E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				FD2DBBC41C144AC70062984C /* FLAnimatedImageView+PINRemoteImage.m in Sources */,
 				FD2DBB561C144AC70062984C /* vp8.c in Sources */,
 				FD2DBB701C144AC70062984C /* yuv_sse2.c in Sources */,
 				FDB874411C18A9A100BA641E /* CustomNavBar.m in Sources */,
 				FD2DBB8D1C144AC70062984C /* huffman_encode.c in Sources */,
-				FDB874391C18A03D00BA641E /* UIView.m in Sources */,
 				FD2DBBC61C144AC70062984C /* UIImageView+PINRemoteImage.m in Sources */,
 				FD2DBBC51C144AC70062984C /* UIButton+PINRemoteImage.m in Sources */,
+				FD9925DB1C19D5C80017532E /* UIView.m in Sources */,
 				FD2DBB7E1C144AC70062984C /* picture_tools.c in Sources */,
 				FD2DBB5A1C144AC70062984C /* alpha_processing.c in Sources */,
 				FD2DBB981C144AC70062984C /* PINDiskCache.m in Sources */,
@@ -2165,17 +2165,17 @@
 				FD2DBB7D1C144AC70062984C /* picture_rescale.c in Sources */,
 				FD2DBB531C144AC70062984C /* io.c in Sources */,
 				FD2DBBCF1C144AC70062984C /* PINRemoteImageTask.m in Sources */,
+				FD9925EB1C19D65F0017532E /* News.m in Sources */,
 				FD2DBB501C144AC70062984C /* buffer.c in Sources */,
-				FD2DBC001C1483680062984C /* MarketPlaceControl.m in Sources */,
 				FD2DBB671C144AC70062984C /* lossless.c in Sources */,
 				FD2DBB491C144AC70062984C /* FLAnimatedImageView.m in Sources */,
 				FD2DBB751C144AC70062984C /* cost.c in Sources */,
 				FDB874521C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				FD2DBB611C144AC70062984C /* dec_sse2.c in Sources */,
-				FD2DB9511C143C3B0062984C /* NSURLSession.m in Sources */,
 				FD2DBB6B1C144AC70062984C /* upsampling.c in Sources */,
 				FD2DBBB31C144AC70062984C /* Pods-PINRemoteImage-libwebp-dummy.m in Sources */,
 				FD2DBB5B1C144AC70062984C /* alpha_processing_sse2.c in Sources */,
+				FD9925D61C19D5C80017532E /* NSDateComponents.m in Sources */,
 				FD2DBB6F1C144AC70062984C /* yuv_mips32.c in Sources */,
 				FD2DBB891C144AC70062984C /* bit_writer.c in Sources */,
 				FD2DBB411C144AC70062984C /* ProgressiveViewController.m in Sources */,
