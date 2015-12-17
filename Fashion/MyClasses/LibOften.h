@@ -18,6 +18,7 @@
 // UIKit
 #import "UIButton.h"
 #import "UIView.h"
+#import "UIViewController.h"
 #import "UIStoryboard.h"
 
 // PromiseKit

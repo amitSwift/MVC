@@ -21,7 +21,7 @@
     [[UIView appearanceWhenContainedInInstancesOfClasses:@[[UITabBar class]]] setTintColor:[UIColor whiteColor]];
     
     self.loginButton.hidden = [UserStore shared].isLoggedIn;
-    self.loginButton.text = @"You are not logged in yet!\nTap anywhere to login/signup";
+    self.loginButton.text = @"You are not logged in yet!\nTap anywhere to login/signup.";
     
     DefineWeakSelf;
     self.loginButton.actionBlock = ^{

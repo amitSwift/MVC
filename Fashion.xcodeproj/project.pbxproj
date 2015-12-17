@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0791C31C19FDF40097D29F /* UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0791C21C19FDF40097D29F /* UIViewController.m */; };
 		FD2DBB171C144AC70062984C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9561C144AC70062984C /* .gitattributes */; };
 		FD2DBB181C144AC70062984C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9571C144AC70062984C /* .gitignore */; };
 		FD2DBB191C144AC70062984C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9581C144AC70062984C /* .travis.yml */; };
@@ -209,6 +210,10 @@
 		FD9925E71C19D62F0017532E /* MarketPlaceControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925E41C19D62F0017532E /* MarketPlaceControl.m */; };
 		FD9925E81C19D62F0017532E /* MyAccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925E61C19D62F0017532E /* MyAccountControl.m */; };
 		FD9925EB1C19D65F0017532E /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925EA1C19D65F0017532E /* News.m */; };
+		FD9925EF1C19DEB10017532E /* LoginSignUpControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925EE1C19DEB10017532E /* LoginSignUpControl.m */; };
+		FD9925F51C19DED70017532E /* LoginControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925F41C19DED70017532E /* LoginControl.m */; };
+		FD9925F81C19DEF80017532E /* SignUpControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925F71C19DEF80017532E /* SignUpControl.m */; };
+		FD9925FB1C19FAD70017532E /* CategoriesTableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925FA1C19FAD70017532E /* CategoriesTableControl.m */; };
 		FDB8743E1C18A99100BA641E /* MarketPlaceNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8743D1C18A99100BA641E /* MarketPlaceNavBar.m */; };
 		FDB874411C18A9A100BA641E /* CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874401C18A9A100BA641E /* CustomNavBar.m */; };
 		FDB874441C18A9E700BA641E /* CustomTabBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874431C18A9E700BA641E /* CustomTabBarControl.m */; };
@@ -296,6 +301,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD0791C11C19FDF40097D29F /* UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController.h; path = MyClasses/UIViewController.h; sourceTree = "<group>"; };
+		FD0791C21C19FDF40097D29F /* UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewController.m; path = MyClasses/UIViewController.m; sourceTree = "<group>"; };
 		FD2DB9561C144AC70062984C /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		FD2DB9571C144AC70062984C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FD2DB9581C144AC70062984C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -728,6 +735,14 @@
 		FD9925E61C19D62F0017532E /* MyAccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAccountControl.m; path = Controls/MyAccountControl.m; sourceTree = "<group>"; };
 		FD9925E91C19D65F0017532E /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Models/News.h; sourceTree = "<group>"; };
 		FD9925EA1C19D65F0017532E /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Models/News.m; sourceTree = "<group>"; };
+		FD9925ED1C19DEB10017532E /* LoginSignUpControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginSignUpControl.h; path = Controls/LoginSignUpControl.h; sourceTree = "<group>"; };
+		FD9925EE1C19DEB10017532E /* LoginSignUpControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginSignUpControl.m; path = Controls/LoginSignUpControl.m; sourceTree = "<group>"; };
+		FD9925F31C19DED60017532E /* LoginControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginControl.h; path = Controls/LoginControl.h; sourceTree = "<group>"; };
+		FD9925F41C19DED70017532E /* LoginControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginControl.m; path = Controls/LoginControl.m; sourceTree = "<group>"; };
+		FD9925F61C19DEF80017532E /* SignUpControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpControl.h; path = Controls/SignUpControl.h; sourceTree = "<group>"; };
+		FD9925F71C19DEF80017532E /* SignUpControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpControl.m; path = Controls/SignUpControl.m; sourceTree = "<group>"; };
+		FD9925F91C19FAD70017532E /* CategoriesTableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesTableControl.h; path = Controls/CategoriesTableControl.h; sourceTree = "<group>"; };
+		FD9925FA1C19FAD70017532E /* CategoriesTableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesTableControl.m; path = Controls/CategoriesTableControl.m; sourceTree = "<group>"; };
 		FDB8743C1C18A99100BA641E /* MarketPlaceNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarketPlaceNavBar.h; path = Views/MarketPlaceNavBar.h; sourceTree = "<group>"; };
 		FDB8743D1C18A99100BA641E /* MarketPlaceNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarketPlaceNavBar.m; path = Views/MarketPlaceNavBar.m; sourceTree = "<group>"; };
 		FDB8743F1C18A9A100BA641E /* CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomNavBar.h; path = Views/CustomNavBar.h; sourceTree = "<group>"; };
@@ -1689,6 +1704,21 @@
 			path = DummyData;
 			sourceTree = "<group>";
 		};
+		FD9925EC1C19DE780017532E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FD9925E51C19D62F0017532E /* MyAccountControl.h */,
+				FD9925E61C19D62F0017532E /* MyAccountControl.m */,
+				FD9925ED1C19DEB10017532E /* LoginSignUpControl.h */,
+				FD9925EE1C19DEB10017532E /* LoginSignUpControl.m */,
+				FD9925F31C19DED60017532E /* LoginControl.h */,
+				FD9925F41C19DED70017532E /* LoginControl.m */,
+				FD9925F61C19DEF80017532E /* SignUpControl.h */,
+				FD9925F71C19DEF80017532E /* SignUpControl.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
 		FDB874331C1899AE00BA641E /* MyClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -1710,6 +1740,8 @@
 				FD9925D11C19D5C80017532E /* UIStoryboard.m */,
 				FD9925D21C19D5C80017532E /* UIView.h */,
 				FD9925D31C19D5C80017532E /* UIView.m */,
+				FD0791C11C19FDF40097D29F /* UIViewController.h */,
+				FD0791C21C19FDF40097D29F /* UIViewController.m */,
 			);
 			name = MyClasses;
 			sourceTree = "<group>";
@@ -1807,10 +1839,11 @@
 			isa = PBXGroup;
 			children = (
 				FDB8743B1C18A24C00BA641E /* FashionNews */,
+				FD9925EC1C19DE780017532E /* Account */,
 				FD9925E31C19D62F0017532E /* MarketPlaceControl.h */,
 				FD9925E41C19D62F0017532E /* MarketPlaceControl.m */,
-				FD9925E51C19D62F0017532E /* MyAccountControl.h */,
-				FD9925E61C19D62F0017532E /* MyAccountControl.m */,
+				FD9925F91C19FAD70017532E /* CategoriesTableControl.h */,
+				FD9925FA1C19FAD70017532E /* CategoriesTableControl.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -2057,11 +2090,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2DBB621C144AC70062984C /* enc.c in Sources */,
+				FD9925F51C19DED70017532E /* LoginControl.m in Sources */,
 				FD2DBB421C144AC70062984C /* WebPViewController.m in Sources */,
 				FD2DBB871C144AC70062984C /* muxread.c in Sources */,
 				FD2DBBA31C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m in Sources */,
 				FD2DBB3F1C144AC70062984C /* PINViewController.m in Sources */,
 				FD2DBB791C144AC70062984C /* iterator.c in Sources */,
+				FD9925FB1C19FAD70017532E /* CategoriesTableControl.m in Sources */,
 				FD2DBB8B1C144AC70062984C /* filters.c in Sources */,
 				FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */,
 				FD2DBB581C144AC70062984C /* webp.c in Sources */,
@@ -2090,6 +2125,7 @@
 				FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */,
 				FD9925D81C19D5C80017532E /* NSURLSession.m in Sources */,
 				FD2DBB801C144AC70062984C /* syntax.c in Sources */,
+				FD9925F81C19DEF80017532E /* SignUpControl.m in Sources */,
 				FD9925D71C19D5C80017532E /* NSObject.m in Sources */,
 				FD2DBB971C144AC70062984C /* PINCache.m in Sources */,
 				FD2DBB991C144AC70062984C /* PINMemoryCache.m in Sources */,
@@ -2111,6 +2147,7 @@
 				FD9925D91C19D5C80017532E /* UIButton.m in Sources */,
 				FD2DBB811C144AC70062984C /* token.c in Sources */,
 				FD2DBB921C144AC70062984C /* thread.c in Sources */,
+				FD9925EF1C19DEB10017532E /* LoginSignUpControl.m in Sources */,
 				FD2DBB721C144AC70062984C /* analysis.c in Sources */,
 				FD2DBB821C144AC70062984C /* tree.c in Sources */,
 				FDB8743E1C18A99100BA641E /* MarketPlaceNavBar.m in Sources */,
@@ -2182,6 +2219,7 @@
 				FD40E09D1C10B8E3008CF1A4 /* FashionStore.m in Sources */,
 				FD2DBB631C144AC70062984C /* enc_avx2.c in Sources */,
 				FD2DBB841C144AC70062984C /* webpenc.c in Sources */,
+				FD0791C31C19FDF40097D29F /* UIViewController.m in Sources */,
 				FD2DBB541C144AC70062984C /* quant.c in Sources */,
 				FD2DBB3D1C144AC70062984C /* PINAppDelegate.m in Sources */,
 				FDDF302C1C0B0B0E00145970 /* main.m in Sources */,
@@ -2317,6 +2355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fashion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lakh.Fashion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2328,6 +2367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fashion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lakh.Fashion;
 				PRODUCT_NAME = "$(TARGET_NAME)";

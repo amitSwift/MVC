@@ -29,19 +29,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.noDataFound.text = @"No news has been found.\nTap anywhere to refresh.";
+    [self initViews];
+    pageIndex = 1;
+    [SVProgressHUD show];
+    [self loadNews];
+    // Do any additional setup after loading the view, typically from a nib.
+}
 
+- (void)initViews {
+    [self.collectionView addSubview:self.refreshControl];
+    [self.collectionView setCollectionViewLayout:self.customLayout animated:YES];
+    
     DefineWeakSelf;
     self.noDataFound.actionBlock = ^{
         [SVProgressHUD show];
         [weakSelf reload];
     };
-    [self.collectionView addSubview:self.refreshControl];
-    pageIndex = 1;
-    [self.collectionView setCollectionViewLayout:self.customLayout animated:YES];
-    [SVProgressHUD show];
-    [self loadNews];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.noDataFound.text = @"No news found!\nTap anywhere to refresh.";
 }
 
 - (UIRefreshControl *)refreshControl {
