@@ -2341,7 +2341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
+				PROVISIONING_PROFILE = "fb274b0a-8495-48f7-bc2f-1caf792abf03";
 			};
 			name = Debug;
 		};
@@ -2357,7 +2357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
+				PROVISIONING_PROFILE = "fb274b0a-8495-48f7-bc2f-1caf792abf03";
 			};
 			name = Release;
 		};

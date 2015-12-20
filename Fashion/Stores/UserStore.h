@@ -19,6 +19,12 @@
 
 - (void)getPasswordWithUserName:(NSString *)userName withCompletion:(void(^)(NSError *error, NSString *msg))completion;
 
+- (void)registerWithDisplayName:(NSString *)displayName userName:(NSString *)userName email:(NSString *)email password:(NSString *)password withCompletion:(void(^)(NSError *error, User *user))completion;
+
+- (User *)getUser;
+
+- (void)logoutUser;
+
 @end
 
 #define FASHION_API_BASE_URL @"http://fashion.ie/api"

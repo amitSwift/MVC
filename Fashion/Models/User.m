@@ -21,7 +21,7 @@
     user.firstName = json[@"user"][@"firstname"];
     user.lastName = json[@"user"][@"lastname"];
     user.userDescription = json[@"user"][@"description"];
-    user.subscriber = json[@"user"][@"capabilities"][@"subscriber"];
+    user.subscriber = [json[@"user"][@"capabilities"][@"subscriber"] boolValue];
     user.registerDate = [NSDate dateFromString:json[@"user"][@"registered"] withFormat:@"yyyy-MM-dd HH:mm:ss"];
     user.cookie = json[@"cookie"];
     user.cookieName = json[@"cookie_name"];

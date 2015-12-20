@@ -10,6 +10,8 @@
 #import "LibOften.h"
 #import "UserStore.h"
 
+#define MsgValidateLength @"should not be blank."
+
 @interface LoginControl ()
 @property (strong, nonatomic) IBOutlet UITextField *userName;
 @property (strong, nonatomic) IBOutlet UITextField *password;
@@ -29,7 +31,7 @@
 }
 
 - (IBAction)forgetPasswordButtonClicked:(id)sender {
-    self.lblError.textColor = [UIColor whiteColor];
+    self.lblError.textColor = COLOR_FASHION_PINK;
     self.lblError.text = @"";
     UIAlertView *alert = [UIAlertView showWithTextFieldTitle:@"Lost Password?" message:@"Please enter your username or email address. You will receive a link to create a new password via email." buttons:@[@"Cancel", @"Get New Password"] completion:^(NSUInteger buttonIndex, NSString *text) {
         if (buttonIndex == 1) {
@@ -63,36 +65,39 @@
 - (IBAction)loginButtonClicked:(id)sender {
     [self.userName resignFirstResponder];
     [self.password resignFirstResponder];
-    self.lblError.textColor = [UIColor whiteColor];
+    self.lblError.textColor = COLOR_FASHION_PINK;
     self.lblError.text = @"";
-    if (!self.userName.text.length) {
-        self.lblError.text = @"Please enter username/email";
-        [self.userName becomeFirstResponder];
-    }
-    else if (!self.password.text.length) {
-        self.lblError.text = @"Please enter password.";
-        [self.password becomeFirstResponder];
-    }
-    else {
-        [SVProgressHUD show];
-        [[UserStore shared] loginWithUserName:self.userName.text andPassword:self.password.text withCompletion:^(NSError *error, User *user) {
-            if (error) {
-                self.lblError.text = [error localizedDescription];
-                self.lblError.textColor = [UIColor redColor];
-                [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+    
+    if (![self validate:self.userName] || ![self validate:self.password])
+        return;
+
+    [SVProgressHUD show];
+    [[UserStore shared] loginWithUserName:self.userName.text andPassword:self.password.text withCompletion:^(NSError *error, User *user) {
+        if (error) {
+            self.lblError.text = [error localizedDescription];
+            self.lblError.textColor = [UIColor redColor];
+            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+        }
+        else {
+            [SVProgressHUD dismiss];
+            if (!user) {
+                self.lblError.text = @"Check internet connection.\nPlease try again.";
             }
             else {
-                [SVProgressHUD dismiss];
-                if (!user) {
-                    self.lblError.text = @"Check internet connection.\nPlease try again.";
-                }
-                else {
-                    [UIAlertView showWithTitle:@"Alert!" message:@"Process pending after login..." buttons:@[@"Ok"] completion:^(NSUInteger index) {
-                        [self dismissViewControllerAnimated:YES completion:nil];
-                    }];
-                }
+                [self dismissViewControllerAnimated:YES completion:nil];
             }
-        }];
+        }
+    }];
+}
+
+- (BOOL)validate:(UITextField *)txtField {
+    [txtField resignFirstResponder];
+    if ([txtField.text length] == 0) {
+        self.lblError.text = [NSString stringWithFormat:@"%@ %@", txtField.placeholder, MsgValidateLength];
+        [txtField becomeFirstResponder];
+        return NO;
+    } else {
+        return YES;
     }
 }
 
