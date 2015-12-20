@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FD0791C31C19FDF40097D29F /* UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0791C21C19FDF40097D29F /* UIViewController.m */; };
+		FD2388271C25438000159056 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2388261C25438000159056 /* User.m */; };
+		FD23882D1C25547D00159056 /* UIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23882C1C25547D00159056 /* UIAlertView.m */; };
+		FD2388381C2556EA00159056 /* NSBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2388351C2556EA00159056 /* NSBundle.m */; };
+		FD2388391C2556EA00159056 /* NSError.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2388371C2556EA00159056 /* NSError.m */; };
 		FD2DBB171C144AC70062984C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9561C144AC70062984C /* .gitattributes */; };
 		FD2DBB181C144AC70062984C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9571C144AC70062984C /* .gitignore */; };
 		FD2DBB191C144AC70062984C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9581C144AC70062984C /* .travis.yml */; };
@@ -187,16 +191,6 @@
 		FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0961C10B76A008CF1A4 /* AbstractCell.m */; };
 		FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */; };
 		FD40E09D1C10B8E3008CF1A4 /* FashionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */; };
-		FD40E0AD1C10BF0C008CF1A4 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A31C10BF0C008CF1A4 /* image1.jpg */; };
-		FD40E0AE1C10BF0C008CF1A4 /* image10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A41C10BF0C008CF1A4 /* image10.jpg */; };
-		FD40E0AF1C10BF0C008CF1A4 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A51C10BF0C008CF1A4 /* image2.jpg */; };
-		FD40E0B01C10BF0C008CF1A4 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A61C10BF0C008CF1A4 /* image3.jpg */; };
-		FD40E0B11C10BF0C008CF1A4 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A71C10BF0C008CF1A4 /* image4.jpg */; };
-		FD40E0B21C10BF0C008CF1A4 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A81C10BF0C008CF1A4 /* image5.jpg */; };
-		FD40E0B31C10BF0C008CF1A4 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0A91C10BF0C008CF1A4 /* image6.jpg */; };
-		FD40E0B41C10BF0C008CF1A4 /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AA1C10BF0C008CF1A4 /* image7.jpg */; };
-		FD40E0B51C10BF0C008CF1A4 /* image8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AB1C10BF0C008CF1A4 /* image8.jpg */; };
-		FD40E0B61C10BF0C008CF1A4 /* image9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD40E0AC1C10BF0C008CF1A4 /* image9.jpg */; };
 		FD9925D41C19D5C80017532E /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C41C19D5C70017532E /* GCD.m */; };
 		FD9925D51C19D5C80017532E /* NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C71C19D5C70017532E /* NSDate.m */; };
 		FD9925D61C19D5C80017532E /* NSDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C91C19D5C70017532E /* NSDateComponents.m */; };
@@ -303,6 +297,15 @@
 /* Begin PBXFileReference section */
 		FD0791C11C19FDF40097D29F /* UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewController.h; path = MyClasses/UIViewController.h; sourceTree = "<group>"; };
 		FD0791C21C19FDF40097D29F /* UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewController.m; path = MyClasses/UIViewController.m; sourceTree = "<group>"; };
+		FD23881A1C25383700159056 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FD2388251C25438000159056 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Models/User.h; sourceTree = "<group>"; };
+		FD2388261C25438000159056 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Models/User.m; sourceTree = "<group>"; };
+		FD23882B1C25547D00159056 /* UIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertView.h; path = MyClasses/UIAlertView.h; sourceTree = "<group>"; };
+		FD23882C1C25547D00159056 /* UIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIAlertView.m; path = MyClasses/UIAlertView.m; sourceTree = "<group>"; };
+		FD2388341C2556EA00159056 /* NSBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSBundle.h; path = MyClasses/NSBundle.h; sourceTree = "<group>"; };
+		FD2388351C2556EA00159056 /* NSBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBundle.m; path = MyClasses/NSBundle.m; sourceTree = "<group>"; };
+		FD2388361C2556EA00159056 /* NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSError.h; path = MyClasses/NSError.h; sourceTree = "<group>"; };
+		FD2388371C2556EA00159056 /* NSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSError.m; path = MyClasses/NSError.m; sourceTree = "<group>"; };
 		FD2DB9561C144AC70062984C /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		FD2DB9571C144AC70062984C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FD2DB9581C144AC70062984C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -697,16 +700,6 @@
 		FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionNewsCell.m; path = Views/FashionNewsCell.m; sourceTree = "<group>"; };
 		FD40E09B1C10B8E3008CF1A4 /* FashionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionStore.h; path = Stores/FashionStore.h; sourceTree = "<group>"; };
 		FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionStore.m; path = Stores/FashionStore.m; sourceTree = "<group>"; };
-		FD40E0A31C10BF0C008CF1A4 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
-		FD40E0A41C10BF0C008CF1A4 /* image10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpg; sourceTree = "<group>"; };
-		FD40E0A51C10BF0C008CF1A4 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
-		FD40E0A61C10BF0C008CF1A4 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
-		FD40E0A71C10BF0C008CF1A4 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
-		FD40E0A81C10BF0C008CF1A4 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
-		FD40E0A91C10BF0C008CF1A4 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
-		FD40E0AA1C10BF0C008CF1A4 /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpg; sourceTree = "<group>"; };
-		FD40E0AB1C10BF0C008CF1A4 /* image8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpg; sourceTree = "<group>"; };
-		FD40E0AC1C10BF0C008CF1A4 /* image9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpg; sourceTree = "<group>"; };
 		FD9925C31C19D5C70017532E /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCD.h; path = MyClasses/GCD.h; sourceTree = "<group>"; };
 		FD9925C41C19D5C70017532E /* GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCD.m; path = MyClasses/GCD.m; sourceTree = "<group>"; };
 		FD9925C51C19D5C70017532E /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = MyClasses/Macro.h; sourceTree = "<group>"; };
@@ -1658,6 +1651,8 @@
 			children = (
 				FD9925E91C19D65F0017532E /* News.h */,
 				FD9925EA1C19D65F0017532E /* News.m */,
+				FD2388251C25438000159056 /* User.h */,
+				FD2388261C25438000159056 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1687,23 +1682,6 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
-		FD40E0A21C10BF0C008CF1A4 /* DummyData */ = {
-			isa = PBXGroup;
-			children = (
-				FD40E0A31C10BF0C008CF1A4 /* image1.jpg */,
-				FD40E0A41C10BF0C008CF1A4 /* image10.jpg */,
-				FD40E0A51C10BF0C008CF1A4 /* image2.jpg */,
-				FD40E0A61C10BF0C008CF1A4 /* image3.jpg */,
-				FD40E0A71C10BF0C008CF1A4 /* image4.jpg */,
-				FD40E0A81C10BF0C008CF1A4 /* image5.jpg */,
-				FD40E0A91C10BF0C008CF1A4 /* image6.jpg */,
-				FD40E0AA1C10BF0C008CF1A4 /* image7.jpg */,
-				FD40E0AB1C10BF0C008CF1A4 /* image8.jpg */,
-				FD40E0AC1C10BF0C008CF1A4 /* image9.jpg */,
-			);
-			path = DummyData;
-			sourceTree = "<group>";
-		};
 		FD9925EC1C19DE780017532E /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -1726,14 +1704,20 @@
 				FD9925C31C19D5C70017532E /* GCD.h */,
 				FD9925C41C19D5C70017532E /* GCD.m */,
 				FD9925C51C19D5C70017532E /* Macro.h */,
+				FD2388341C2556EA00159056 /* NSBundle.h */,
+				FD2388351C2556EA00159056 /* NSBundle.m */,
 				FD9925C61C19D5C70017532E /* NSDate.h */,
 				FD9925C71C19D5C70017532E /* NSDate.m */,
 				FD9925C81C19D5C70017532E /* NSDateComponents.h */,
 				FD9925C91C19D5C70017532E /* NSDateComponents.m */,
+				FD2388361C2556EA00159056 /* NSError.h */,
+				FD2388371C2556EA00159056 /* NSError.m */,
 				FD9925CA1C19D5C70017532E /* NSObject.h */,
 				FD9925CB1C19D5C70017532E /* NSObject.m */,
 				FD9925CC1C19D5C70017532E /* NSURLSession.h */,
 				FD9925CD1C19D5C70017532E /* NSURLSession.m */,
+				FD23882B1C25547D00159056 /* UIAlertView.h */,
+				FD23882C1C25547D00159056 /* UIAlertView.m */,
 				FD9925CE1C19D5C70017532E /* UIButton.h */,
 				FD9925CF1C19D5C80017532E /* UIButton.m */,
 				FD9925D01C19D5C80017532E /* UIStoryboard.h */,
@@ -1815,9 +1799,9 @@
 		FDDF302A1C0B0B0E00145970 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD40E0A21C10BF0C008CF1A4 /* DummyData */,
 				FD40E09E1C10B98F008CF1A4 /* Libs */,
 				FDDF303B1C0B0B0E00145970 /* Info.plist */,
+				FD23881A1C25383700159056 /* PrefixHeader.pch */,
 				FDDF302B1C0B0B0E00145970 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1888,6 +1872,7 @@
 				TargetAttributes = {
 					FDDF30261C0B0B0E00145970 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3K3KM9968A;
 					};
 				};
 			};
@@ -1999,12 +1984,10 @@
 			files = (
 				FD2DBB361C144AC70062984C /* PINRemoteImageCategory_Deprecated.html in Resources */,
 				FD2DBB941C144AC70062984C /* PINRemoteImage.podspec.json in Resources */,
-				FD40E0B11C10BF0C008CF1A4 /* image4.jpg in Resources */,
 				FD2DBBB21C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage.xcconfig in Resources */,
 				FD2DBB2B1C144AC70062984C /* style.scss in Resources */,
 				FD2DBB2C1C144AC70062984C /* style.css in Resources */,
 				FD2DBBB41C144AC70062984C /* Pods-PINRemoteImage-libwebp-Private.xcconfig in Resources */,
-				FD40E0B21C10BF0C008CF1A4 /* image5.jpg in Resources */,
 				FD2DBB281C144AC70062984C /* _print.scss in Resources */,
 				FD2DBB191C144AC70062984C /* .travis.yml in Resources */,
 				FD2DBB1C1C144AC70062984C /* PINRemoteImageManagerImageCompletion.html in Resources */,
@@ -2017,7 +2000,6 @@
 				FD2DBB9F1C144AC70062984C /* Pods-PINRemoteImage.debug.xcconfig in Resources */,
 				FD2DBB2A1C144AC70062984C /* _xcode.scss in Resources */,
 				FD2DBBAB1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-Private.xcconfig in Resources */,
-				FD40E0B61C10BF0C008CF1A4 /* image9.jpg in Resources */,
 				FD2DBB391C144AC70062984C /* InfoPlist.strings in Resources */,
 				FD2DBB1E1C144AC70062984C /* PINRemoteImageCategoryManager.html in Resources */,
 				FD2DBB951C144AC70062984C /* Manifest.lock in Resources */,
@@ -2028,10 +2010,8 @@
 				FD2DBB301C144AC70062984C /* disclosure_open.png in Resources */,
 				FD2DBB251C144AC70062984C /* _layout.scss in Resources */,
 				FD2DBB1A1C144AC70062984C /* build_docs.sh in Resources */,
-				FD40E0AD1C10BF0C008CF1A4 /* image1.jpg in Resources */,
 				FD2DBB461C144AC70062984C /* Podfile in Resources */,
 				FD2DBBF91C1452490062984C /* SVProgressHUD.bundle in Resources */,
-				FD40E0B51C10BF0C008CF1A4 /* image8.jpg in Resources */,
 				FD2DBB2D1C144AC70062984C /* hierarchy.html in Resources */,
 				FD2DBB4C1C144AC70062984C /* COPYING in Resources */,
 				FD2DBB341C144AC70062984C /* script.js in Resources */,
@@ -2049,7 +2029,6 @@
 				FD2DBB3E1C144AC70062984C /* PINRemoteImage-Info.plist in Resources */,
 				FD2DBB291C144AC70062984C /* _variables.scss in Resources */,
 				FD2DBBD11C144AC70062984C /* progressive.gif in Resources */,
-				FD40E0AE1C10BF0C008CF1A4 /* image10.jpg in Resources */,
 				FD2DBB211C144AC70062984C /* PINRemoteImageManagerError.html in Resources */,
 				FD2DBB221C144AC70062984C /* PINRemoteImageManagerPriority.html in Resources */,
 				FD2DBB4E1C144AC70062984C /* README.mux in Resources */,
@@ -2057,10 +2036,8 @@
 				FD2DBBB71C144AC70062984C /* Pods-PINRemoteImage-PINCache-Private.xcconfig in Resources */,
 				FD2DBB451C144AC70062984C /* PINRemoteImage.xcworkspace in Resources */,
 				FD2DBB1B1C144AC70062984C /* com.pinterest.PINRemoteImage-1.0.docset in Resources */,
-				FD40E0B31C10BF0C008CF1A4 /* image6.jpg in Resources */,
 				FD2DBBAE1C144AC70062984C /* Pods-PINRemoteImage Tests-PINRemoteImage-Private.xcconfig in Resources */,
 				FD2DBBA01C144AC70062984C /* Pods-PINRemoteImage.release.xcconfig in Resources */,
-				FD40E0AF1C10BF0C008CF1A4 /* image2.jpg in Resources */,
 				FD2DBB371C144AC70062984C /* Main.storyboard in Resources */,
 				FD2DBB201C144AC70062984C /* PINRemoteImageManagerDownloadOptions.html in Resources */,
 				FD2DBBA91C144AC70062984C /* Pods-PINRemoteImage Tests-FLAnimatedImage.xcconfig in Resources */,
@@ -2075,9 +2052,7 @@
 				FD2DBB321C144AC70062984C /* title_background.png in Resources */,
 				FD2DBB231C144AC70062984C /* PINRemoteImageResultType.html in Resources */,
 				FD2DBBAC1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache.xcconfig in Resources */,
-				FD40E0B41C10BF0C008CF1A4 /* image7.jpg in Resources */,
 				FD2DBB171C144AC70062984C /* .gitattributes in Resources */,
-				FD40E0B01C10BF0C008CF1A4 /* image3.jpg in Resources */,
 				FDDF30351C0B0B0E00145970 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2102,6 +2077,7 @@
 				FD2DBB581C144AC70062984C /* webp.c in Sources */,
 				FD2DBB601C144AC70062984C /* dec_neon.c in Sources */,
 				FD9925D41C19D5C80017532E /* GCD.m in Sources */,
+				FD23882D1C25547D00159056 /* UIAlertView.m in Sources */,
 				FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */,
 				FD9925E71C19D62F0017532E /* MarketPlaceControl.m in Sources */,
 				FD2DBB401C144AC70062984C /* ProcessingViewController.m in Sources */,
@@ -2143,6 +2119,7 @@
 				FD2DBB691C144AC70062984C /* lossless_neon.c in Sources */,
 				FD2DBB8C1C144AC70062984C /* huffman.c in Sources */,
 				FD9925D51C19D5C80017532E /* NSDate.m in Sources */,
+				FD2388271C25438000159056 /* User.m in Sources */,
 				FD2DBB6E1C144AC70062984C /* yuv.c in Sources */,
 				FD9925D91C19D5C80017532E /* UIButton.m in Sources */,
 				FD2DBB811C144AC70062984C /* token.c in Sources */,
@@ -2158,6 +2135,7 @@
 				FD2DBB731C144AC70062984C /* backward_references.c in Sources */,
 				FD2DBB761C144AC70062984C /* filter.c in Sources */,
 				FD2DBB8F1C144AC70062984C /* quant_levels_dec.c in Sources */,
+				FD2388381C2556EA00159056 /* NSBundle.m in Sources */,
 				FD2DBBCD1C144AC70062984C /* PINRemoteImageManagerResult.m in Sources */,
 				FD2DBB5D1C144AC70062984C /* dec.c in Sources */,
 				FD2DBB5C1C144AC70062984C /* cpu.c in Sources */,
@@ -2178,6 +2156,7 @@
 				FD9925DA1C19D5C80017532E /* UIStoryboard.m in Sources */,
 				FD2DBB551C144AC70062984C /* tree.c in Sources */,
 				FD2DBB7B1C144AC70062984C /* picture_csp.c in Sources */,
+				FD2388391C2556EA00159056 /* NSError.m in Sources */,
 				FD2DBB6A1C144AC70062984C /* lossless_sse2.c in Sources */,
 				FD2DBB901C144AC70062984C /* random.c in Sources */,
 				FD2DBBC71C144AC70062984C /* PINDataTaskOperation.m in Sources */,
@@ -2306,7 +2285,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
+				PROVISIONING_PROFILE = "fb274b0a-8495-48f7-bc2f-1caf792abf03";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2344,7 +2323,7 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Fashion/Libs/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
+				PROVISIONING_PROFILE = "fb274b0a-8495-48f7-bc2f-1caf792abf03";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2354,11 +2333,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Fashion/PrefixHeader.pch";
 				INFOPLIST_FILE = Fashion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lakh.Fashion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
 			};
 			name = Debug;
 		};
@@ -2366,11 +2349,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Fashion/PrefixHeader.pch";
 				INFOPLIST_FILE = Fashion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lakh.Fashion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9210a593-d1e8-41e3-8169-d7f010bc3050";
 			};
 			name = Release;
 		};

@@ -31,7 +31,7 @@
          options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
          documentAttributes: nil error:nil];
     });
-    [self.imgView setUrl:[NSURL URLWithString:news.imageUrl] placeholder:nil];
+    [self.imgView setUrl:[NSURL URLWithString:news.imageUrl] placeholder:[UIImage imageNamed:@"placeholder"]];
 }
 
 @end
