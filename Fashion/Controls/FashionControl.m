@@ -99,7 +99,9 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (UICollectionViewFlowLayout *)customLayout { // FIXME: should convert to +[AbstractListControl collectionViewLayout]
+#pragma mark - Collection view delegates and some methods for collection view
+
+- (UICollectionViewFlowLayout *)customLayout {
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     layout.itemSize = [self cellSize];
@@ -107,6 +109,7 @@
     layout.minimumInteritemSpacing = 5;
     return layout;
 }
+
 - (CGSize)cellSize {
     return CGSizeMake(self.view.bounds.size.width, 100);
 }
@@ -135,7 +138,5 @@
 }
 
 @end
-
-
 
 

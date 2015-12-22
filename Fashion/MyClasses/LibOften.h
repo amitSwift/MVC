@@ -11,6 +11,7 @@
  */
 
 // Foundation
+#import "NSAttributedString.h"
 #import "NSBundle.h"
 #import "NSDate.h"
 #import "NSDateComponents.h"

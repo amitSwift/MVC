@@ -191,6 +191,10 @@
 		FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0961C10B76A008CF1A4 /* AbstractCell.m */; };
 		FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */; };
 		FD40E09D1C10B8E3008CF1A4 /* FashionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */; };
+		FD7700121C29AE3A00600B6D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7700111C29AE3A00600B6D /* Product.m */; };
+		FD77001F1C29B84800600B6D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77001E1C29B84800600B6D /* ProductCell.m */; };
+		FD7700231C29BFF800600B6D /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7700221C29BFF800600B6D /* ProductDetail.m */; };
+		FD77002A1C29D41600600B6D /* NSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7700291C29D41600600B6D /* NSAttributedString.m */; };
 		FD9925D41C19D5C80017532E /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C41C19D5C70017532E /* GCD.m */; };
 		FD9925D51C19D5C80017532E /* NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C71C19D5C70017532E /* NSDate.m */; };
 		FD9925D61C19D5C80017532E /* NSDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9925C91C19D5C70017532E /* NSDateComponents.m */; };
@@ -700,6 +704,14 @@
 		FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionNewsCell.m; path = Views/FashionNewsCell.m; sourceTree = "<group>"; };
 		FD40E09B1C10B8E3008CF1A4 /* FashionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FashionStore.h; path = Stores/FashionStore.h; sourceTree = "<group>"; };
 		FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FashionStore.m; path = Stores/FashionStore.m; sourceTree = "<group>"; };
+		FD7700101C29AE3A00600B6D /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = Models/Product.h; sourceTree = "<group>"; };
+		FD7700111C29AE3A00600B6D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = Models/Product.m; sourceTree = "<group>"; };
+		FD77001D1C29B84800600B6D /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = Views/ProductCell.h; sourceTree = "<group>"; };
+		FD77001E1C29B84800600B6D /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = Views/ProductCell.m; sourceTree = "<group>"; };
+		FD7700211C29BFF800600B6D /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetail.h; sourceTree = "<group>"; };
+		FD7700221C29BFF800600B6D /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetail.m; sourceTree = "<group>"; };
+		FD7700281C29D41600600B6D /* NSAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAttributedString.h; sourceTree = "<group>"; };
+		FD7700291C29D41600600B6D /* NSAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAttributedString.m; sourceTree = "<group>"; };
 		FD9925C31C19D5C70017532E /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCD.h; path = MyClasses/GCD.h; sourceTree = "<group>"; };
 		FD9925C41C19D5C70017532E /* GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCD.m; path = MyClasses/GCD.m; sourceTree = "<group>"; };
 		FD9925C51C19D5C70017532E /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = MyClasses/Macro.h; sourceTree = "<group>"; };
@@ -1651,6 +1663,8 @@
 			children = (
 				FD9925E91C19D65F0017532E /* News.h */,
 				FD9925EA1C19D65F0017532E /* News.m */,
+				FD7700101C29AE3A00600B6D /* Product.h */,
+				FD7700111C29AE3A00600B6D /* Product.m */,
 				FD2388251C25438000159056 /* User.h */,
 				FD2388261C25438000159056 /* User.m */,
 			);
@@ -1682,6 +1696,19 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
+		FD7700201C29BB4900600B6D /* MarketPlace */ = {
+			isa = PBXGroup;
+			children = (
+				FD9925F91C19FAD70017532E /* CategoriesTableControl.h */,
+				FD9925FA1C19FAD70017532E /* CategoriesTableControl.m */,
+				FD9925E31C19D62F0017532E /* MarketPlaceControl.h */,
+				FD9925E41C19D62F0017532E /* MarketPlaceControl.m */,
+				FD7700211C29BFF800600B6D /* ProductDetail.h */,
+				FD7700221C29BFF800600B6D /* ProductDetail.m */,
+			);
+			name = MarketPlace;
+			sourceTree = "<group>";
+		};
 		FD9925EC1C19DE780017532E /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -1704,6 +1731,8 @@
 				FD9925C31C19D5C70017532E /* GCD.h */,
 				FD9925C41C19D5C70017532E /* GCD.m */,
 				FD9925C51C19D5C70017532E /* Macro.h */,
+				FD7700281C29D41600600B6D /* NSAttributedString.h */,
+				FD7700291C29D41600600B6D /* NSAttributedString.m */,
 				FD2388341C2556EA00159056 /* NSBundle.h */,
 				FD2388351C2556EA00159056 /* NSBundle.m */,
 				FD9925C61C19D5C70017532E /* NSDate.h */,
@@ -1748,6 +1777,8 @@
 				FD40E0961C10B76A008CF1A4 /* AbstractCell.m */,
 				FD40E0981C10B7CF008CF1A4 /* FashionNewsCell.h */,
 				FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */,
+				FD77001D1C29B84800600B6D /* ProductCell.h */,
+				FD77001E1C29B84800600B6D /* ProductCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1823,11 +1854,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB8743B1C18A24C00BA641E /* FashionNews */,
+				FD7700201C29BB4900600B6D /* MarketPlace */,
 				FD9925EC1C19DE780017532E /* Account */,
-				FD9925E31C19D62F0017532E /* MarketPlaceControl.h */,
-				FD9925E41C19D62F0017532E /* MarketPlaceControl.m */,
-				FD9925F91C19FAD70017532E /* CategoriesTableControl.h */,
-				FD9925FA1C19FAD70017532E /* CategoriesTableControl.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -2071,6 +2099,7 @@
 				FD2DBBA31C144AC70062984C /* Pods-PINRemoteImage Tests-dummy.m in Sources */,
 				FD2DBB3F1C144AC70062984C /* PINViewController.m in Sources */,
 				FD2DBB791C144AC70062984C /* iterator.c in Sources */,
+				FD7700231C29BFF800600B6D /* ProductDetail.m in Sources */,
 				FD9925FB1C19FAD70017532E /* CategoriesTableControl.m in Sources */,
 				FD2DBB8B1C144AC70062984C /* filters.c in Sources */,
 				FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */,
@@ -2099,6 +2128,7 @@
 				FD2DBBB61C144AC70062984C /* Pods-PINRemoteImage-PINCache-dummy.m in Sources */,
 				FD2DBB591C144AC70062984C /* demux.c in Sources */,
 				FD40E09A1C10B7CF008CF1A4 /* FashionNewsCell.m in Sources */,
+				FD77001F1C29B84800600B6D /* ProductCell.m in Sources */,
 				FD9925D81C19D5C80017532E /* NSURLSession.m in Sources */,
 				FD2DBB801C144AC70062984C /* syntax.c in Sources */,
 				FD9925F81C19DEF80017532E /* SignUpControl.m in Sources */,
@@ -2121,6 +2151,7 @@
 				FD9925D51C19D5C80017532E /* NSDate.m in Sources */,
 				FD2388271C25438000159056 /* User.m in Sources */,
 				FD2DBB6E1C144AC70062984C /* yuv.c in Sources */,
+				FD7700121C29AE3A00600B6D /* Product.m in Sources */,
 				FD9925D91C19D5C80017532E /* UIButton.m in Sources */,
 				FD2DBB811C144AC70062984C /* token.c in Sources */,
 				FD2DBB921C144AC70062984C /* thread.c in Sources */,
@@ -2172,6 +2203,7 @@
 				FD2DBBC61C144AC70062984C /* UIImageView+PINRemoteImage.m in Sources */,
 				FD2DBBC51C144AC70062984C /* UIButton+PINRemoteImage.m in Sources */,
 				FD9925DB1C19D5C80017532E /* UIView.m in Sources */,
+				FD77002A1C29D41600600B6D /* NSAttributedString.m in Sources */,
 				FD2DBB7E1C144AC70062984C /* picture_tools.c in Sources */,
 				FD2DBB5A1C144AC70062984C /* alpha_processing.c in Sources */,
 				FD2DBB981C144AC70062984C /* PINDiskCache.m in Sources */,
