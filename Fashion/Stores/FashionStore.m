@@ -7,8 +7,8 @@
 //
 
 #import "FashionStore.h"
-#import "NSURLSession.h"
 #import "News.h"
+#import "LibOften.h"
 #import "Product.h"
 
 #define KEY_RESULTS @"posts"
@@ -28,7 +28,7 @@
 #pragma mark news requests
 
 - (void)requestNews:(NSInteger)page withCompletion:(void(^)(NSArray *news, NSError *error))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/api/get_posts?page=%lu",(long)page]]; // Construct URL
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/get_posts?page=%lu",FASHION_API_BASE_URL,(long)page]]; // Construct URL
     [NSURLSession jsonFromURL:url completion:^(id json){
         NSArray *news = [self isListJsonOK:json] ? [self newsArrayWithJSON:json[KEY_RESULTS]] : nil; // Get the result
         dispatch_async_main(^{

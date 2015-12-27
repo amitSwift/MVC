@@ -16,7 +16,7 @@
 @property (strong, nonatomic) News *newsDetail;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
-@property (strong, nonatomic) IBOutlet UITextView *descriptionView;
+@property (strong, nonatomic) IBOutlet UIWebView *descriptionWebView;
 @property (strong, nonatomic) IBOutlet UILabel *editorNameLabel;
 
 - (IBAction)commentButton:(id)sender;
@@ -44,10 +44,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    self.descriptionView.attributedText =
-    [[NSAttributedString alloc] initWithData: [self.newsDetail.contentWeb dataUsingEncoding:NSUTF8StringEncoding]
-                                     options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-                          documentAttributes: nil error:nil];
+    [self.descriptionWebView loadHTMLString:self.newsDetail.contentWeb baseURL:nil];
     [SVProgressHUD dismiss];
 }
 
@@ -70,6 +67,14 @@
 
 - (IBAction)backButton:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+-(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if (inType == UIWebViewNavigationTypeLinkClicked) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    return YES;
 }
 
 @end

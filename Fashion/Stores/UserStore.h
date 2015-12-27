@@ -27,7 +27,4 @@
 
 @end
 
-#define FASHION_API_BASE_URL @"http://fashion.ie/api"
 
-
-//http://fashion.ie/api/user/register/?username=john&email=john@domain.com&nonce=bc6d5a50ac&display_name=John&seconds=100

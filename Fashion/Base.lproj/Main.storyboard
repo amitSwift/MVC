@@ -1202,22 +1202,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-Ye-d7r">
                                 <rect key="frame" x="6" y="141" width="308" height="290"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-da-090">
+                                    <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chx-pB-p9h">
                                         <rect key="frame" x="0.0" y="0.0" width="308" height="290"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
-                                    </textView>
+                                        <connections>
+                                            <outlet property="delegate" destination="0Rz-km-k9q" id="12p-L3-Pzc"/>
+                                        </connections>
+                                    </webView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="HUp-da-090" firstAttribute="leading" secondItem="cd8-Ye-d7r" secondAttribute="leading" id="VRn-tE-yWf"/>
-                                    <constraint firstAttribute="trailing" secondItem="HUp-da-090" secondAttribute="trailing" id="gfq-lx-r1B"/>
-                                    <constraint firstAttribute="bottom" secondItem="HUp-da-090" secondAttribute="bottom" id="wip-ZK-Q6F"/>
-                                    <constraint firstItem="HUp-da-090" firstAttribute="top" secondItem="cd8-Ye-d7r" secondAttribute="top" id="xkz-2l-BmF"/>
+                                    <constraint firstItem="chx-pB-p9h" firstAttribute="top" secondItem="cd8-Ye-d7r" secondAttribute="top" id="Feh-43-bWx"/>
+                                    <constraint firstAttribute="trailing" secondItem="chx-pB-p9h" secondAttribute="trailing" id="bV3-Xj-3MT"/>
+                                    <constraint firstItem="chx-pB-p9h" firstAttribute="leading" secondItem="cd8-Ye-d7r" secondAttribute="leading" id="hqN-Ii-Cnw"/>
+                                    <constraint firstAttribute="bottom" secondItem="chx-pB-p9h" secondAttribute="bottom" id="zRq-th-WQQ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1260,7 +1261,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="dateLabel" destination="sHJ-Kw-Cdp" id="GTQ-7W-Xuw"/>
-                        <outlet property="descriptionView" destination="HUp-da-090" id="cWt-qY-4rV"/>
+                        <outlet property="descriptionWebView" destination="chx-pB-p9h" id="3QX-EZ-LLR"/>
                         <outlet property="editorNameLabel" destination="0nh-jQ-caL" id="SO5-ms-K3V"/>
                         <outlet property="titleLabel" destination="4fY-if-BmA" id="bzW-VC-CAC"/>
                     </connections>
