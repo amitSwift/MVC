@@ -218,6 +218,12 @@
 		FDB8744B1C18AE9300BA641E /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8744A1C18AE9300BA641E /* UserStore.m */; };
 		FDB874511C18B07900BA641E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8744E1C18B07900BA641E /* TPKeyboardAvoidingScrollView.m */; };
 		FDB874521C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB874501C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		FDC66DC31C30122C00217A75 /* ProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DC21C30122C00217A75 /* ProductStore.m */; };
+		FDC66DD01C30127F00217A75 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DCF1C30127F00217A75 /* Category.m */; };
+		FDC66DD71C303FB200217A75 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DD61C303FB200217A75 /* Author.m */; };
+		FDC66DDE1C31882400217A75 /* CommentScreenControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DDD1C31882400217A75 /* CommentScreenControl.m */; };
+		FDC66DE11C31A15500217A75 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DE01C31A15500217A75 /* CommentCell.m */; };
+		FDC66DE71C31A1B800217A75 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC66DE61C31A1B800217A75 /* Comment.m */; };
 		FDDF302C1C0B0B0E00145970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDF302B1C0B0B0E00145970 /* main.m */; };
 		FDDF302F1C0B0B0E00145970 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDF302E1C0B0B0E00145970 /* AppDelegate.m */; };
 		FDDF30351C0B0B0E00145970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDF30331C0B0B0E00145970 /* Main.storyboard */; };
@@ -760,6 +766,18 @@
 		FDB8744E1C18B07900BA641E /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		FDB8744F1C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		FDB874501C18B07900BA641E /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		FDC66DC11C30122C00217A75 /* ProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductStore.h; path = Stores/ProductStore.h; sourceTree = "<group>"; };
+		FDC66DC21C30122C00217A75 /* ProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductStore.m; path = Stores/ProductStore.m; sourceTree = "<group>"; };
+		FDC66DCE1C30127F00217A75 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = Models/Category.h; sourceTree = "<group>"; };
+		FDC66DCF1C30127F00217A75 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = Models/Category.m; sourceTree = "<group>"; };
+		FDC66DD51C303FB200217A75 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Author.h; path = Models/Author.h; sourceTree = "<group>"; };
+		FDC66DD61C303FB200217A75 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Author.m; path = Models/Author.m; sourceTree = "<group>"; };
+		FDC66DDC1C31882400217A75 /* CommentScreenControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentScreenControl.h; sourceTree = "<group>"; };
+		FDC66DDD1C31882400217A75 /* CommentScreenControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentScreenControl.m; sourceTree = "<group>"; };
+		FDC66DDF1C31A15500217A75 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentCell.h; path = Views/CommentCell.h; sourceTree = "<group>"; };
+		FDC66DE01C31A15500217A75 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentCell.m; path = Views/CommentCell.m; sourceTree = "<group>"; };
+		FDC66DE51C31A1B800217A75 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Models/Comment.h; sourceTree = "<group>"; };
+		FDC66DE61C31A1B800217A75 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Models/Comment.m; sourceTree = "<group>"; };
 		FDDF30271C0B0B0E00145970 /* Fashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDF302B1C0B0B0E00145970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDDF302D1C0B0B0E00145970 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1661,6 +1679,12 @@
 		FD40E08C1C10B50C008CF1A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FDC66DD51C303FB200217A75 /* Author.h */,
+				FDC66DD61C303FB200217A75 /* Author.m */,
+				FDC66DCE1C30127F00217A75 /* Category.h */,
+				FDC66DCF1C30127F00217A75 /* Category.m */,
+				FDC66DE51C31A1B800217A75 /* Comment.h */,
+				FDC66DE61C31A1B800217A75 /* Comment.m */,
 				FD9925E91C19D65F0017532E /* News.h */,
 				FD9925EA1C19D65F0017532E /* News.m */,
 				FD7700101C29AE3A00600B6D /* Product.h */,
@@ -1766,6 +1790,8 @@
 				FD9925DE1C19D6220017532E /* FashionControl.m */,
 				FD9925DF1C19D6220017532E /* FashionNewsDetailControl.h */,
 				FD9925E01C19D6220017532E /* FashionNewsDetailControl.m */,
+				FDC66DDC1C31882400217A75 /* CommentScreenControl.h */,
+				FDC66DDD1C31882400217A75 /* CommentScreenControl.m */,
 			);
 			name = FashionNews;
 			sourceTree = "<group>";
@@ -1775,6 +1801,8 @@
 			children = (
 				FD40E0951C10B76A008CF1A4 /* AbstractCell.h */,
 				FD40E0961C10B76A008CF1A4 /* AbstractCell.m */,
+				FDC66DDF1C31A15500217A75 /* CommentCell.h */,
+				FDC66DE01C31A15500217A75 /* CommentCell.m */,
 				FD40E0981C10B7CF008CF1A4 /* FashionNewsCell.h */,
 				FD40E0991C10B7CF008CF1A4 /* FashionNewsCell.m */,
 				FD77001D1C29B84800600B6D /* ProductCell.h */,
@@ -1844,6 +1872,8 @@
 				FDDF30451C0B0DCC00145970 /* ConstantStore.h */,
 				FD40E09B1C10B8E3008CF1A4 /* FashionStore.h */,
 				FD40E09C1C10B8E3008CF1A4 /* FashionStore.m */,
+				FDC66DC11C30122C00217A75 /* ProductStore.h */,
+				FDC66DC21C30122C00217A75 /* ProductStore.m */,
 				FDB874491C18AE9300BA641E /* UserStore.h */,
 				FDB8744A1C18AE9300BA641E /* UserStore.m */,
 			);
@@ -2105,6 +2135,7 @@
 				FD2DBBC91C144AC70062984C /* PINRemoteImageCallbacks.m in Sources */,
 				FD2DBB581C144AC70062984C /* webp.c in Sources */,
 				FD2DBB601C144AC70062984C /* dec_neon.c in Sources */,
+				FDC66DE71C31A1B800217A75 /* Comment.m in Sources */,
 				FD9925D41C19D5C80017532E /* GCD.m in Sources */,
 				FD23882D1C25547D00159056 /* UIAlertView.m in Sources */,
 				FD2DBBFA1C1452490062984C /* SVProgressHUD.m in Sources */,
@@ -2113,6 +2144,7 @@
 				FD2DBB9D1C144AC70062984C /* Pods-PINRemoteImage-dummy.m in Sources */,
 				FD2DBB6D1C144AC70062984C /* upsampling_sse2.c in Sources */,
 				FD2DBB911C144AC70062984C /* rescaler.c in Sources */,
+				FDC66DDE1C31882400217A75 /* CommentScreenControl.m in Sources */,
 				FD2DBB7C1C144AC70062984C /* picture_psnr.c in Sources */,
 				FD40E0971C10B76A008CF1A4 /* AbstractCell.m in Sources */,
 				FD2DBB641C144AC70062984C /* enc_mips32.c in Sources */,
@@ -2157,6 +2189,7 @@
 				FD2DBB921C144AC70062984C /* thread.c in Sources */,
 				FD9925EF1C19DEB10017532E /* LoginSignUpControl.m in Sources */,
 				FD2DBB721C144AC70062984C /* analysis.c in Sources */,
+				FDC66DD71C303FB200217A75 /* Author.m in Sources */,
 				FD2DBB821C144AC70062984C /* tree.c in Sources */,
 				FDB8743E1C18A99100BA641E /* MarketPlaceNavBar.m in Sources */,
 				FD2DBB8E1C144AC70062984C /* quant_levels.c in Sources */,
@@ -2169,6 +2202,7 @@
 				FD2388381C2556EA00159056 /* NSBundle.m in Sources */,
 				FD2DBBCD1C144AC70062984C /* PINRemoteImageManagerResult.m in Sources */,
 				FD2DBB5D1C144AC70062984C /* dec.c in Sources */,
+				FDC66DC31C30122C00217A75 /* ProductStore.m in Sources */,
 				FD2DBB5C1C144AC70062984C /* cpu.c in Sources */,
 				FD2DBB4F1C144AC70062984C /* alpha.c in Sources */,
 				FD2DBB7F1C144AC70062984C /* quant.c in Sources */,
@@ -2176,6 +2210,8 @@
 				FD2DBBC31C144AC70062984C /* UIImage+WebP.m in Sources */,
 				FD2DBB5F1C144AC70062984C /* dec_mips32.c in Sources */,
 				FD2DBBB01C144AC70062984C /* Pods-PINRemoteImage-FLAnimatedImage-dummy.m in Sources */,
+				FDC66DD01C30127F00217A75 /* Category.m in Sources */,
+				FDC66DE11C31A15500217A75 /* CommentCell.m in Sources */,
 				FDB874441C18A9E700BA641E /* CustomTabBarControl.m in Sources */,
 				FD2DBB651C144AC70062984C /* enc_neon.c in Sources */,
 				FD2DBBCA1C144AC70062984C /* PINRemoteImageCategoryManager.m in Sources */,

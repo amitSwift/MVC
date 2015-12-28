@@ -32,14 +32,14 @@
 }
 
 - (void)getNonceWithMethod:(NSString *)method withCompletion:(void(^)(NSString *nonce))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/get_nonce/?controller=user&method=%@",FASHION_API_BASE_URL, method]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/get_nonce/?controller=user&method=%@",FASHION_JSON_BASE_URL, method]];
     [NSURLSession jsonFromURL:url completion:^(id json){
         completion (json[@"nonce"]);
     }];
 }
 
 - (void)loginWithUserName:(NSString *)userName andPassword:(NSString *)password withCompletion:(void(^)(NSError *error, User *user))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/generate_auth_cookie/?username=%@&password=%@",FASHION_API_BASE_URL, userName, password]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/generate_auth_cookie/?username=%@&password=%@",FASHION_JSON_BASE_URL, userName, password]];
     [NSURLSession jsonFromURL:url completion:^(id json){
         if ([json[@"status"] isEqualToString:@"error"]) {
             NSError *error = [NSError errorWithFormat:json[@"error"]];
@@ -57,7 +57,7 @@
 }
 
 - (void)getPasswordWithUserName:(NSString *)userName withCompletion:(void(^)(NSError *error, NSString *msg))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/retrieve_password/?user_login=%@",FASHION_API_BASE_URL, userName]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/retrieve_password/?user_login=%@",FASHION_JSON_BASE_URL, userName]];
     [NSURLSession jsonFromURL:url completion:^(id json){
         if ([json[@"status"] isEqualToString:@"error"]) {
             NSError *error = [NSError errorWithFormat:json[@"error"]];
@@ -71,7 +71,7 @@
 
 - (void)registerWithDisplayName:(NSString *)displayName userName:(NSString *)userName email:(NSString *)email password:(NSString *)password withCompletion:(void(^)(NSError *error, User *user))completion {
     [self getNonceWithMethod:NONCE_METHOD_REGISTER withCompletion:^(NSString *nonce) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/register/?username=%@&email=%@&nonce=%@&display_name=%@&user_pass=%@&seconds=100",FASHION_API_BASE_URL, userName, email, nonce, displayName, password]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/user/register/?username=%@&email=%@&nonce=%@&display_name=%@&user_pass=%@&seconds=100",FASHION_JSON_BASE_URL, userName, email, nonce, displayName, password]];
         [NSURLSession jsonFromURL:url completion:^(id json){
             if ([json[@"status"] isEqualToString:@"error"]) {
                 NSError *error = [NSError errorWithFormat:json[@"error"]];
@@ -86,6 +86,24 @@
                 }
             }
         }];
+    }];
+}
+
+- (void)addComment:(NSString *)comment postId:(NSString *)postId withCompletion:(void(^)(BOOL success, NSError *error))completion {
+    NSString *strUrl = [NSString stringWithFormat:@"%@/user/post_comment/?comment_status=1&post_id=%@&content=%@&cookie=%@",FASHION_JSON_BASE_URL, postId, comment, self.getUser.cookie];
+    NSURL *url = [NSURL URLWithString:[strUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [NSURLSession jsonFromURL:url completion:^(id json){
+        if ([json[@"status"] isEqualToString:@"error"]) {
+            NSError *error = [NSError errorWithFormat:json[@"error"]];
+            dispatch_async_main_safely_variadic (completion, NO, error);
+        }
+        else if (!json) {
+            NSError *error = [NSError errorWithFormat:@"OOPS! Something went wrong!"];
+            dispatch_async_main_safely_variadic (completion, NO, error);
+        }
+        else {
+            dispatch_async_main_safely_variadic (completion, YES, nil);
+        }
     }];
 }
 

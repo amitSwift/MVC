@@ -9,14 +9,20 @@
 #import "MarketPlaceControl.h"
 #import "CategoriesTableControl.h"
 #import "LibOften.h"
-#import "FashionStore.h"
+#import "ProductStore.h"
 #import "ProductCell.h"
 #import "ProductDetail.h"
 
+#define NO_PRODUCT_MESSAGE @"No prodcuts found!\nTap anywhere to refresh."
+#define CAT_NOT_SELECTED @"Please select category first."
+
 @interface MarketPlaceControl ()<CategoriesTableDelegate, UICollectionViewDataSource, UICollectionViewDelegate> {
     BOOL isMenuShow;
+    BOOL isMoreProductsAvailable;
     NSMutableArray *items;
+    NSInteger pageIndex;
 }
+@property (strong, nonatomic) CategoryPro *catSelected;
 @property (strong, nonatomic, readonly) CategoriesTableControl *categoriesTableControl;
 @property (strong, nonatomic) IBOutlet UIView *viewBack;
 @property (strong, nonatomic) IBOutlet UILabel *lblNoProductsFound;
@@ -27,6 +33,7 @@
 @end
 
 @implementation MarketPlaceControl
+@synthesize catSelected;
 @synthesize categoriesTableControl = _categoriesTableControl;
 
 - (void)viewDidLoad {
@@ -36,7 +43,9 @@
 }
 
 - (void)initViews {
+    isMoreProductsAvailable = YES;
     isMenuShow = YES;
+    pageIndex = 1;
     [self.viewBack addSubview:self.categoriesTableControl.view];
     [self.view bringSubviewToFront:self.viewBack];
     self.lblNoProductsFound.text = @"No prodcuts found!\nTap anywhere to refresh.";
@@ -45,29 +54,48 @@
     
     DefineWeakSelf;
     self.lblNoProductsFound.actionBlock = ^{
-        [weakSelf reload];
+        if (weakSelf.catSelected) {
+            [weakSelf reload];
+        }
     };
 }
 
 - (void)reload {
     [SVProgressHUD show];
-    self.lblNoProductsFound.hidden = YES;
+    [self requestItemsForFirstPage];
+}
+
+- (void)requestItemsForFirstPage {
+    pageIndex = 1;
+    [self loadProducts];
+}
+
+- (void)requestItemsForNextPage {
+    if (!isMoreProductsAvailable) return;
+    pageIndex ++;
+    [SVProgressHUD show];
     [self loadProducts];
 }
 
 - (void)loadProducts {
-    [[FashionStore shared] requestProducts:1 categoryId:1 withCompletion:^(NSArray *products, NSError *error) {
+    self.lblNoProductsFound.hidden = YES;
+    self.lblNoProductsFound.text = catSelected ? NO_PRODUCT_MESSAGE : CAT_NOT_SELECTED;
+    if (!catSelected) {
+        [self reloadData];
+        [SVProgressHUD dismiss];
+        return;
+    }
+    [[ProductStore shared] requestProductsForCategory:catSelected page:pageIndex withCompletion:^(NSArray *products, NSError *error, BOOL isMoreProducts) {
+        isMoreProductsAvailable = isMoreProducts;
+        if (pageIndex == 1) {
+            items = [NSMutableArray new];
+        }
         if (products.count == 0) {
-            [SVProgressHUD showErrorWithStatus:@"No news found."];
+            [SVProgressHUD showErrorWithStatus:@"No products found."];
         }
         else {
             [SVProgressHUD dismiss];
         }
-        items = [NSMutableArray new];
-        [items addObjectsFromArray:products];
-        [items addObjectsFromArray:products];
-        [items addObjectsFromArray:products];
-        [items addObjectsFromArray:products];
         [items addObjectsFromArray:products];
         [self reloadData];
     }];
@@ -75,6 +103,9 @@
 
 - (void)reloadData {
     self.lblNoProductsFound.hidden = items.count;
+    if (items.count) {
+        [self.view sendSubviewToBack:self.viewBack];
+    }
     [self.collectionView reloadData];
 }
 
@@ -94,7 +125,11 @@
     [self.view bringSubviewToFront:self.viewBack];
 }
 
-- (void)selectCategory {
+- (void)selectCategory:(CategoryPro *)category {
+    if (category != catSelected)
+        [items removeAllObjects];
+
+    catSelected = category;
     [self showHideCategories];
 }
 
@@ -119,10 +154,7 @@
 }
 
 - (void)showProductList {
-    if (!items.count) {
-        [self reload];
-    }
-    [self.view sendSubviewToBack:self.viewBack];
+    [self reload];
 }
 
 - (void)updateViewConstraints {
@@ -165,7 +197,7 @@
     BOOL lastItemReached = indexPath.item == items.count - 1;
     if (lastItemReached)
         dispatch_async_main(^{ // Avoid race condition
-//            [self requestItemsForNextPage];
+            [self requestItemsForNextPage];
         });
 }
 

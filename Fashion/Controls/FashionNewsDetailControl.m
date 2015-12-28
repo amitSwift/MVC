@@ -8,9 +8,9 @@
 
 #import "FashionNewsDetailControl.h"
 #import "News.h"
-#import "UIStoryboard.h"
-#import "GCD.h"
-#import "SVProgressHUD.h"
+#import "LibOften.h"
+#import "UserStore.h"
+#import "CommentScreenControl.h"
 
 @interface FashionNewsDetailControl ()
 @property (strong, nonatomic) News *newsDetail;
@@ -43,6 +43,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tabBarController.tabBar setHidden:YES];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [self.descriptionWebView loadHTMLString:self.newsDetail.contentWeb baseURL:nil];
     [SVProgressHUD dismiss];
@@ -58,11 +62,27 @@
 }
 
 - (IBAction)commentButton:(id)sender {
-    
+    if (![[UserStore shared] isLoggedIn]) {
+        DefineWeakSelf;
+        [UIAlertView showWithTitle:@"Alert!" message:@"You have to login first." buttons:@[@"Cancel", @"Login"] completion:^(NSUInteger buttonIndex) {
+            if (buttonIndex == 1) {
+                [weakSelf presentViewController:[[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:@"SignInSignUpControl"] animated:YES completion:nil];
+            }
+        }];
+    }
+    else {
+        CommentScreenControl *commentScreen = [CommentScreenControl controlWithNews:self.newsDetail];
+        [self.navigationController pushViewController:commentScreen animated:YES];
+    }
 }
 
 - (IBAction)shareButton:(id)sender {
+    NSString *noteStr = [NSString stringWithFormat:@"%@. %@", self.newsDetail.title, self.newsDetail.newsURL];
     
+    NSURL *url = [NSURL URLWithString:self.newsDetail.newsURL];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[noteStr, url] applicationActivities:nil];
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (IBAction)backButton:(id)sender {

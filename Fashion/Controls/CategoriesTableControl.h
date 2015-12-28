@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CategoryPro;
 
 @protocol CategoriesTableDelegate <NSObject>
 
-- (void)selectCategory;
+- (void)selectCategory:(CategoryPro *)category;
 
 @end
 

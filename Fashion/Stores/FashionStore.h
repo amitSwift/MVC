@@ -16,6 +16,8 @@
 - (void)requestNews:(NSInteger)page withCompletion:(void(^)(NSArray *news, NSError *error))completion;
 //! Asynchronously returns products array
 - (void)requestProducts:(NSInteger)page categoryId:(NSInteger)catId withCompletion:(void(^)(NSArray *news, NSError *error))completion;
+//! Asynchronously returns product comments
+- (void)requestCommentsForNews:(News *)news withCompletion:(void(^)(NSArray *comments, NSError *error))completion;
 @end
 
 

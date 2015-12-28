@@ -56,7 +56,11 @@
 - (void)loadData {
     self.productName.text = self.productDetail.title;
     self.sellerInformationLabel.text = self.productDetail.sellerDetails;
-    self.productDescriptionLabel.text = self.productDetail.productDetails;
+    self.productDescriptionLabel.attributedText =
+    [[NSAttributedString alloc]
+     initWithData: [self.productDetail.productDetails dataUsingEncoding:NSUTF8StringEncoding]
+     options: @{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType}
+     documentAttributes: nil error:nil];
     self.shippingInfoLabel.text = self.productDetail.shipInfo;
     self.shippingPolicyLabel.text = self.productDetail.shippingPolicy;
     self.refundPolicyLabel.text = self.productDetail.refundPolicy;

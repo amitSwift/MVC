@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Author.h"
 
 @interface Product : NSObject
 
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) NSString *productId;
 
 @property (strong, nonatomic) NSString *title;
+
+@property (strong, nonatomic) NSString *slug;
 
 @property (strong, nonatomic) NSString *price;
 
@@ -35,6 +38,8 @@
 @property (strong, nonatomic) NSString *productDetails;
 
 @property (strong, nonatomic) NSString *sellerDetails;
+
+@property (strong, nonatomic) Author *author;
 
 //@property (strong, nonatomic) NSArray *productDetails;
 //
