@@ -31,7 +31,8 @@
 }
 
 - (void)requestProductsForCategory:(CategoryPro *)category page:(NSInteger)page withCompletion:(void(^)(NSArray *products, NSError *error, BOOL isMoreProducts))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/product-category/%@/?json=get_posts&page=%lu&custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length,_backorders",category.slug,(long)page]]; // Construct URL
+    NSString *additionalInfo = @"custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length,_backorders&author_meta=_dps_refund_policy,_dps_ship_policy";
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/product-category/%@/?json=get_posts&page=%lu&%@",category.slug,(long)page, additionalInfo]]; // Construct URL
     [NSURLSession jsonFromURL:url completion:^(id json){
         NSArray *products = [self isListJsonOK:json] ? [self productsArrayWithJSON:json[KEY_RESULTS]] : nil; // Get the result
         dispatch_async_main(^{

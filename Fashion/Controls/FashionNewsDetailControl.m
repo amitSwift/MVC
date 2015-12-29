@@ -77,7 +77,7 @@
 }
 
 - (IBAction)shareButton:(id)sender {
-    NSString *noteStr = [NSString stringWithFormat:@"%@. %@", self.newsDetail.title, self.newsDetail.newsURL];
+    NSString *noteStr = [NSString stringWithFormat:@"%@", self.newsDetail.title];
     
     NSURL *url = [NSURL URLWithString:self.newsDetail.newsURL];
     
