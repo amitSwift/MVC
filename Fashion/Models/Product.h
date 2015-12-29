@@ -25,6 +25,8 @@
 
 @property (nonatomic) NSInteger inStock;
 
+@property (nonatomic) BOOL inStockAvailable;
+
 @property (strong, nonatomic) NSString *productCode;
 
 @property (strong, nonatomic) NSString *shipInfo;

@@ -112,7 +112,7 @@
 
 //! Check if we got correct list result from api
 - (BOOL)isListJsonOK:(id)json {
-    return json && [json[@"status"] isEqualToString:@"ok"] > 0;
+    return json && [json[@"status"] isEqualToString:@"ok"];
 }
 
 @end

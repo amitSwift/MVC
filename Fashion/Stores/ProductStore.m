@@ -31,11 +31,20 @@
 }
 
 - (void)requestProductsForCategory:(CategoryPro *)category page:(NSInteger)page withCompletion:(void(^)(NSArray *products, NSError *error, BOOL isMoreProducts))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/product-category/%@/?json=get_posts&page=%lu",category.slug,(long)page]]; // Construct URL
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/product-category/%@/?json=get_posts&page=%lu&custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length,_backorders",category.slug,(long)page]]; // Construct URL
     [NSURLSession jsonFromURL:url completion:^(id json){
         NSArray *products = [self isListJsonOK:json] ? [self productsArrayWithJSON:json[KEY_RESULTS]] : nil; // Get the result
         dispatch_async_main(^{
             completion(products, nil, page != [json[@"pages"] integerValue]);
+        }); // Execute completion block
+    }];
+}
+
+- (void)requestProductsDetail:(Product *)product withCompletion:(void(^)(Product *product, NSError *error))completion {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/?json=get_post&post_type=product&post_id=%@&custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length",product.productId]]; // Construct URL
+    [NSURLSession jsonFromURL:url completion:^(id json){
+        dispatch_async_main(^{
+            completion([self isListJsonOK:json] ? [Product productFromJSON:json[@"post"]] : nil, nil);
         }); // Execute completion block
     }];
 }
@@ -67,7 +76,7 @@
 
 //! Check if we got correct list result from api
 - (BOOL)isListJsonOK:(id)json {
-    return json && json[@"status"] && [json[KEY_RESULTS] count] > 0;
+    return json && [json[@"status"] isEqualToString:@"ok"];
 }
 
 @end
