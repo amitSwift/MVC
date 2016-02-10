@@ -2,7 +2,7 @@
 //  Author.m
 //  Fashion
 //
-//  Created by Lakhwinder Singh on 27/12/15.
+//  Created by Rana on 27/12/15.
 //  Copyright © 2015 lakh. All rights reserved.
 //
 

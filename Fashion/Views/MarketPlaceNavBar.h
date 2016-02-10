@@ -2,7 +2,7 @@
 //  MarketPlaceNavBar.h
 //  Fashion
 //
-//  Created by Lakhwinder Singh on 09/12/15.
+//  Created by Rana on 09/12/15.
 //  Copyright © 2015 lakh. All rights reserved.
 //
 

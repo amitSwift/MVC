@@ -2,7 +2,7 @@
 //  User.h
 //  Fashion
 //
-//  Created by Lakhwinder Singh on 19/12/15.
+//  Created by Rana on 19/12/15.
 //  Copyright © 2015 lakh. All rights reserved.
 //
 

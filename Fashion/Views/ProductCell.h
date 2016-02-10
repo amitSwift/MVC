@@ -2,7 +2,7 @@
 //  ProductCell.h
 //  Fashion
 //
-//  Created by Lakhwinder Singh on 22/12/15.
+//  Created by Rana on 22/12/15.
 //  Copyright © 2015 lakh. All rights reserved.
 //
 
