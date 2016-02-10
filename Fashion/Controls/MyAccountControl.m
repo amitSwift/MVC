@@ -63,7 +63,7 @@
 }
 
 - (IBAction)signOutButtonClicked:(id)sender {
-    [UIAlertView showWithTitle:@"Logout?" message:nil buttons:@[@"Cancel", @"OK"] completion:^(NSUInteger buttonIndex){
+    [UIAlertView showWithTitle:@"Sign out?" message:nil buttons:@[@"Cancel", @"OK"] completion:^(NSUInteger buttonIndex){
         if (buttonIndex == 1) {
             [[UserStore shared] logoutUser];
             [self viewWillAppear:YES];

@@ -20,6 +20,7 @@
         shared = [[super allocWithZone:nil] init];
     }); return shared;
 }
+
 - (void)requestProductsCategoriesWithCompletion:(void(^)(NSArray *categories, NSError *error))completion {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/term/product_cat.json",FASHION_API_BASE_URL]]; // Construct URL
     [NSURLSession jsonFromURL:url completion:^(id json){

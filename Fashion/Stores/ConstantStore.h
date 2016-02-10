@@ -12,5 +12,6 @@
 
 #define FASHION_API_BASE_URL @"http://fashion.ie/api"
 #define FASHION_JSON_BASE_URL @"http://fashion.ie/json"
+#define FASHION_WC_JSON_BASE_URL @"https://fashion.ie/wc-api/v3"
 
 
