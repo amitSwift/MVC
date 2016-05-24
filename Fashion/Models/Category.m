@@ -16,7 +16,7 @@
     cat.title = json[@"name"];
     cat.slug = json[@"slug"];
     cat.categoryDescription = json[@"description"];
-    cat.catId = json[@"term_id"];
+    cat.catId = json[@"id"];
     return cat;
 }
 

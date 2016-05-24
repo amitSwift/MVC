@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyAccountControl : UIViewController
+@interface MyAccountControl : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
+
 @end
 
 

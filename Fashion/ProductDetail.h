@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
+
+#define kPayPalEnvironment PayPalEnvironmentNoNetwork
+
 @class Product;
 
-@interface ProductDetail : UIViewController
+@interface ProductDetail : UIViewController <PayPalPaymentDelegate>
 + (instancetype)controlWithProduct:(Product *)product;
+
+@property(nonatomic, strong, readwrite) NSString *environment;
+@property(nonatomic, assign, readwrite) BOOL acceptCreditCards;
+@property(nonatomic, strong, readwrite) NSString *resultText;
 
 @end
 
