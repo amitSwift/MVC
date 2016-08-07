@@ -9,6 +9,8 @@
 #import "ProductStore.h"
 #import "LibOften.h"
 
+#define CONSUMER_KEY @"ck_eb4fdd1fc2b1485c756f8e6d340c01192616ba02"
+#define CONSUMER_SECRET @"cs_4d2ad83b759c4f98523d47deb2185dc9f0fa6bf5"
 #define KEY_RESULTS @"posts"
 
 @implementation ProductStore
@@ -22,40 +24,60 @@
 }
 
 - (void)requestProductsCategoriesWithCompletion:(void(^)(NSArray *categories, NSError *error))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/term/product_cat.json",FASHION_API_BASE_URL]]; // Construct URL
-    [NSURLSession jsonFromURL:url completion:^(id json){
-        NSArray *categories = [self isProductsJsonOK:json] ? [self categoriesArrayWithJSON:json[@"data"]] : nil; // Get the result
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/products/categories",FASHION_WC_JSON_BASE_URL]]; // Construct URL
+    
+    [NSURLSession jsonFromURLRequest:[self urlRequestWithURL:url] completion:^(id json){
+        NSArray *categories = [self categoriesArrayWithJSON:json[@"product_categories"]]; // Get the result
         dispatch_async_main(^{
             completion(categories, nil);
         }); // Execute completion block
     }];
 }
 
-- (void)requestProductsForCategory:(CategoryPro *)category page:(NSInteger)page withCompletion:(void(^)(NSArray *products, NSError *error, BOOL isMoreProducts))completion {
-    NSString *additionalInfo = @"custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length,_backorders&author_meta=_dps_refund_policy,_dps_ship_policy";
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/product-category/%@/?json=get_posts&page=%lu&%@",category.slug,(long)page, additionalInfo]]; // Construct URL
-    [NSURLSession jsonFromURL:url completion:^(id json){
-        NSArray *products = [self isListJsonOK:json] ? [self productsArrayWithJSON:json[KEY_RESULTS]] : nil; // Get the result
+- (void)requestProductsForCategory:(CategoryPro *)category page:(NSInteger)page withCompletion:(void(^)(NSArray *products, NSError *error))completion {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/products?filter[category]=%@&page=%lu",FASHION_WC_JSON_BASE_URL, category.slug, page]]; // Construct URL
+    
+    [NSURLSession jsonFromURLRequest:[self urlRequestWithURL:url] completion:^(id json){
+        NSArray *products = [self productsArrayWithJSON:json[@"products"]]; // Get the result
         dispatch_async_main(^{
-            completion(products, nil, page != [json[@"pages"] integerValue]);
+            completion(products, nil);
         }); // Execute completion block
     }];
 }
 
 - (void)requestProductsDetail:(Product *)product withCompletion:(void(^)(Product *product, NSError *error))completion {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://fashion.ie/?json=get_post&post_type=product&post_id=%@&custom_fields=_price,_stock_status,_stock,_sku,_weight,_width,_height,_length",product.productId]]; // Construct URL
-    [NSURLSession jsonFromURL:url completion:^(id json){
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/products/%@",FASHION_WC_JSON_BASE_URL, product.productId]]; // Construct URL
+    
+    [NSURLSession jsonFromURLRequest:[self urlRequestWithURL:url] completion:^(id json){
         dispatch_async_main(^{
-            completion([self isListJsonOK:json] ? [Product productFromJSON:json[@"post"]] : nil, nil);
+            completion([Product productFromJSON:json[@"product"]], nil);
         }); // Execute completion block
     }];
 }
 
+- (void)requestShippingDetail:(NSInteger)shippingClassId withCompletion:(void(^)(Shipping *ship))completion {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/products/shipping_classes/%lu", FASHION_WC_JSON_BASE_URL, shippingClassId]]; // Construct URL
+    
+    [NSURLSession jsonFromURLRequest:[self urlRequestWithURL:url] completion:^(id json){
+        dispatch_async_main(^{
+            completion([Shipping shippingFromJSON:json[@"product_shipping_class"]]);
+        }); // Execute completion block
+    }];
+}
+
+- (NSURLRequest *)urlRequestWithURL:(NSURL *)url {
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", CONSUMER_KEY, CONSUMER_SECRET];
+    NSString *authValue = [NSString stringWithFormat:@"Basic %@", [[authStr dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0]];
+    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    [urlRequest setValue:authValue forHTTPHeaderField:@"Authorization"];
+    return urlRequest;
+}
+
 //! Returns array of categories from JSON
-- (NSArray *)categoriesArrayWithJSON:(NSDictionary *)json {
+- (NSArray *)categoriesArrayWithJSON:(id)json {
     NSMutableArray *proCatArray = [NSMutableArray new];
-    for (NSDictionary *key in json.allKeys) {
-        CategoryPro *proCat = [CategoryPro categoryFromJSON:json[key]];
+    for (NSDictionary *dict in json) {
+        CategoryPro *proCat = [CategoryPro categoryFromJSON:dict];
         if (proCat) [proCatArray addObject:proCat];
     }
     return proCatArray.count > 0 ? proCatArray : nil;

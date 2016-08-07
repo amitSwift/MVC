@@ -26,6 +26,20 @@
     }];
 }
 
++ (void)dataFromRequestURL:(NSURLRequest *)urlRequest completion:(void(^)(NSData *data))completion {
+    //NSLog(@"GET %@", url);
+    [[[NSURLSession sharedSession] dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        completion(data);
+    }] resume];
+}
+
++ (void)jsonFromURLRequest:(NSURLRequest *)urlRequest completion:(void(^)(id json))completion {
+    [NSURLSession dataFromRequestURL:urlRequest completion:^(NSData *data){
+        id result = data ? [NSJSONSerialization JSONObjectWithData:data options:0 error:nil] : nil; // Parse JSON
+        result = [result removeNsNullsRecursively]; // Remove NSNull objects
+        completion(result);
+    }];
+}
 
 @end
 

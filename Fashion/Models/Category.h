@@ -18,7 +18,9 @@
 
 @property (strong, nonatomic) NSString *categoryDescription;
 
-@property (strong, nonatomic) NSString *catId;
+@property (nonatomic) NSInteger productCount;
+
+@property (nonatomic) NSInteger catId;
 
 @end
 

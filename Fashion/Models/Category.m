@@ -16,7 +16,8 @@
     cat.title = json[@"name"];
     cat.slug = json[@"slug"];
     cat.categoryDescription = json[@"description"];
-    cat.catId = json[@"id"];
+    cat.catId = [json[@"id"] integerValue];
+    cat.productCount = [json[@"count"] integerValue];
     return cat;
 }
 

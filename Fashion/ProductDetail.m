@@ -9,6 +9,7 @@
 #import "ProductDetail.h"
 #import "Product.h"
 #import "PINRemoteImageAdapter.h"
+#import "ProductStore.h"
 #import "LibOften.h"
 
 @interface ProductDetail ()
@@ -130,18 +131,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buyNowTapped:(id)sender
-{
+- (IBAction)buyNowTapped:(id)sender {
+    if (self.productDetail.shippingRequired) {
+        [SVProgressHUD show];
+        [[ProductStore shared] requestShippingDetail:self.productDetail.shippingClassID withCompletion:^(Shipping *ship) {
+            [SVProgressHUD dismiss];
+            NSInteger price = [self.productDetail.price integerValue];
+            NSInteger shipPrice = ship.count;
+            [UIAlertView showWithTitle:@"Shipment amount required!" message:[NSString stringWithFormat:@"It will cost extra €%lu for shipment.", shipPrice] buttons:@[@"Cancel", @"Proceed"] completion:^(NSUInteger btn) {
+                if (btn == 1) {
+                    [self buyItem:[NSString stringWithFormat:@"%lu",price + shipPrice]];
+                }
+            }];
+        }];
+    } else {
+        [self buyItem:self.productDetail.price];
+    }
+}
+
+- (void)buyItem:(NSString *)price {
     PayPalItem *item = [PayPalItem itemWithName:self.productDetail.title
-                                    withQuantity:1
-                                       withPrice:[NSDecimalNumber decimalNumberWithString:self.productDetail.price]
-                                    withCurrency:@"EUR"
-                                         withSku:self.productDetail.productCode];
+                                   withQuantity:1
+                                      withPrice:[NSDecimalNumber decimalNumberWithString:price]
+                                   withCurrency:@"EUR"
+                                        withSku:self.productDetail.productCode];
     NSArray *items = @[item];
-   
+    
     NSDecimalNumber *total = [PayPalItem totalPriceForItems:items];
-
-
+    
+    
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     payment.amount = total;
     payment.currencyCode = @"EUR";
@@ -156,7 +174,6 @@
                                                                                                 configuration:self.payPalConfig
                                                                                                      delegate:self];
     [self presentViewController:paymentViewController animated:YES completion:nil];
-
 }
 
 #pragma mark PayPalPaymentDelegate methods

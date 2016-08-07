@@ -14,35 +14,42 @@
     Product *product = [Product new];
     product.productId = json[@"id"];
     product.title = json[@"title"];
-    product.slug = json[@"slug"];
-    product.imageUrl = [NSURL URLWithString:json[@"thumbnail_images"][@"shop_catalog"][@"url"]];
-    product.productDetails = json[@"content"];
-    product.author = [Author authorFromJSON:json[@"author"]];
+    product.imageUrl = [NSURL URLWithString:json[@"featured_src"]];
+    product.productDetails = json[@"description"];
+//    product.author = [Author authorFromJSON:json[@"author"]];
     product.sellerDetails = [product tempSellerDetails];
     
-    product.price = json[@"custom_fields"][@"_price"][0];
-    product.inStock = [json[@"custom_fields"][@"_stock"][0] integerValue];
-    product.inStockAvailable = [json[@"custom_fields"][@"_stock_status"][0] isEqualToString:@"instock"] ? YES : NO;
-    product.productCode = [NSString stringWithFormat:@"SKU: %@", json[@"custom_fields"][@"_sku"][0]];
+    product.price = json[@"price"];
+    product.inStock = [json[@"in_stock"] boolValue];
+    product.inStockAvailable = [json[@"in_stock"] boolValue];
+    product.productCode = [NSString stringWithFormat:@"SKU: %@", json[@"sku"]];
     
-    NSString *wieght = json[@"custom_fields"][@"_weight"][0];
-    NSString *width = json[@"custom_fields"][@"_width"][0];
-    NSString *height = json[@"custom_fields"][@"_height"][0];
-    NSString *length = json[@"custom_fields"][@"_length"][0];
+    NSString *wieght = json	[@"weight"];
+    NSString *width = json[@"dimensions"][@"width"];
+    NSString *height = json[@"dimensions"][@"height"];
+    NSString *length = json[@"dimensions"][@"length"];
     NSString *dimenstions = [NSString stringWithFormat:@"%@ x %@ x %@ cm",length, width, height];
     if (wieght) product.additionalInformation = @{@"Weight" : wieght, @"Dimensions" : dimenstions};
     
-    product.refundPolicy = json[@"author"][@"_dps_refund_policy"];
-    product.shippingPolicy = json[@"author"][@"_dps_ship_policy"];
+//    product.refundPolicy = json[@"author"][@"_dps_refund_policy"];
+//    product.shippingPolicy = json[@"author"][@"_dps_ship_policy"];
+
+    product.refundPolicy = @"N/A";
+    product.shippingPolicy = @"N/A";
     
     //Static info's
-    product.shipInfo = @"Ready to ship in 3-5 business day from Australia";
+    product.shipInfo = json[@"shipping_class"];
+    
+    product.shippingClass = json[@"shipping_class"];
+    product.shippingClassID = [json[@"shipping_class_id"] integerValue];
+    product.shippingRequired = [json[@"shipping_required"] boolValue];
+    product.shippingTaxable = [json[@"shipping_taxable"] boolValue];
 
     return product;
 }
 
 - (NSString *)tempSellerDetails {
-    return [NSString stringWithFormat:@"• Store Name: %@\n• Seller: %@\n• Address: 3/703 Esplanade, Mornington, Victoria, 3931, Australia\n• No ratings found yet!", self.author.nickname , self.author.name];
+    return [NSString stringWithFormat:@"Sold By Fashion.ie"];
 }
 
 @end

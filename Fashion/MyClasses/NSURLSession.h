@@ -16,6 +16,9 @@
 // Asynchronously returns serialized JSON object from URL with a completion block
 + (void)jsonFromURL:(NSURL *)url completion:(void(^)(id json))completion;
 
+// Asynchronously returns serialized JSON object from URL Request with a completion block
++ (void)jsonFromURLRequest:(NSURLRequest *)urlRequest completion:(void(^)(id json))completion;
+
 @end
 
 

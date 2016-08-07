@@ -17,8 +17,6 @@
 
 @property (strong, nonatomic) NSString *title;
 
-@property (strong, nonatomic) NSString *slug;
-
 @property (strong, nonatomic) NSString *price;
 
 @property (strong, nonatomic) NSURL *imageUrl;
@@ -41,7 +39,15 @@
 
 @property (strong, nonatomic) NSString *sellerDetails;
 
-@property (strong, nonatomic) Author *author;
+@property (strong, nonatomic) NSString *shippingClass;
+
+@property (nonatomic) BOOL shippingRequired;
+
+@property (nonatomic) BOOL shippingTaxable;
+
+@property (nonatomic) NSInteger shippingClassID;
+
+//@property (strong, nonatomic) Author *author;
 
 //@property (strong, nonatomic) NSArray *productDetails;
 //

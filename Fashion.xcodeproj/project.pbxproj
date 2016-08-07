@@ -23,6 +23,7 @@
 		FD23882D1C25547D00159056 /* UIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD23882C1C25547D00159056 /* UIAlertView.m */; };
 		FD2388381C2556EA00159056 /* NSBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2388351C2556EA00159056 /* NSBundle.m */; };
 		FD2388391C2556EA00159056 /* NSError.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2388371C2556EA00159056 /* NSError.m */; };
+		FD2AA6BE1CF4E0D9008B6782 /* Shipping.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2AA6BD1CF4E0D9008B6782 /* Shipping.m */; };
 		FD2DBB171C144AC70062984C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9561C144AC70062984C /* .gitattributes */; };
 		FD2DBB181C144AC70062984C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9571C144AC70062984C /* .gitignore */; };
 		FD2DBB191C144AC70062984C /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = FD2DB9581C144AC70062984C /* .travis.yml */; };
@@ -352,6 +353,8 @@
 		FD2388351C2556EA00159056 /* NSBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBundle.m; path = MyClasses/NSBundle.m; sourceTree = "<group>"; };
 		FD2388361C2556EA00159056 /* NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSError.h; path = MyClasses/NSError.h; sourceTree = "<group>"; };
 		FD2388371C2556EA00159056 /* NSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSError.m; path = MyClasses/NSError.m; sourceTree = "<group>"; };
+		FD2AA6BC1CF4E0D9008B6782 /* Shipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shipping.h; path = Models/Shipping.h; sourceTree = "<group>"; };
+		FD2AA6BD1CF4E0D9008B6782 /* Shipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shipping.m; path = Models/Shipping.m; sourceTree = "<group>"; };
 		FD2DB9561C144AC70062984C /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		FD2DB9571C144AC70062984C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FD2DB9581C144AC70062984C /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -1757,6 +1760,8 @@
 				FD9925EA1C19D65F0017532E /* News.m */,
 				FD7700101C29AE3A00600B6D /* Product.h */,
 				FD7700111C29AE3A00600B6D /* Product.m */,
+				FD2AA6BC1CF4E0D9008B6782 /* Shipping.h */,
+				FD2AA6BD1CF4E0D9008B6782 /* Shipping.m */,
 				FD2388251C25438000159056 /* User.h */,
 				FD2388261C25438000159056 /* User.m */,
 			);
@@ -2294,6 +2299,7 @@
 				FD2DBB651C144AC70062984C /* enc_neon.c in Sources */,
 				FD2DBBCA1C144AC70062984C /* PINRemoteImageCategoryManager.m in Sources */,
 				FD9925E81C19D62F0017532E /* MyAccountControl.m in Sources */,
+				FD2AA6BE1CF4E0D9008B6782 /* Shipping.m in Sources */,
 				FD2DBBAA1C144AC70062984C /* Pods-PINRemoteImage Tests-PINCache-dummy.m in Sources */,
 				FD2DBBD01C144AC70062984C /* PINURLSessionManager.m in Sources */,
 				FD2DBB481C144AC70062984C /* FLAnimatedImage.m in Sources */,
@@ -2474,7 +2480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Take and Create Ltd (3K3KM9968A)";
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Fashion/PrefixHeader.pch";
@@ -2492,7 +2498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5b076604-7a8f-48d1-8af9-dbcdef1d8a17";
+				PROVISIONING_PROFILE = "ea015818-9251-4f2e-90ea-bd0b43fbac9d";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2502,8 +2508,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Take and Create Ltd (3K3KM9968A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Take and Create Ltd (3K3KM9968A)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Fashion/PrefixHeader.pch";
@@ -2521,7 +2527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fashion.ie.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5b076604-7a8f-48d1-8af9-dbcdef1d8a17";
+				PROVISIONING_PROFILE = "ea015818-9251-4f2e-90ea-bd0b43fbac9d";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

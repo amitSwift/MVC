@@ -43,6 +43,7 @@
 }
 
 - (void)initViews {
+    items = [NSMutableArray new];
     isMoreProductsAvailable = YES;
     isMenuShow = YES;
     pageIndex = 1;
@@ -85,8 +86,14 @@
         [SVProgressHUD dismiss];
         return;
     }
-    [[ProductStore shared] requestProductsForCategory:catSelected page:pageIndex withCompletion:^(NSArray *products, NSError *error, BOOL isMoreProducts) {
-        isMoreProductsAvailable = isMoreProducts;
+    if (catSelected.productCount <= items.count) {
+        isMoreProductsAvailable = NO;
+        [self reloadData];
+        [SVProgressHUD dismiss];
+        return;
+    }
+    isMoreProductsAvailable = YES;
+    [[ProductStore shared] requestProductsForCategory:catSelected page:pageIndex withCompletion:^(NSArray *products, NSError *error) {
         if (pageIndex == 1) {
             items = [NSMutableArray new];
         }
